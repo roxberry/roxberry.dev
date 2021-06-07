@@ -1,0 +1,289 @@
+@import "variables";
+@import "flexbox";
+
+$container-width: 1250px;  //1250
+$sidebar-width: 200px;
+
+html,body {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Raleway", sans-serif;
+  font-display: auto;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: black !important;
+}
+
+.container {
+  margin: 0 auto;
+  //max-width: 1250px; //was 750px
+//   padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-left: auto;
+  padding-right: auto;
+}
+
+header {
+  background-color: #282828;
+  color: $brand-primary;
+  display: flex;
+  justify-content: center;
+  line-height: 2;
+}
+
+.sub-header {
+  display: flex;
+  // flex: 0 0 1150px;
+  //flex: 0 0 1150px;
+  //justify-content: space-between;
+  width: $container-width;
+  // border: 2px solid red; //for design purposes
+
+}
+
+.disclaimer {
+  width: 100%;
+  background-color: $brand-primary;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  display: flex;
+  justify-content: center;
+  span {
+    padding: .25em 0em;
+    color: #282828;
+    width: $container-width;
+    // border: 2px solid red; //for design purposes
+    text-align: center;
+  }
+}
+
+main {
+  display: flex;
+  min-height: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: $container-width;
+  flex: 1;
+  //border: 2px solid red;//for design purposes
+
+}
+
+aside {
+  background: linear-gradient(to right, black, #282828);
+  flex: 0 0 $sidebar-width;
+  overflow: auto;
+  padding: 2em 4em;
+}
+
+section {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+article {
+  //min-width: 40em;
+  // max-width: 100em;
+  flex: 1;
+  line-height: 1.5;
+  overflow: auto;
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+// footer {
+//   padding: 2em;
+// }
+
+
+
+
+
+// index.js
+h1, .section-heading {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: $brand-primary;
+  font-weight: normal;
+  line-height: 1.5;
+  // font-size: 2em;
+  border-bottom: 2px solid $brand-primary;
+}
+
+h2, h3, h4, h5 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: $brand-primary;
+  font-weight: normal;
+}
+
+a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  &:hover {
+    color: $brand-primary;
+  }
+}
+
+
+.flexboxA {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  a {
+    font-weight: unset;
+    color: unset;
+  }
+  > div {
+    width: 32%;
+    .postedInfo {
+      font-size: .8em;
+    }
+    margin-bottom: 5em;
+  }
+
+}
+
+// .box {
+//   display: flex;
+//   flex-wrap: wrap;
+// }
+// .box>* {
+//     flex: 0 0 33.3333%;
+// }
+
+// .boxItem {
+//   padding-right: 10px;
+// }
+
+
+// header styles
+.leftSide {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  padding-left: 4em;
+  // border: 2px solid red; //for design purposes
+}
+
+.leftSide .title {
+  font-size: 1.25em;
+  text-decoration: none;
+  color: $brand-primary;
+  font-weight: normal;
+}
+
+.leftSide .title.active {
+  font-weight: bold;
+}
+
+.leftSide ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.leftSide ul a {
+  text-decoration: none;
+  color: rgba(255,255,255,.5);
+  font-weight: normal;
+}
+
+.header-menu-item.active {
+  font-weight: bold;
+  color: darkgray;
+}
+
+.leftSide ul li {
+  margin-right: 1em;
+}
+
+.rightSide {
+  // display: flex;
+  // align-items: center;
+  margin-left: auto;
+  padding-right: 4em;
+
+}
+
+
+
+// sidebar
+.profile img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+aside section {
+  // width: 200px;
+  flex: 0 0 200px;
+}
+
+.social-icons ul {
+  display: flex;
+  list-style-type: none;
+  padding-inline-start: unset;
+  justify-content: space-between
+}
+
+.social-icons ul li {
+  // margin-right: .5em;
+  font-size: 1.25em;
+  padding: 5px;
+}
+
+
+// blog post
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.7); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:1;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  // text-align: center;
+}
+
+// * {box-sizing: border-box}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.postImage {
+  position: relative;
+  // width: 50%;
+  // max-width: 300px;
+}
+
+.postedInfo {
+  font-size: 1em;
+  color: $gray;
+  margin-top: 1em;
+}
+
+// .blogContent {
+//   height: 300px;
+// }
+
+.blogBody {
+  margin-bottom: 5em;
+}
+
+code {
+  font-size: 87.5%;
+  color: $amber;
+  word-break: break-word;
+}
+
+
+@import "media";
+

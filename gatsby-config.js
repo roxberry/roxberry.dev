@@ -5,6 +5,39 @@
  */
 
 module.exports = {
-  /* Your site config here */
-  plugins: [],
+  siteMetadata: {
+    title: 'Roxberry.DEV',
+    author: 'Mark Roxberry',
+    version: '1.1'
+  },
+  plugins: [
+    'gatsby-plugin-sass', 
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-image',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'posts',
+        path: `${__dirname}/src/posts`
+      }
+    },
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          'gatsby-remark-relative-images',
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 800,
+              linkImagesToOriginal: false
+            }
+          }
+        ]
+      }
+    },
+    'gatsby-plugin-fontawesome-css',
+  ],
 }
