@@ -27,6 +27,7 @@ const Blog = (props) => {
                             <GatsbyImage
                             image={postImage.src.childImageSharp.gatsbyImageData}
                             alt={postImage.alt}
+                            layout="fullWidth"
                             />
                         )
                     }
@@ -61,8 +62,7 @@ export const query = graphql`
                 absolutePath
                 childImageSharp {
                     gatsbyImageData(
-                        width: 800
-                        height: 600
+                        layout: FULL_WIDTH
                         placeholder: BLURRED
                         formats: [AUTO, WEBP, AVIF]
                     )

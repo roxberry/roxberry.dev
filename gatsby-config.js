@@ -7,6 +7,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Roxberry.DEV',
+    url: 'https://www.roxberry.dev',
     author: 'Mark Roxberry',
     version: '1.1'
   },
@@ -39,5 +40,11 @@ module.exports = {
       }
     },
     'gatsby-plugin-fontawesome-css',
+    {
+      resolve: `gatsby-plugin-doctype`,
+      options: {
+        doctype: 'HTML',
+      },
+    },
   ],
 }

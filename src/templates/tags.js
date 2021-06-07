@@ -30,6 +30,7 @@ const Tags = ({ pageContext, data }) => {
                       <GatsbyImage
                       image={postImage.src.childImageSharp.gatsbyImageData}
                       alt={postImage.alt}
+                      layout="fullWidth"
                       />
                   )
               }
@@ -110,10 +111,9 @@ export const query = graphql`
                   absolutePath
                   childImageSharp {
                       gatsbyImageData(
-                          width: 300
-                          height: 200
-                          placeholder: BLURRED
-                          formats: [AUTO, WEBP, AVIF]
+                        layout: FULL_WIDTH
+                        placeholder: BLURRED
+                        formats: [AUTO, WEBP, AVIF]
                       )
                   }
                 }

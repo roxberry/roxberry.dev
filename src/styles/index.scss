@@ -1,10 +1,11 @@
 @import "variables";
 @import "flexbox";
 
-$container-width: 1250px;  //1250
+$container-width: 1250px; //1250
 $sidebar-width: 200px;
 
-html,body {
+html,
+body {
   margin: 0;
 }
 
@@ -20,7 +21,7 @@ body {
 .container {
   margin: 0 auto;
   //max-width: 1250px; //was 750px
-//   padding: 1rem;
+  //   padding: 1rem;
 
   display: flex;
   flex-direction: column;
@@ -44,7 +45,6 @@ header {
   //justify-content: space-between;
   width: $container-width;
   // border: 2px solid red; //for design purposes
-
 }
 
 .disclaimer {
@@ -55,7 +55,7 @@ header {
   display: flex;
   justify-content: center;
   span {
-    padding: .25em 0em;
+    padding: 0.25em 0em;
     color: #282828;
     width: $container-width;
     // border: 2px solid red; //for design purposes
@@ -71,7 +71,6 @@ main {
   width: $container-width;
   flex: 1;
   //border: 2px solid red;//for design purposes
-
 }
 
 aside {
@@ -100,12 +99,9 @@ article {
 //   padding: 2em;
 // }
 
-
-
-
-
 // index.js
-h1, .section-heading {
+h1,
+.section-heading {
   margin-top: 20px;
   margin-bottom: 20px;
   color: $brand-primary;
@@ -115,7 +111,10 @@ h1, .section-heading {
   border-bottom: 2px solid $brand-primary;
 }
 
-h2, h3, h4, h5 {
+h2,
+h3,
+h4,
+h5 {
   margin-top: 20px;
   margin-bottom: 20px;
   color: $brand-primary;
@@ -131,7 +130,6 @@ a {
   }
 }
 
-
 .flexboxA {
   display: flex;
   justify-content: space-between;
@@ -143,11 +141,10 @@ a {
   > div {
     width: 32%;
     .postedInfo {
-      font-size: .8em;
+      font-size: 0.8em;
     }
     margin-bottom: 5em;
   }
-
 }
 
 // .box {
@@ -161,7 +158,6 @@ a {
 // .boxItem {
 //   padding-right: 10px;
 // }
-
 
 // header styles
 .leftSide {
@@ -190,7 +186,7 @@ a {
 
 .leftSide ul a {
   text-decoration: none;
-  color: rgba(255,255,255,.5);
+  color: rgba(255, 255, 255, 0.5);
   font-weight: normal;
 }
 
@@ -208,10 +204,7 @@ a {
   // align-items: center;
   margin-left: auto;
   padding-right: 4em;
-
 }
-
-
 
 // sidebar
 .profile img {
@@ -228,7 +221,7 @@ aside section {
   display: flex;
   list-style-type: none;
   padding-inline-start: unset;
-  justify-content: space-between
+  justify-content: space-between;
 }
 
 .social-icons ul li {
@@ -236,7 +229,6 @@ aside section {
   font-size: 1.25em;
   padding: 5px;
 }
-
 
 // blog post
 /* The overlay effect - lays on top of the container and over the image */
@@ -247,8 +239,8 @@ aside section {
   background: rgba(0, 0, 0, 0.7); /* Black see-through */
   color: #f1f1f1;
   width: 100%;
-  transition: .5s ease;
-  opacity:1;
+  transition: 0.5s ease;
+  opacity: 1;
   color: white;
   font-size: 20px;
   padding: 20px;
@@ -284,6 +276,4 @@ code {
   word-break: break-word;
 }
 
-
 @import "media";
-

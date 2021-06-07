@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import { Link, graphql, useStaticQuery } from "gatsby"
 
 const Header = () => {
@@ -8,6 +9,7 @@ const Header = () => {
       site {
         siteMetadata {
           title
+          url
         }
       }
     }
@@ -15,6 +17,11 @@ const Header = () => {
 
   return (
     <header>
+      <Helmet>
+          <meta charSet="utf-8" />
+          <title>{data.site.siteMetadata.title}</title>
+          <link rel="canonical" href="{data.site.siteMetadata.url}" />
+      </Helmet>
       <div className="sub-header">
         <div className="leftSide">
             <Link to="/" className="title" activeClassName="active">{data.site.siteMetadata.title}</Link>
