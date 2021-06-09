@@ -16,8 +16,6 @@ postimage:
     alt: "main post image"
 featured:   true
 ---
-{% include assignments.html %}
-
 1. Get [Docker](https://www.docker.com/) (if it is not already running)
 
 1. Get the SQL Server on Linux for Docker Engine image

@@ -1,177 +1,109 @@
-// /*
-//  * Author: http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/
-//  */
-
-// /* Smartphones (portrait and landscape) ----------- */
-// @media only screen 
-// and (min-device-width : 320px) 
-// and (max-device-width : 480px) {
-// /* Styles */
-// }
-
-// /* Smartphones (landscape) ----------- */
-// @media only screen 
-// and (min-width : 321px) {
-// /* Styles */
-// }
-
-// /* Smartphones (portrait) ----------- */
-// @media only screen 
-// and (max-width : 320px) {
-// /* Styles */
-// }
-
-// /* iPads (portrait and landscape) ----------- */
-// @media only screen 
-// and (min-device-width : 768px) 
-// and (max-device-width : 1024px) {
-// /* Styles */
-// }
-
-// /* iPads (landscape) ----------- */
-// @media only screen 
-// and (min-device-width : 768px) 
-// and (max-device-width : 1024px) 
-// and (orientation : landscape) {
-// /* Styles */
-// }
-
-// /* iPads (portrait) ----------- */
-// @media only screen 
-// and (min-device-width : 768px) 
-// and (max-device-width : 1024px) 
-// and (orientation : portrait) {
-// /* Styles */
-// }
-
-// /* Desktops and laptops ----------- */
-// @media only screen 
-// and (min-width : 1224px) {
-// /* Styles */
-// }
-
-// /* Large screens ----------- */
-// @media only screen 
-// and (min-width : 1824px) {
-// /* Styles */
-// }
-
-// /* iPhone 4 ----------- */
-// @media
-// only screen and (-webkit-min-device-pixel-ratio : 1.5),
-// only screen and (min-device-pixel-ratio : 1.5) {
-// /* Styles */
-// }
-
-// // aside {
-// //     display: none;
-// //     width: 0px;
-// // }
-
-/* ROX: less than 1024 ----- */
-@media only screen
-and (max-device-width : 767px) {
-    .sub-header {
-        width: 90%;
-    }
-    
-    .disclaimer {
-        span {
-            width: 90%;
-        }
-    }
-    
-    main {
-        width: 90%;
-        article {
-            padding: 0 1em;
-        }
-    }
-    
+@media only screen 
+and (max-width : 480px) {
     aside {
-        display: none;
         width: 0px;
-    }
-    
-    section {
-        padding: unset;
-    }
-    
-    article {
-        //padding: 0 1em;
-
-    }
-    
-    .flexbox > div {
-        flex: 1 0 100%;
-        margin: unset;
-        margin-bottom: 5em;
-    }
-
-    .rightSide {
         display: none;
     }
-
-    .leftSide {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        padding-left: unset;
-        .title {
-            font-size: 1.4em;
+    header {
+        //display: none; //causing horizonal scroll
+        .leftSide {
+            //display: none;
+            padding: 0 1rem;
         }
-        // ul {
-        //     border: 2px solid red; //for design purposes
-        // }
+        .rightSide {
+            display: none;
+        }
+        justify-content: unset;
+    }
+    article {
+        padding: 0 1rem;
+        font-size: 1.5rem;
+    }
+    // section {
+    //     padding: 1rem 2rem;
+    //     margin: unset;
+    // }
+    .blogContent {
+        padding: 1rem 2rem;
     }
 
-    .post h3 {
-        border-bottom: 2px solid $brand-primary;
+    .blogBody {
+        font-size: 2rem;
     }
-    
+
+    .flexbox > div {
+        margin: 2rem 0;
+        width: 100%;
+
+    }
 }
 
-/* ROX: less than 1024 ----- */
 @media only screen
-and (max-device-width : 1223px) 
-{
-
-    // .sub-header {
-    //     width: 100%;
-    // }
-    
-    // .disclaimer {
-    //     font-size: .8em;
-    //     span {
-    //         width: 100%;
-    //     }
-    // }
-    
-    main {
-        width: unset;
-        article {
-            padding: 0 1em;
-            .blogContent {
-                width: 90%;
-            }
+and (min-width: 481px)
+and (max-width: 1024px) {
+    aside {
+        width: 0px;
+        display: none;
+    }
+    header {
+        //display: none; //causing horizonal scroll
+        .leftSide {
+            //display: none;
+            padding: 0 2rem;
         }
+        .rightSide {
+            display: none;
+        }
+        justify-content: unset;
+    }
+    article {
+        padding: 0 2rem;
+        font-size: 2rem;
+    }
+    // section {
+    //     padding: 1rem 2rem;
+    //     margin: unset;
+    // }
+    .blogContent {
+        padding: 1rem 2rem;
     }
 
-    // .rightSide {
-    //     display: none;
+    .blogBody {
+        font-size: 2rem;
+    }
+
+    .flexbox > div {
+        margin: 2rem 0;
+        width: 100%;
+
+    }
+
+}
+
+$container-width: 80%; 
+
+@media only screen
+and (min-width: 1025px) {
+
+    .disclainer {
+        span {
+            width: $container-width;
+        } 
+    }
+
+    .sub-header {
+        width: $container-width;
+    }
+
+    // main {
+    //     
     // }
 
-    // .leftSide {
-    //     width: 100%;
-    //     display: flex;
-    //     justify-content: space-between;
-    //     padding-left: unset;
-    //     .title {
-    //         font-size: 1.4em;
-    //     }
-    //     // ul {
-    //     //     border: 2px solid red; //for design purposes
-    //     // }
-    // }
+    main {
+        width: $container-width;
 
+        // section {
+        //     width: 800px;
+        // }
+    }
 }

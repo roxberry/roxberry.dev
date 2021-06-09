@@ -18,7 +18,7 @@ const Blog = (props) => {
     return (
 
         <Layout>
-            <div className="blogContent">
+            <section>
                 <div className="postedInfo">posted on {props.data.markdownRemark.frontmatter.date} by {props.data.markdownRemark.frontmatter.author}</div>
                 <h1>{props.data.markdownRemark.frontmatter.title}</h1>
                 <div className="postImage">
@@ -40,7 +40,7 @@ const Blog = (props) => {
                 </Helmet>
 
                 <div id="amzn-assoc-ad-d50ae18d-23ca-411f-bd12-d8b2b9bf5e18"></div>
-            </div>
+            </section>        
         </Layout>
     )
 }

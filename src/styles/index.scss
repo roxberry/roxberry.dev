@@ -1,7 +1,12 @@
 @import "variables";
 @import "flexbox";
 
-$container-width: 1250px; //1250
+// for debugging styles, uncomment for outlining.
+// *:hover { 
+//   outline:1px blue solid;
+// } 
+
+// $container-width: 1250px; //1250
 $sidebar-width: 200px;
 
 html,
@@ -26,8 +31,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  padding-left: auto;
-  padding-right: auto;
+
 }
 
 header {
@@ -43,7 +47,7 @@ header {
   // flex: 0 0 1150px;
   //flex: 0 0 1150px;
   //justify-content: space-between;
-  width: $container-width;
+  //width: $container-width;
   // border: 2px solid red; //for design purposes
 }
 
@@ -57,7 +61,7 @@ header {
   span {
     padding: 0.25em 0em;
     color: #282828;
-    width: $container-width;
+    //width: $container-width;
     // border: 2px solid red; //for design purposes
     text-align: center;
   }
@@ -68,7 +72,7 @@ main {
   min-height: 0;
   margin-right: auto;
   margin-left: auto;
-  width: $container-width;
+  //width: $container-width;
   flex: 1;
   //border: 2px solid red;//for design purposes
 }
@@ -91,10 +95,14 @@ article {
   flex: 1;
   line-height: 1.5;
   overflow: auto;
-  padding-left: 5em;
-  padding-right: 5em;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
+pre {
+  white-space: pre-wrap;
+  overflow: auto;
+}
 // footer {
 //   padding: 2em;
 // }
@@ -102,11 +110,10 @@ article {
 // index.js
 h1,
 .section-heading {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 1em;
   color: $brand-primary;
   font-weight: normal;
-  line-height: 1.5;
+  line-height: 1;
   // font-size: 2em;
   border-bottom: 2px solid $brand-primary;
 }
@@ -115,8 +122,8 @@ h2,
 h3,
 h4,
 h5 {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: unset;
+  margin-top: 1em;
   color: $brand-primary;
   font-weight: normal;
 }
@@ -164,7 +171,7 @@ a {
   flex-direction: row;
   display: flex;
   align-items: center;
-  padding-left: 4em;
+  padding-left: 2em;
   // border: 2px solid red; //for design purposes
 }
 
@@ -203,7 +210,7 @@ a {
   // display: flex;
   // align-items: center;
   margin-left: auto;
-  padding-right: 4em;
+  padding-right: 2em;
 }
 
 // sidebar
@@ -257,10 +264,16 @@ aside section {
 }
 
 .postedInfo {
-  font-size: 1em;
+  font-size: .8em;
   color: $gray;
-  margin-top: 1em;
+  //margin-top: 1em;
 }
+
+.postExcerpt {
+  word-wrap: break-word;
+}
+
+
 
 // .blogContent {
 //   height: 300px;

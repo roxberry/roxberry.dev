@@ -15,7 +15,9 @@ postimage:
     alt: "main post image"
 featured:   true
 ---
+# Tool set as of 2018-10-03
 
+Tracking the tools, extensions and configurations I use for software/hardware development, development/operations and security.
 ## Webstorm
 
 Build: 2018.2.4

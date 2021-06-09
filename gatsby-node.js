@@ -1,7 +1,4 @@
-const { create } = require('domain')
 const path = require('path')
-const slugify = require("slug");
-
 const _ = require("lodash")
 const { createFilePath } = require("gatsby-source-filesystem")
 const { extractMetadataFromFilename, isBlogPostFileName } = require("./src/util/posthelper");
@@ -25,16 +22,6 @@ module.exports.onCreateNode = ({ node, getNode, actions}) => {
         const slugPre = catPath ? catPath.concat("/", datePath) : datePath
 
         const value = `/${slugPre}/${title}/`;     
-          console.log(value)
-        // console.log(date)
-
-        // const datePath = date.replace(/-/gi, "/")
-        // const value = `${datePath.concat("/").concat(title)}/`;
-        // console.log(datePath)
-
-        //const value = `/${slugify(date, "/")}/${title}/`
-
-        console.log(value)
         createNodeField({ node, name: `slug`, value });
         createNodeField({ node, name: `date`, value: date });
       }
@@ -126,6 +113,7 @@ module.exports.createPages = async ({graphql, actions, reporter}) => {
         return
     }
 
+    // extract posts from query
     const posts = result.data.postsRemark.edges
 
     posts.forEach(( { node }) => {
@@ -138,7 +126,7 @@ module.exports.createPages = async ({graphql, actions, reporter}) => {
         })
     });
     
-    // Extract tag data from query
+    // extract tag data from query
     const tags = result.data.tagsGroup.group
 
     // Make tag pages

@@ -6,39 +6,41 @@ import { Link, graphql, useStaticQuery } from "gatsby"
 const IndexPage = () => {
 
   const data = useStaticQuery(graphql`
-      query {
-        allMarkdownRemark {
-          edges {
-            node {
-              excerpt
-              frontmatter {
-                  title
-                  subtitle
-                  date(formatString: "LL")
-                  author
-                  featured
-                  postimage
-                  {
-                    alt
-                    src {
-                      absolutePath
-                      childImageSharp {
-                          gatsbyImageData(
-                              layout: FULL_WIDTH
-                              placeholder: BLURRED
-                              formats: [AUTO, WEBP, AVIF]
-                          )
-                      }
-                    }
-                  }
-              }
-              fields {
-                slug
+  query {
+    allMarkdownRemark(
+      filter: { frontmatter: { featured: { eq: true } } }
+      sort: { order: DESC, fields: [frontmatter___date] }
+    ) {
+      edges {
+        node {
+          excerpt
+          frontmatter {
+            title
+            subtitle
+            date(formatString: "LL")
+            author
+            featured
+            postimage {
+              alt
+              src {
+                absolutePath
+                childImageSharp {
+                  gatsbyImageData(
+                    layout: FULL_WIDTH
+                    placeholder: BLURRED
+                    formats: [AUTO, WEBP, AVIF]
+                  )
+                }
               }
             }
           }
+          fields {
+            slug
+          }
         }
       }
+    }
+  }  
   `)
 
   return (
@@ -69,7 +71,7 @@ const IndexPage = () => {
                   }                
                   <h3>{edge.node.frontmatter.title}</h3>
                   <div className="postedInfo">posted on {edge.node.frontmatter.date}</div>
-                  <p>{edge.node.excerpt}</p>
+                  <div className="postExcerpt"><p>{edge.node.excerpt}</p></div>
                 </Link>
 
               </div> 
