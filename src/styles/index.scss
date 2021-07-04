@@ -213,11 +213,23 @@ a {
   padding-right: 2em;
 }
 
-// sidebar
+// sidebar start
+.profile {
+  border-radius: 100%;
+  background: transparent;
+}
+
+.profile > div {
+  border-radius: 100%;
+  background: transparent;
+}
 .profile img {
   margin-left: auto;
   margin-right: auto;
+  border-radius: 100%;
+  background: transparent;
 }
+// sidebar end
 
 aside section {
   // width: 200px;

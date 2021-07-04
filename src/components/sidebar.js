@@ -15,6 +15,7 @@ const SideBar = () =>  {
                 src="../images/profile.png"
                 quality={95}
                 alt="Profile picture"
+                style={{ borderRadius: '100%' }}
             />
           </section>
           <section>
