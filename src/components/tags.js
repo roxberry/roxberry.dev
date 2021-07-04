@@ -20,8 +20,8 @@ const Tags = () =>  {
         <h2>Tags</h2>
         <ul>
           {data.allMarkdownRemark.group.map(tag => (
-            <li key={tag.fieldValue}>
-              <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
+            <li key={tag.fieldValue} >
+              <Link to={`/tags/${kebabCase(tag.fieldValue)}/`} className="category-item" activeClassName="active">
                 {tag.fieldValue} ({tag.totalCount})
               </Link>
             </li>

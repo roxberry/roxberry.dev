@@ -25,7 +25,7 @@ const SideBar = () =>  {
             <h2>About Me</h2>
             <p>Cross Platform Consultant</p>
             <a href="https://www.waveseeker.com">@ Database Solutions</a>
-            <p>Husband, father, son, brother and uncle. Security driven developer and passionate cross platform software engineer, architect and consultant.</p>
+            <p>Husband, father, son, brother and uncle.</p><p>Security driven developer and passionate cross platform software engineer, architect and consultant.</p>
           </section>
             <Categories />
           <Footer />

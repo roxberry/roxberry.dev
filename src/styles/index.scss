@@ -177,13 +177,14 @@ a {
 
 .leftSide .title {
   font-size: 1.25em;
-  text-decoration: none;
+  //text-decoration: none;
   color: $brand-primary;
   font-weight: normal;
 }
 
 .leftSide .title.active {
   font-weight: bold;
+  color: $brand-primary;
 }
 
 .leftSide ul {
@@ -195,11 +196,14 @@ a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.5);
   font-weight: normal;
+  &:hover {
+    color: $brand-primary;
+  }
 }
 
-.header-menu-item.active {
+.header-menu-item.active, .category-item.active {
   font-weight: bold;
-  color: darkgray;
+  color: $brand-primary;
 }
 
 .leftSide ul li {
