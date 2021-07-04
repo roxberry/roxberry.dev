@@ -19,6 +19,7 @@ const IndexPage = () => {
             subtitle
             date(formatString: "LL")
             author
+            excerpt
             featured
             postimage {
               alt
@@ -71,7 +72,7 @@ const IndexPage = () => {
                   }                
                   <h3>{edge.node.frontmatter.title}</h3>
                   <div className="postedInfo">posted on {edge.node.frontmatter.date}</div>
-                  <div className="postExcerpt"><p>{edge.node.excerpt}</p></div>
+                  <div className="postExcerpt"><p>{edge.node.frontmatter.excerpt}</p></div>
                 </Link>
 
               </div> 

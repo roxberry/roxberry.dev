@@ -29,6 +29,9 @@ const Header = () => {
             <li>
               <Link to="/contact" className="header-menu-item" activeClassName="active">Contact</Link>
             </li>
+            <li>
+              <Link to="/tags/nwrpg" className="header-menu-item" activeClassName="active">NWRPG</Link>
+            </li>
               {/* <li>
               <Link to="/blog" className="header-menu-item"  activeClassName="active">Blog</Link>
             </li> */}

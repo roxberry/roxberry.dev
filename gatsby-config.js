@@ -9,7 +9,7 @@ module.exports = {
     title: 'Roxberry.DEV',
     url: 'https://www.roxberry.dev',
     author: 'Mark Roxberry',
-    version: '2021.06.08.09'
+    version: '2021.07.03.01'
   },
   plugins: [
     'gatsby-plugin-sass', 

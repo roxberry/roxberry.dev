@@ -60,7 +60,7 @@ header {
   justify-content: center;
   span {
     padding: 0.25em 0em;
-    color: #282828;
+    color: $disclaimer-color;
     //width: $container-width;
     // border: 2px solid red; //for design purposes
     text-align: center;
@@ -78,7 +78,7 @@ main {
 }
 
 aside {
-  background: linear-gradient(to right, black, #282828);
+  background: $sidebar-background;
   flex: 0 0 $sidebar-width;
   overflow: auto;
   padding: 2em 4em;
@@ -91,10 +91,10 @@ section {
 
 article {
   //min-width: 40em;
-  // max-width: 100em;
+  max-width: 800px;
   flex: 1;
   line-height: 1.5;
-  overflow: auto;
+  overflow: hidden;
   padding-left: 2em;
   padding-right: 2em;
 }

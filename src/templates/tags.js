@@ -37,7 +37,7 @@ const Tags = ({ pageContext, data }) => {
               <section>
                 <h3>{node.frontmatter.title}</h3>
                 <div className="postedInfo">posted on {node.frontmatter.date}</div>
-                <p>{node.excerpt}</p>
+                <p>{node.frontmatter.excerpt}</p>
               </section>
             </Link>
           </div> 
@@ -103,6 +103,7 @@ export const query = graphql`
               subtitle
               date(formatString: "LL")
               author
+              excerpt
               featured
               postimage
               {
