@@ -19,8 +19,8 @@ const Blog = (props) => {
 
         <Layout>
             <section>
+                <h1 class="postTitle">{props.data.markdownRemark.frontmatter.title}</h1>
                 <div className="postedInfo">posted on {props.data.markdownRemark.frontmatter.date} by {props.data.markdownRemark.frontmatter.author}</div>
-                <h1>{props.data.markdownRemark.frontmatter.title}</h1>
                 <div className="postImage">
                     {
                         postImage && (

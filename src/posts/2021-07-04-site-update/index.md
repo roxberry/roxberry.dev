@@ -11,7 +11,15 @@ categories:
     - planning
     - website
 postimage: 
-    src: "post.png"
+    src: "post.jpg"
     alt: "main post image"
 featured:   true
 ---
+# Improvements and Future Plan
+
+## The Move (Jekyll to Gatsby, Azure to Github Pages)
+
+## The Site Feature Roadmap
+
+## The Site Content Roadmap
+

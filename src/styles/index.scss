@@ -273,6 +273,10 @@ aside section {
 // * {box-sizing: border-box}
 
 /* Container needed to position the overlay. Adjust the width as needed */
+.postTitle {
+  margin-bottom: unset;
+}
+
 .postImage {
   position: relative;
   // width: 50%;
@@ -283,6 +287,7 @@ aside section {
   font-size: .8em;
   color: $gray;
   //margin-top: 1em;
+  margin-bottom: 2em;
 }
 
 .postExcerpt {
