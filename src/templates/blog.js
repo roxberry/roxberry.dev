@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
+import SEO from '../components/seo'
 import Helmet from 'react-helmet'
 import { GatsbyImage } from "gatsby-plugin-image"
 import { graphql } from 'gatsby'
@@ -7,20 +8,31 @@ import { DiscussionEmbed } from 'disqus-react'
 
 const Blog = (props) => {
     
-    const postImage = props.data.markdownRemark.frontmatter.postimage
+    const post = props.data.markdownRemark
+    const postImage = post.frontmatter.postimage
+    const seoImage = post.frontmatter.postimage
+    ? post.frontmatter.postimage.src.childImageSharp.resize
+    : null
     const disqusShortname = "roxberry";
     const disqusConfig = {
-      identifier: props.data.markdownRemark.id,
-      title: props.data.markdownRemark.frontmatter.title,
+      identifier: post.id,
+      title: post.frontmatter.title,
     };
+    const pathName = props.location.pathname
 
 
     return (
 
         <Layout>
+            <SEO           
+                title={post.frontmatter.title}
+                description={post.frontmatter.description || post.excerpt}
+                image={seoImage}
+                pathname={pathName}>
+            </SEO>
             <section>
-                <h1 class="postTitle">{props.data.markdownRemark.frontmatter.title}</h1>
-                <div className="postedInfo">posted on {props.data.markdownRemark.frontmatter.date} by {props.data.markdownRemark.frontmatter.author}</div>
+                <h1 class="postTitle">{post.frontmatter.title}</h1>
+                <div className="postedInfo">posted on {post.frontmatter.date} by {post.frontmatter.author}</div>
                 <div className="postImage">
                     {
                         postImage && (
@@ -31,9 +43,9 @@ const Blog = (props) => {
                             />
                         )
                     }
-                    <div className="overlay">{props.data.markdownRemark.frontmatter.subtitle}</div>
+                    <div className="overlay">{post.frontmatter.subtitle}</div>
                 </div>
-                <div className="blogBody" dangerouslySetInnerHTML={{__html: props.data.markdownRemark.html}}></div>
+                <div className="blogBody" dangerouslySetInnerHTML={{__html: post.html}}></div>
                 <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
                 <Helmet>
                     <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=d50ae18d-23ca-411f-bd12-d8b2b9bf5e18" type="text/javascript" />
@@ -66,6 +78,11 @@ export const query = graphql`
                         placeholder: BLURRED
                         formats: [AUTO, WEBP, AVIF]
                     )
+                    resize(width: 1200) {
+                        src
+                        height
+                        width
+                      }
                 }
               }
             }

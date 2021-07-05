@@ -9,8 +9,10 @@ module.exports = {
     title: "Roxberry.DEV",
     url: "https://www.roxberry.dev",
     siteUrl: "https://www.roxberry.dev",
+    twitterUsername: "@roxberry",
     author: "Mark Roxberry",
-    version: "2021.07.03.01",
+    keywords: ["roxberry", "journal", "development"],
+    version: "2021.07.04.01",
   },
   plugins: [
     "gatsby-plugin-sass",
@@ -37,15 +39,28 @@ module.exports = {
               linkImagesToOriginal: false,
             },
           },
+          {
+            resolve: `gatsby-remark-twitter-cards`,
+            options: {
+              title: "roxberry.dev",
+              separator: "|",
+              author: "Mark Roxberry",
+              background: require.resolve("./src/images/profile.png"),
+              fontColor: "#011a27",
+              titleFontSize: 96,
+              subtitleFontSize: 60,
+              fontStyle: "monospace",
+            },
+          },
         ],
       },
     },
-    {
-      resolve: "gatsby-plugin-doctype",
-      options: {
-        doctype: `HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"`,
-      },
-    },
+    // {
+    //   resolve: "gatsby-plugin-doctype",
+    //   options: {
+    //     doctype: `HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"`,
+    //   },
+    // },
     "gatsby-plugin-fontawesome-css",
     {
       resolve: "gatsby-plugin-feed",

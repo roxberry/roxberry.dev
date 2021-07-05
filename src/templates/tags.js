@@ -1,5 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 import PropTypes from "prop-types"
 
 // Components
@@ -15,6 +16,7 @@ const Tags = ({ pageContext, data }) => {
 
   return (
     <Layout>
+      <SEO title={tag} />
       <section>
       <h1>{tagHeader}</h1>
       <div className="flexbox">

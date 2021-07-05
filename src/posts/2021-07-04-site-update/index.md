@@ -13,7 +13,7 @@ categories:
 postimage: 
     src: "post.jpg"
     alt: "main post image"
-featured:   true
+featured:   false
 ---
 # Improvements and Future Plan
 

@@ -17,11 +17,10 @@ const Header = () => {
 
   return (
     <header>
-      <Helmet>
+      {/* <Helmet>
           <meta charSet="utf-8" />
           <title>{data.site.siteMetadata.title}</title>
-          <link rel="canonical" href="{data.site.siteMetadata.url}" />
-      </Helmet>
+      </Helmet> */}
       <div className="sub-header">
         <div className="leftSide">
             <Link to="/" className="title" activeClassName="active">{data.site.siteMetadata.title}</Link>

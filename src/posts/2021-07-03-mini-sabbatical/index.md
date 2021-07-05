@@ -16,7 +16,7 @@ featured:   true
 ---
 # Finding or making the time
 
-This summer, I decided to burn a few vacation days for personal and professional improvements, a [small scale sabbatical](https://seanwes.com/2014/from-working-100-hours-a-week-to-a-sabbatical-in-the-mountains/).  I wanted to find fun again in what I do, whether it be Russian language / history academic pursuits (I have a Russian Technical Translation background - degree, experience), my security / dev / devops / database pursuits or just finding the magic in my mindspace with writing, coding, games and finding my open mind again.  I've been fortunate to be busy during and even before the pandemic lockdowns in March 2022.  I have had a steady queue of work and client requests, but I wanted to carve out a few days for some personal controlled entropy.
+This summer, I decided to burn a few vacation days for personal and professional improvements, a [small scale sabbatical](https://seanwes.com/2014/from-working-100-hours-a-week-to-a-sabbatical-in-the-mountains/).  I wanted to find fun again in what I do, whether it be Russian language / history academic pursuits (I have a Russian Technical Translation background - degree, experience), my security / dev / devops / database pursuits or just finding the magic in my mindspace with writing, coding, games and finding my open mind again.  I've been fortunate to be busy during and even before the pandemic lockdowns in March 2020.  I have had a steady queue of work and client requests, but I wanted to carve out a few days for some personal controlled entropy.
 
 > Finding time for my tasks to work on other people's tasks as a motivator
 
