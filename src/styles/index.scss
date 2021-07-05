@@ -310,4 +310,19 @@ code {
   word-break: break-word;
 }
 
+blockquote {
+  margin: 20px;
+  font-size: 1.25em;
+  p {
+    padding: 20px;
+    border-left: $brand-primary 4px solid;
+  }
+  p::before {
+    content: '\201C';
+  }
+  p::after {
+    content: '\201D';
+  }
+}
+
 @import "media";
