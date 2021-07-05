@@ -23,9 +23,6 @@ const BlogPage = () => {
         }
       }
   `)
-
-  console.log(data)
-
   return (
     <Layout>
       <section>

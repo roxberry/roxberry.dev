@@ -4,7 +4,7 @@ title:      Building a Swift UI App - Planning
 subtitle:   Charles Ebbets shooting his famous photograph, “Lunch atop a Skyscraper”, while perching on the 69th floor of the GE building.
 subtitlex:   Scratching out the plan for a Swift UI App
 comments:   true
-date:       2021-07-04 01:00:00
+date:       2021-07-04 23:00:00
 author:     Mark Roxberry
 excerpt:    Design, Plan, Code and Ship a SwiftUI app and Blog about it
 tags:       [development, apple, swift, projects, nwrpg]

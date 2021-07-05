@@ -6,44 +6,105 @@
 
 module.exports = {
   siteMetadata: {
-    title: 'Roxberry.DEV',
-    url: 'https://www.roxberry.dev',
-    author: 'Mark Roxberry',
-    version: '2021.07.03.01'
+    title: "Roxberry.DEV",
+    url: "https://www.roxberry.dev",
+    siteUrl: "https://www.roxberry.dev",
+    author: "Mark Roxberry",
+    version: "2021.07.03.01",
   },
   plugins: [
-    'gatsby-plugin-sass', 
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-image',
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
+    "gatsby-plugin-sass",
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-image",
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: 'posts',
-        path: `${__dirname}/src/posts`
-      }
+        name: "posts",
+        path: `${__dirname}/src/posts`,
+      },
     },
     {
-      resolve: 'gatsby-transformer-remark',
+      resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
-          'gatsby-remark-relative-images',
+          "gatsby-remark-relative-images",
           {
-            resolve: 'gatsby-remark-images',
+            resolve: "gatsby-remark-images",
             options: {
               maxWidth: 800,
-              linkImagesToOriginal: false
+              linkImagesToOriginal: false,
+            },
+          },
+        ],
+      },
+    },
+    {
+      resolve: "gatsby-plugin-doctype",
+      options: {
+        doctype: `HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"`,
+      },
+    },
+    "gatsby-plugin-fontawesome-css",
+    {
+      resolve: "gatsby-plugin-feed",
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
             }
           }
-        ]
-      }
-    },
-    'gatsby-plugin-fontawesome-css',
-    {
-      resolve: `gatsby-plugin-doctype`,
-      options: {
-        doctype: 'HTML',
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map(edge => {
+                return Object.assign({}, edge.node.frontmatter, {
+                  description: edge.node.excerpt,
+                  date: edge.node.frontmatter.date,
+                  url: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  custom_elements: [{ "content:encoded": edge.node.excerpt }],
+                })
+              })
+            },
+            query: `
+              {
+                allMarkdownRemark(
+                  sort: { order: DESC, fields: [frontmatter___date] },
+                ) {
+                  edges {
+                    node {
+                      excerpt
+                      html
+                      fields { slug }
+                      frontmatter {
+                        title
+                        date
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+            output: "/feed.xml",
+            title: "Roxberry.DEV RSS Feed",
+            // // optional configuration to insert feed reference in pages:
+            // // if `string` is used, it will be used to create RegExp and then test if pathname of
+            // // current page satisfied this regular expression;
+            // // if not provided or `undefined`, all pages will have feed reference inserted
+            // match: "^/blog/",
+            // // optional configuration to specify external rss feed, such as feedburner
+            // link: "https://feeds.feedburner.com/gatsby/blog",
+          },
+        ],
       },
     },
   ],

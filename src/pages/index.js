@@ -54,12 +54,12 @@ const IndexPage = () => {
       <section>
           <h1>Posts</h1>
           <div className="flexbox">
-          {data.allMarkdownRemark.edges.map((edge) => {
+          {data.allMarkdownRemark.edges.map((edge, i) => {
 
             const postImage = edge.node.frontmatter.postimage
 
             return (
-              <div className="post">
+              <div key={edge.node.fields.slug + i.toString()} className="post">
                 <Link to={edge.node.fields.slug}>
                   {
                       postImage && (
