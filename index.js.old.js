@@ -51,8 +51,7 @@ const IndexPage = () => {
       <SEO title="Welcome!" />
       <section>
           <h1>Welcome</h1>
-          <p>I am a technologist and someone who seeks out new ideas and paradigms. On my blog, you will find my day to day
-          notes, ideas, projects and stuff that may be useful.</p>
+          <p>I am a technologist.  I see in systems and patterns.  My blog focus is coding, architecture, integration, automation, robotics, artificial intelligence & languages.</p>
       </section>
       <section>
           <h1>Posts</h1>

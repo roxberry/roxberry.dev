@@ -51,7 +51,7 @@ module.exports = {
               title: "roxberry.dev",
               separator: "|",
               author: "Mark Roxberry",
-              background: require.resolve("./src/images/profile.png"),
+              background: require.resolve("./src/images/profile.1.jpg"),
               fontColor: "#011a27",
               titleFontSize: 96,
               subtitleFontSize: 60,
