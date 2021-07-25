@@ -6,7 +6,7 @@ comments:   true
 date:       2018-10-12 15:30:00
 author:     Mark Roxberry
 excerpt:    Coordinating the Future Engineers Projects with the First Lego League Into Orbit Challenge.
-tags:       [ai, future engineers, robots, robotics, servos, games, iot]
+tags:       [future engineers, robotics, games, iot]
 categories:
     - ai
     - robotics

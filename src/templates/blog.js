@@ -31,7 +31,7 @@ const Blog = (props) => {
                 pathname={pathName}>
             </SEO>
             <section>
-                <h1 class="postTitle">{post.frontmatter.title}</h1>
+                <h1 className="postTitle">{post.frontmatter.title}</h1>
                 <div className="postedInfo">posted on {post.frontmatter.date} by {post.frontmatter.author}</div>
                 <div className="postImage">
                     {

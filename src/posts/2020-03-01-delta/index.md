@@ -6,7 +6,7 @@ comments:   true
 date:       2020-03-01 23:30:00
 author:     Mark Roxberry
 excerpt:    Back and forth discussion of relevant topics.
-tags:       [march, continuous deployment, planning, projects]
+tags:       [continuous deployment, planning, projects]
 categories:
     - planning
 postimage: 

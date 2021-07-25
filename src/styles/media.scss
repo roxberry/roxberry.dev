@@ -13,6 +13,10 @@ and (max-width : 480px) {
         .rightSide {
             display: none;
         }
+        .menu-desktop {
+            display: none;
+        }
+
         justify-content: unset;
     }
     article {
@@ -52,9 +56,12 @@ and (max-width: 1024px) {
             padding: 0 2rem;
         }
         .rightSide {
-            display: none;
+            //display: none;
         }
         justify-content: unset;
+    }
+    .sub-header {
+        width: 100%;
     }
     article {
         padding: 0 2rem;

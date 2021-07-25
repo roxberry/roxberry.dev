@@ -6,7 +6,7 @@ comments:   true
 date:       2021-05-02 23:00:00
 author:     Mark Roxberry
 excerpt:    Capturing useful tools and tips for working with the web and data
-tags:       [toolbox, tips, javascript, html]
+tags:       [tools, tips, javascript, html]
 categories: 
     - technology
 postimage: 

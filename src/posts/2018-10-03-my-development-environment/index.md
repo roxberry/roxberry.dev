@@ -6,7 +6,7 @@ comments:   true
 date:       2018-10-03 22:00:00
 author:     Mark Roxberry
 excerpt:    Tracking the tools, extensions and configurations I use for software/hardware development, development/operations and security.
-tags:       [tools, code, ide, extensions]
+tags:       [tools, ide]
 categories:
     - tools
     - ide

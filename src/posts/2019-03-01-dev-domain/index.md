@@ -6,7 +6,7 @@ comments:   true
 date:       2019-03-01 15:30:00
 author:     Mark Roxberry
 excerpt:    Switching Roxberry.PRO to Roxberry.DEV - Secure Comms FTW.
-tags:       [domains, hsts, security, tls, dev]
+tags:       [domains, security]
 categories:
     - domains
     - hsts

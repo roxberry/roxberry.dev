@@ -4,6 +4,7 @@ import SEO from "../components/seo"
 import PropTypes from "prop-types"
 
 // Components
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { GatsbyImage } from "gatsby-plugin-image"
 import { Link, graphql } from "gatsby"
 
@@ -18,7 +19,7 @@ const Tags = ({ pageContext, data }) => {
     <Layout>
       <SEO title={tag} />
       <section>
-      <h1>{tagHeader}</h1>
+      <h1><FontAwesomeIcon icon={['fas', 'tags']} />&nbsp;&nbsp;{tagHeader}</h1>
       <div className="flexbox">
       {edges.map(({ node }) => {
 

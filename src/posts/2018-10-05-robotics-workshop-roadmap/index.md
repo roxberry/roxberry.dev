@@ -6,7 +6,7 @@ comments:   true
 date:       2018-10-03 22:00:00
 author:     Mark Roxberry
 excerpt:    Roadmap for Robotics Elective 2018-2019
-tags:       [robots, robotics, roadmap, servos]
+tags:       [robotics, roadmap, servos]
 categories:
     - robotics
 postimage: 

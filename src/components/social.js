@@ -2,10 +2,10 @@ import React from "react"
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { Link, graphql, useStaticQuery } from "gatsby"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faRss, faEnvelope } from '@fortawesome/free-solid-svg-icons' 
+import { faTags, faRss, faEnvelope } from '@fortawesome/free-solid-svg-icons' 
 import { faFacebookF, faTwitter, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons' 
 
-library.add([faRss, faFacebookF, faTwitter, faGithub, faLinkedin, faEnvelope]); 
+library.add([faTags, faRss, faFacebookF, faTwitter, faGithub, faLinkedin, faEnvelope]); 
 
 const Social = () =>  {
     return (

@@ -1,5 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
+import SEO from "../components/seo"
+
 import { GatsbyImage } from "gatsby-plugin-image"
 import { Link, graphql, useStaticQuery } from "gatsby"
 
@@ -46,6 +48,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
+      <SEO title="Welcome!" />
       <section>
           <h1>Welcome</h1>
           <p>I am a technologist and someone who seeks out new ideas and paradigms. On my blog, you will find my day to day

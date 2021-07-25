@@ -24,23 +24,28 @@ const Header = () => {
       <div className="sub-header">
         <div className="leftSide">
             <Link to="/" className="title" activeClassName="active">{data.site.siteMetadata.title}</Link>
-          <ul>
-            <li>
-              <Link to="/contact" className="header-menu-item" activeClassName="active">Contact</Link>
-            </li>
-            <li>
-              <Link to="/tags/nwrpg" className="header-menu-item" activeClassName="active">NWRPG</Link>
-            </li>
-              {/* <li>
-              <Link to="/blog" className="header-menu-item"  activeClassName="active">Blog</Link>
-            </li> */}
-          </ul>
+          <nav>
+            {/* <input className="menu-btn" type="checkbox" id="menu-btn" />
+            <label className="menu-icon" for="menu-btn"><span class="navicon"></span></label> */}
+
+            <ul className="menu">
+              <li>
+                <Link to="/contact" className="header-menu-item" activeClassName="active">Contact</Link>
+              </li>
+              <li>
+                <Link to="/tags/nwrpg" className="header-menu-item" activeClassName="active">NWRPG</Link>
+              </li>
+                {/* <li>
+                <Link to="/blog" className="header-menu-item"  activeClassName="active">Blog</Link>
+              </li> */}
+            </ul>
+          </nav>
         </div>
         <div className="center">
           
         </div>
         <div className="rightSide">
-          <p>coder, maker, hacker, mentor</p>
+          <p className="tagLine">coder, maker, hacker, mentor</p>
         </div>
       </div>
     </header>
