@@ -270,8 +270,12 @@ aside section {
   opacity: 1;
   color: white;
   font-size: 20px;
-  padding: 20px;
+  //padding: 20px;
   // text-align: center;
+}
+
+.innerOverlayText {
+  padding: 20px;
 }
 
 // * {box-sizing: border-box}

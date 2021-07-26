@@ -43,7 +43,9 @@ const Blog = (props) => {
                             />
                         )
                     }
-                    <div className="overlay">{post.frontmatter.subtitle}</div>
+                    <div className="overlay">
+                        <div className="innerOverlayText">{post.frontmatter.subtitle}</div>
+                    </div>
                 </div>
                 <div className="blogBody" dangerouslySetInnerHTML={{__html: post.html}}></div>
                 <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
