@@ -5,8 +5,8 @@ subtitle: Notes for the pager implementation on Roxberry.DEV
 comments: true
 date: 2021-07-07 01:00:00
 author: Mark Roxberry
-excerpt: Post to track coding, other notables for Swift development
-tags: [site, development]
+excerpt: Notes on coding a pager for the site
+tags: [site, development, react]
 categories:
   - development
 postimage:
