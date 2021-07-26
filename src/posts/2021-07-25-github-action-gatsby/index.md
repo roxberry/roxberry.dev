@@ -14,7 +14,6 @@ postimage:
   alt: "main post image"
 featured: true
 ---
-# Gatsby Publish Github Action for Roxberry.DEV
 ## Why?
 The gatsby template includes scripting to deploy from whereever you cloned your code.  It works just fine and is reliable when everything is set up on my machine.  The package.json includes the deploy script:
 
@@ -39,7 +38,7 @@ I documented my steps in case I need to go back and change anything - e.g. I wou
 ## Steps to publish a Gatsby site to gh-pages 
 
 
-### 1. Create a new worklfow in the repository Actions section
+1. Create a new workflow in the repository Actions section
 
 ``` yaml
 name: Gatsby Publish
@@ -60,23 +59,25 @@ jobs:
           deploy-branch: gh-pages
 ```
 
+2. Create a personal access token (PAT), select the *repo* permission.
 
-### 2. Create a personal access token (PAT), select the *repo* permission.
+    [Authentication in a Github Action Workflow](https://docs.github.com/en/actions/reference/authentication-in-a-workflow)
 
-[Authentication in a Github Action Workflow](https://docs.github.com/en/actions/reference/authentication-in-a-workflow)
+3. Create a Secret in the repo: ACCESS_TOKEN and use the new PAT token (note the workflow YAML file specifies the ACCESS_TOKEN parameter).
 
-### 3. Create a Secret in the repo: ACCESS_TOKEN and use the new PAT token (note the workflow YAML file specifies the ACCESS_TOKEN parameter).
+4. Build should kick in and go green
 
-### 4. Build should kick in and go green
+5. Profit?
 
-### 5. Profit?
-And lo and behold, my site is passing (hopefully this shows it's passing):
-[![Gatsby Publish](https://github.com/roxberry/gatsby-roxberry/actions/workflows/main.yml/badge.svg)](https://github.com/roxberry/gatsby-roxberry/actions/workflows/main.yml)
+    And lo and behold, my site is passing (hopefully this shows it's passing):
+    [![Gatsby Publish](https://github.com/roxberry/gatsby-roxberry/actions/workflows/main.yml/badge.svg)](https://github.com/roxberry/gatsby-roxberry/actions/workflows/main.yml)
 
 
 ## Next things
 
 - [ ] Improve this post with images from Github
 - [ ] Add embedded gist for the main.yml
+- [ ] Config version update (need to think about - should only happen on non posts)
+- [ ] Create a tweet with the title if a post
 <!-- <script src="https://gist.github.com/roxberry/f6f58e2212346fd8c699c1d8c8cf8bcf.js"></script>
 {% gist f6f58e2212346fd8c699c1d8c8cf8bcf %} -->
