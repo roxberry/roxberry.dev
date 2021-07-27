@@ -27,6 +27,9 @@ const SideBar = () =>  {
             <a href="https://www.waveseeker.com">@ Database Solutions</a>
             <p>Husband, father, son, brother and uncle.</p><p>Security driven developer and passionate cross platform software engineer, architect and consultant.</p>
           </section>
+          <section>
+            <a href="https://github.com/roxberry/gatsby-roxberry/actions/workflows/main.yml"><img src="https://github.com/roxberry/gatsby-roxberry/actions/workflows/main.yml/badge.svg" alt="Gatsby Publish" /></a>
+          </section>
             <Categories />
           <Footer />
         </aside>

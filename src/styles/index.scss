@@ -70,8 +70,8 @@ header {
 main {
   display: flex;
   min-height: 0;
-  margin-right: auto;
-  margin-left: auto;
+  //margin-right: auto;
+  //margin-left: auto;
   //width: $container-width;
   flex: 1;
   //border: 2px solid red;//for design purposes
@@ -89,15 +89,17 @@ section {
   margin-bottom: 2em;
 }
 
-article {
-  //min-width: 40em;
-  max-width: 800px;
-  flex: 1;
-  line-height: 1.5;
-  overflow: hidden;
-  padding-left: 2em;
-  padding-right: 2em;
-}
+//TODO WIP
+// article {
+//   //min-width: 40em;
+//   //max-width: 800px;
+//   flex: 1;
+//   line-height: 1.5;
+//   overflow: hidden;
+//   padding-left: 2em;
+//   padding-right: 2em;
+// }
+// END
 
 pre {
   white-space: pre-wrap;
@@ -171,7 +173,7 @@ a {
   flex-direction: row;
   display: flex;
   align-items: center;
-  padding-left: 2em;
+  padding-left: 2vw;
   // border: 2px solid red; //for design purposes
 }
 
@@ -218,7 +220,7 @@ a {
   // display: flex;
   // align-items: center;
   margin-left: auto;
-  padding-right: 2em;
+  padding-right: 2vw;
 }
 
 // sidebar start
@@ -333,55 +335,73 @@ blockquote {
   }
 }
 
-pre[class*="language-"] {
-  font-size: 0.75em;
-}
-
-pre {
-  overflow: auto;
-  word-wrap: normal;
-  white-space: pre;
-}
-
-  /**
- * Add back the container background-color, border-radius, padding, margin
- * and overflow that we removed from <pre>.
- */
-.gatsby-highlight {
-  //background-color: #fdf6e3;
-  border-radius: 0.3em;
-  // margin: 0.5em 0;
-  // padding: 0em;
-  //overflow: auto;
-}
-
-/**
- * Remove the default PrismJS theme background-color, border-radius, margin,
- * padding and overflow.
- * 1. Make the element just wide enough to fit its content.
- * 2. Always fill the visible space in .gatsby-highlight.
- * 3. Adjust the position of the line numbers
- */
-.gatsby-highlight pre[class*="language-"] {
-  //background-color: transparent;
-  //margin: 0;
-  margin-top: 1em;
-  margin-bottom: 2em;
-  padding: 0;
-  overflow: initial;
-  float: left; /* 1 */
-  min-width: 100%; /* 2 */
-}
-
-.gatsby-highlight pre[class*="language-"].line-numbers {
-  padding-left: 2.8em; /* 3 */
-  padding-top: 10px;
-}
-
-.line-numbers .line-numbers-rows {
-  padding-top: 10px;
-}
-
 @import "pager";
 
-@import "media";
+//@import "media";
+
+
+.sub-header {
+  width: 100%;
+  height: 64px;
+  // margin: 0 2vw;
+}
+
+main {
+  // margin: 0 2vw;
+}
+
+article {
+  //max-width: 1200px;
+  width: 100%;
+  line-height: 1.5;
+}
+
+@media only screen
+and (max-width: 768px) {
+  header {
+    .rightSide {
+        display: none;
+    }
+    nav {
+        display: none;
+    }
+  }
+}
+
+@media only screen
+and (max-width: 1024px) {
+  aside {
+    width: 0px;
+    display: none;
+  }
+
+  .flexbox > div {
+    margin: 2rem 0;
+    width: 100%;
+  }
+
+  article {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+@media only screen
+and (min-width: 1025px) {
+  article {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+@media only screen
+and (min-width: 1600px) {
+  .sub-header {
+    width: 100%;
+    margin: 0 20vw;
+  }
+
+  main {
+    margin: 0 20vw;
+  }
+}

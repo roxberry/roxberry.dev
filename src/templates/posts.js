@@ -20,7 +20,7 @@ class BlogIndex extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="Welcome!" />
         <section>
-          <h1>Welcome</h1>
+          <h1>Welcome!</h1>
           <p>
             I am a technologist and someone who seeks out new ideas and
             paradigms. On my blog, you will find my day to day notes, ideas,
@@ -39,7 +39,7 @@ class BlogIndex extends React.Component {
                   className="post"
                 >
                   <Link to={edge.node.fields.slug}>
-                    {postImage && (
+                    {postImage.src && (
                       <GatsbyImage
                         image={postImage.src.childImageSharp.gatsbyImageData}
                         alt={postImage.alt}

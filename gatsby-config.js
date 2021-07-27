@@ -31,10 +31,16 @@ module.exports = {
       resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
-          { 
-            resolve: "gatsby-remark-prismjs",      
+          // { 
+          //   resolve: "gatsby-remark-prismjs",      
+          //   // options: {
+          //   //   showLineNumbers: true,
+          //   // }
+          // },
+          {
+            resolve: "gatsby-remark-vscode",
             options: {
-              showLineNumbers: true,
+              theme:  "Dark+ (default dark)" // Or install your favorite theme from GitHub
             }
           },
           "gatsby-remark-relative-images",
