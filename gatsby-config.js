@@ -33,9 +33,9 @@ module.exports = {
         plugins: [
           { 
             resolve: "gatsby-remark-prismjs",      
-            options: {
-              showLineNumbers: true,
-            }
+            // options: {
+            //   showLineNumbers: true,
+            // }
           },
           "gatsby-remark-relative-images",
           {
