@@ -27,7 +27,7 @@ The gatsby template includes scripting to deploy from whereever you cloned your 
 However, there are 2 drawbacks for my workflow (and my goal to start writing more):
 
 1. You can deploy without a commit and push to the repository
-1. You can't deploy without running the deploy script, so any work on the site on Github or my iPad won't get deployed until I commit and push one one device and then pull and deploy to the same repo on my computer.  Ain't nobody got time for that.
+1. You can't deploy without running the deploy script, so any work on the site on Github or my iPad won't get deployed until I commit and push on one device and then pull and deploy to the same repo on my computer.  Ain't nobody got time for that.
 
 I was using a Github Action for my Jekyll site, prior to moving to Gatsby, and that worked when I pushed to branch and kickoff the publish action.  This action was a bit more involved as I was using Azure for a host and it required a few more configuration hurdles to set it up.
 
