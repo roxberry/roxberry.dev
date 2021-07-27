@@ -342,10 +342,15 @@ blockquote {
 
 .sub-header {
   width: 100%;
+  // margin: 0 2vw;
+}
+
+main {
+  // margin: 0 2vw;
 }
 
 article {
-  max-width: 1200px;
+  //max-width: 1200px;
   line-height: 1.5;
 }
 
@@ -384,5 +389,17 @@ and (min-width: 1025px) {
   article {
     margin-left: 2rem;
     margin-right: 2rem;
+  }
+}
+
+@media only screen
+and (min-width: 1600px) {
+  .sub-header {
+    width: 100%;
+    margin: 0 20vw;
+  }
+
+  main {
+    margin: 0 20vw;
   }
 }

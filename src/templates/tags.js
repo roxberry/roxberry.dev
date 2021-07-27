@@ -21,12 +21,12 @@ const Tags = ({ pageContext, data }) => {
       <section>
       <h1><FontAwesomeIcon icon={['fas', 'tags']} />&nbsp;&nbsp;{tagHeader}</h1>
       <div className="flexbox">
-      {edges.map(({ node }) => {
+      {edges.map(({ node }, i) => {
 
         const postImage = node.frontmatter.postimage
 
         return (
-          <div>
+          <div key={node.fields.slug + i.toString()}>
             <Link to={node.fields.slug}>
               {
                   postImage && (
