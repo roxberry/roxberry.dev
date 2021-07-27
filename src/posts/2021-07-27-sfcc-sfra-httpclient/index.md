@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dev Note - HttpClient in SFRA
+title: Dev Note - HttpClient in SFRA (Salesforce)
 subtitle: SFRA HttpClient Code
 comments: true
 date: 2021-07-27 01:00:00
