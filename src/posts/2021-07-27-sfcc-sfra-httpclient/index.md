@@ -20,7 +20,7 @@ featured: true
 ## Using HttpClient in Salesforce Commerce Cloud
 I needed a quick way to get a model for a view.  For our API calls, I created services, profiles and credentials that are managed by SFCC.  But that's overkill for a one off call.  HttpClient is a way to make external calls, in SFCC/SFRA there's a little twist.  Code to use the TypeScript HTTPClient in cartridge code:
 
-```javascript
+```javascript {numberLines}
 function callExternalUrl(parameters) {
     var HTTPClient = require('dw/net/HTTPClient');
     var Logger = require('dw/system/Logger');
