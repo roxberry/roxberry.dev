@@ -38,9 +38,9 @@ module.exports = {
           //   // }
           // },
           {
-            resolve: `gatsby-remark-vscode`,
+            resolve: "gatsby-remark-vscode",
             options: {
-              theme: 'Dark' // Or install your favorite theme from GitHub
+              theme:  "Dark+ (default dark)" // Or install your favorite theme from GitHub
             }
           },
           "gatsby-remark-relative-images",
