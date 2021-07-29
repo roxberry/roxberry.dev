@@ -5,7 +5,7 @@ subtitle: A good writer is a good reader
 comments: true
 date: 2021-07-29 01:00:00
 author: Mark Roxberry
-excerpt: Checking in on my summer book list: Fracture, Modern Cryptography for Cybersecurity Professionals, The Invention of Russia: The Rise of Putin and the Age of Fake News
+excerpt: Checking in on my summer book list - Fracture, Modern Cryptography for Cybersecurity Professionals, The Invention of Russia, The Fifth Domain
 tags: [books, security, Russia]
 categories:
   - books
