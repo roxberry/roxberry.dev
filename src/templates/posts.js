@@ -58,14 +58,14 @@ class BlogIndex extends React.Component {
               )
             })}
           </div>
-        </section>
-        <Pager 
+          <Pager 
           isFirst={isFirst} 
           isLast={isLast} 
           prevPage={prevPage} 
           nextPage={nextPage} 
           currentPage={currentPage} 
           numPages={numPages} />
+        </section>   
       </Layout>
     )
   }
