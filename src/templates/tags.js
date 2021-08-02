@@ -29,7 +29,7 @@ const Tags = ({ pageContext, data }) => {
           <div key={node.fields.slug + i.toString()}>
             <Link to={node.fields.slug}>
               {
-                  postImage && (
+                  postImage && postImage.src &&  (
                       <GatsbyImage
                       image={postImage.src.childImageSharp.gatsbyImageData}
                       alt={postImage.alt}

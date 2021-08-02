@@ -39,7 +39,7 @@ class BlogIndex extends React.Component {
                   className="post"
                 >
                   <Link to={edge.node.fields.slug}>
-                    {postImage.src && (
+                    {postImage && postImage.src && (
                       <GatsbyImage
                         image={postImage.src.childImageSharp.gatsbyImageData}
                         alt={postImage.alt}

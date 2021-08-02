@@ -13,3 +13,7 @@ https://placeholder.com/
 https://via.placeholder.com/800x600.png?text=Roxberry.DEV
 
 https://www.adobe.com/express/feature/image/resize
+
+## Creative Commons Images
+Though I like taking photos, sometimes I'll use publicly available images.  Use https://creativecommons.org.  Search for images here: https://search.creativecommons.org
+
