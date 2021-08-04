@@ -44,7 +44,7 @@ const Blog = (props) => {
                         )
                     }
                     <div className="overlay">
-                        <div className="innerOverlayText">{post.frontmatter.subtitle}</div>
+                        <div className="innerOverlayText" dangerouslySetInnerHTML={{__html: post.frontmatter.subtitle }}></div>
                     </div>
                 </div>
                 <div className="blogBody" dangerouslySetInnerHTML={{__html: post.html}}></div>
