@@ -1,18 +1,19 @@
 ---
-layout: post
-title: Resource - Unsplash.com
-subtitle: Sandstorm over the Pyramids in Giza
-comments: true
-date: 2021-08-03 01:00:00
-author: Mark Roxberry
-excerpt: Found several excellent photos and images on Unsplashed, looks like a modern Flickr.
-tags: [site]
-categories:
+author: "Mark Roxberry"
+categories: 
   - site
-postimage:
-  src: "post.jpg"
-  alt: "planner"
+comments: true
+date: 2021-08-03 01:00:00 +00:00
+excerpt: "Found several excellent photos and images on Unsplashed, looks like a modern Flickr."
 featured: true
+layout: post
+postimage: 
+  alt: planner
+  src: post.jpg
+subtitle: "Photo by <a href=\"https://unsplash.com/@gaurav_81?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\">Gaurav D Lathiya</a> on <a href=\"https://unsplash.com/t/wallpapers?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\">Unsplash</a>"
+tags: 
+  - site
+title: "Resource - Unsplash.com"
 
 ---
 ## What is Unsplash.com?
