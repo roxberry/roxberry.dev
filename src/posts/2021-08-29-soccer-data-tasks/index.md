@@ -38,6 +38,19 @@ title: "ETL with Python and Pandas for Soccer Scheduling"
   
 [SJSL GotSport Toolbox - ETL](https://github.com/SJSLORG/gotsport-toolbox/tree/main/etl)
 
+Need to clean up code for public consumption
+
+Points of interest:
+
+1. pseudo code the process
+1. reading excel files
+1. replace with dictionary and set_index
+1. merge 2 dataframes
+1. clean up key values
+1. add and remove columns for the export
+  1. date value with insert_space from lambda
+1. final export to_csv using timestamp to rerun as needed
+
 ### Results from the ETL
 
 |Total Category|Expected|Actual|
