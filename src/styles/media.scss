@@ -49,7 +49,7 @@ and (max-width : 480px) {
 
 @media only screen
 and (min-width: 481px)
-and (max-width: 1024px) {
+and (max-width: 768px) {
     aside {
         width: 0px;
         display: none;
@@ -95,7 +95,7 @@ and (max-width: 1024px) {
 $container-width: 1000px; 
 
 @media only screen
-and (min-width: 1025px) {
+and (min-width: 769px) {
 
     .disclainer {
         span {

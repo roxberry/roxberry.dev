@@ -371,7 +371,7 @@ and (max-width: 768px) {
 }
 
 @media only screen
-and (max-width: 1024px) {
+and (max-width: 880px) {
   aside {
     width: 0px;
     display: none;
@@ -389,7 +389,7 @@ and (max-width: 1024px) {
 }
 
 @media only screen
-and (min-width: 1025px) {
+and (min-width: 881px) {
   article {
     margin-left: 2rem;
     margin-right: 2rem;
