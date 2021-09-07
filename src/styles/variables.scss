@@ -19,16 +19,24 @@ $orange: #ed4c15;
 $red: red;
 $amber: rgb(255,176,0);
 $darkgoldenrod: darkgoldenrod;
+
+$default: $black;
+$default-contrast: #282828;
+
 $pennstateblue: #1E407C;
 $pennstatenavy: #001E44;
 $pennstatesky:  #009CDE;
 
+$brand-header-background: $pennstateblue; // $default-contrast
+$brand-body-background: $pennstatenavy;  // $default
+$brand-overlay: $pennstateblue; // $default-contrast
 $brand-primary: $white;
 $brand-primary-banner: $white;
-$brand-navbar: $pennstatenavy;
-$brand-disclaimer: $pennstatenavy;
+$brand-navbar: $pennstatenavy; // $default
+$brand-disclaimer: $pennstatenavy; // $default
 $brand-font: 'Raleway';
 $disclaimer-color:$white;
-$sidebar-background: linear-gradient(to right, black, #282828);
+// $sidebar-background: linear-gradient(to right, $default, $default-contrast);
+$sidebar-background: linear-gradient(to right, $pennstatenavy, $pennstateblue);
 
 

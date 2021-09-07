@@ -20,7 +20,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-display: auto;
   color: rgba(255, 255, 255, 0.8);
-  background-color: black !important;
+  background-color: $brand-body-background !important;
 }
 
 .container {
@@ -35,7 +35,7 @@ body {
 }
 
 header {
-  background-color: #282828;
+  background-color: $brand-header-background;
   color: $brand-primary;
   display: flex;
   justify-content: center;
@@ -264,12 +264,14 @@ aside section {
 .overlay {
   position: absolute;
   bottom: 0;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.7); /* Black see-through */
+  // background: rgb(0, 0, 0);
+  // background: rgba(0, 0, 0, 0.7); /* Black see-through */
+  background: $brand-overlay;
+  opacity: .8;
   color: #f1f1f1;
   width: 100%;
   transition: 0.5s ease;
-  opacity: 1;
+  // opacity: 1;
   color: white;
   font-size: 20px;
   //padding: 20px;
