@@ -1,8 +1,10 @@
 // normalize css
 import 'normalize.css/normalize.css';
 
-// add raleway font
+// add typfaces font
 import "typeface-raleway";
+import "typeface-roboto";
+import "typeface-roboto-slab";
 
 //code syntax color and line numbers
 require('gatsby-remark-vscode/styles.css');

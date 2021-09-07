@@ -17,8 +17,8 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  font-family: "Raleway", sans-serif;
-  font-display: auto;
+  font-family: $brand-font; //, sans-serif;
+  // font-display: auto;
   color: rgba(255, 255, 255, 0.8);
   background-color: $brand-body-background !important;
 }
@@ -114,28 +114,40 @@ h1,
 .section-heading {
   margin-top: 1em;
   color: $brand-primary;
-  font-weight: normal;
+  font-weight: bold;
   line-height: 1;
   // font-size: 2em;
   border-bottom: 2px solid $brand-primary;
+  font-family: $brand-heading-font;
 }
 
-h2,
+h2 {
+  margin: unset;
+  margin-top: 1em;
+  color: $brand-primary;
+  font-weight: bold;
+  font-family: $brand-heading-font;
+}
+
 h3,
 h4,
 h5 {
   margin: unset;
   margin-top: 1em;
   color: $brand-primary;
-  font-weight: normal;
+  color: $brand-links;
+
+  font-weight: bold;
+  font-family: $brand-heading-font;
 }
 
+
 a {
-  color: white;
+  color: $brand-primary;
   font-weight: bold;
   text-decoration: none;
   &:hover {
-    color: $brand-primary;
+    color: $brand-links;
   }
 }
 
@@ -178,10 +190,11 @@ a {
 }
 
 .leftSide .title {
-  font-size: 1.25em;
+  font-size: 1.5em;
   //text-decoration: none;
   color: $brand-primary;
-  font-weight: normal;
+  font-family: $brand-heading-font;
+  font-weight: bold;
 }
 
 .leftSide .title.active {
@@ -201,6 +214,10 @@ a {
   &:hover {
     color: $brand-primary;
   }
+}
+
+.header-menu-item, .category-item, .tagLine {
+  font-family: $brand-heading-font;
 }
 
 .header-menu-item.active, .category-item.active {
