@@ -17,24 +17,24 @@ jobs:
     runs-on: [ubuntu-latest]
 
     steps:
-      - name: checkout gh-pages  branch # checkout gh-pages  branch
-        uses: actions/checkout@v2
-        with:
-          persist-credentials: false
+#      - name: checkout gh-pages  branch # checkout gh-pages  branch
+#        uses: actions/checkout@v2
+#        with:
+#          persist-credentials: false
 
-      - name: remove all files # remove files.
-        run: |
-          rm -rf *
+#      - name: remove all files # remove files.
+#        run: |
+#          rm -rf *
 
-      - name: create CNAME file # remove files.
-        run: |
-          echo "roxberry.dev" > CNAME
-      - name: checkout main  branch #checkout main  branch into temp folder.
-        uses: actions/checkout@v2
-        with:
-          ref: main
-          path: temp
-          persist-credentials: false
+#      - name: create CNAME file # remove files.
+#        run: |
+#          echo "roxberry.dev" > CNAME
+#      - name: checkout main  branch #checkout main  branch into temp folder.
+#       uses: actions/checkout@v2
+#        with:
+#          ref: main
+#          path: temp
+#          persist-credentials: false
 
       - name: Cache node modules
         uses: actions/cache@v2
