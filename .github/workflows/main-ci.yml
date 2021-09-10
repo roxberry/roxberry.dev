@@ -29,8 +29,9 @@ jobs:
       - name: create CNAME file # remove files.
         run: |
           echo "roxberry.dev" > CNAME
+          
       - name: checkout main  branch #checkout main  branch into temp folder.
-       uses: actions/checkout@v2
+        uses: actions/checkout@v2
         with:
           ref: main
           path: temp
