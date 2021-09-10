@@ -8,7 +8,7 @@ const ContactPage = () => {
     <Layout>
       <SEO title="Contact Me" />
       <section>
-        <h1>Contact Roxberry.DEV</h1>
+        <h1>Contact Me</h1>
         <div>
         <p>Send a message.</p>
         <form
