@@ -49,6 +49,18 @@ jobs:
             ${{ runner.os }}-build-
             ${{ runner.os }}-
           
+      - name: Gatsby Cache Folder
+        uses: actions/cache@v1
+        with:
+          key: gatsby-cache-folder
+          path: .cache
+          
+      - name: Gatsby Public Folder
+        uses: actions/cache@v1
+        with:
+          key: gatsby-public-folder
+          path: public
+          
       - name: run yarn install and build # go to temp folder and run npm build to create files.
         run: |
           cd temp
