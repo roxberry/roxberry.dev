@@ -78,11 +78,11 @@ jobs:
           yarn install
           yarn build:incremental
 
-      - name: move files # move the dist files into root dir and remove others.
-        if: ${{ success() }}
-        run: |
-          mv temp/public/* ./
-          rm -rf temp
+#      - name: move files # move the dist files into root dir and remove others.
+#        if: ${{ success() }}
+#        run: |
+#          mv temp/public/* ./
+#          rm -rf temp
 
       - name: Commit files for change # commit
         if: ${{ success() }}
