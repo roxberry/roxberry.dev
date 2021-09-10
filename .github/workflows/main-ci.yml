@@ -73,7 +73,7 @@ jobs:
         if: ${{ success() }}
         uses: ad-m/github-push-action@master
         with:
-          BRANCH: master
+          BRANCH: gh-pages
           github_token: ${{ secrets.GITHUB_TOKEN }}
           force: true
 
