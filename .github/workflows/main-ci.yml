@@ -17,29 +17,24 @@ jobs:
     runs-on: [ubuntu-latest]
 
     steps:
-#      - name: checkout gh-pages  branch # checkout gh-pages  branch
-#        uses: actions/checkout@v2
-#        with:
-#          persist-credentials: false
-
-#      - name: remove all files # remove files.
-#        run: |
-#          rm -rf *
-
-#      - name: create CNAME file # remove files.
-#        run: |
-#          echo "roxberry.dev" > CNAME
-#      - name: checkout main  branch #checkout main  branch into temp folder.
-#       uses: actions/checkout@v2
-#        with:
-#          ref: main
-#          path: temp
-#          persist-credentials: false
-
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - name: checkout gh-pages  branch # checkout gh-pages  branch
+        uses: actions/checkout@v2
         with:
-          node-version: 12
+          persist-credentials: false
+
+      - name: remove all files # remove files.
+        run: |
+          rm -rf *
+
+      - name: create CNAME file # remove files.
+        run: |
+          echo "roxberry.dev" > CNAME
+      - name: checkout main  branch #checkout main  branch into temp folder.
+       uses: actions/checkout@v2
+        with:
+          ref: main
+          path: temp
+          persist-credentials: false
           
       - name: Cache node modules
         uses: actions/cache@v2
@@ -74,15 +69,15 @@ jobs:
           
       - name: run yarn install and build # go to temp folder and run npm build to create files.
         run: |
-          # cd temp
+          cd temp
           yarn install
           yarn build:incremental
 
-#      - name: move files # move the dist files into root dir and remove others.
-#        if: ${{ success() }}
-#        run: |
-#          mv temp/public/* ./
-#          rm -rf temp
+      - name: move files # move the dist files into root dir and remove others.
+        if: ${{ success() }}
+        run: |
+          mv temp/public/* ./
+          rm -rf temp
 
       - name: Commit files for change # commit
         if: ${{ success() }}
