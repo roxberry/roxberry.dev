@@ -48,12 +48,12 @@ jobs:
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
-
+          
       - name: run yarn install and build # go to temp folder and run npm build to create files.
         run: |
           cd temp
           yarn install
-          yarn build
+          yarn build:incremental
 
       - name: move files # move the dist files into root dir and remove others.
         if: ${{ success() }}
