@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkroxberry_dev=self.webpackChunkroxberry_dev||[]).push([[682],{5518:function(e,r,n){n.r(r);var u=n(7294);r.default=function(){return u.createElement("div",null,"Mark Roxberry")}}}]);
+//# sourceMappingURL=component---src-pages-about-js-bb261ebe7afead844eee.js.map

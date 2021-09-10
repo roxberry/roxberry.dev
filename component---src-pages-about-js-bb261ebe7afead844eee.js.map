@@ -1,0 +1,1 @@
+{"version":3,"file":"component---src-pages-about-js-bb261ebe7afead844eee.js","mappings":"sIAQA,UANkB,WAChB,OACI","sources":["webpack://roxberry.dev/./src/pages/about.js"],"sourcesContent":["import React from \"react\"\n\nconst AboutPage = () => {\n  return (\n      <div>Mark Roxberry</div>\n  )\n}\n\nexport default AboutPage"],"names":[],"sourceRoot":""}
