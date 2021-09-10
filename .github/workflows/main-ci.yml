@@ -71,7 +71,7 @@ jobs:
 
       - name: Push changes #push files into gh-pages branch
         if: ${{ success() }}
-        uses: ad-m/github-push-action@gh-pages
+        uses: ad-m/github-push-action@master
         with:
           BRANCH: master
           github_token: ${{ secrets.GITHUB_TOKEN }}
