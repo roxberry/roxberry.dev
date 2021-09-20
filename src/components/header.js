@@ -30,6 +30,9 @@ const Header = () => {
 
             <ul className="menu">
               <li>
+                <Link to="/tags/planning" className="header-menu-item" activeClassName="active">Planning</Link>
+              </li>
+              <li>
                 <Link to="/contact" className="header-menu-item" activeClassName="active">Contact</Link>
               </li>
               <li>
