@@ -10,8 +10,8 @@ tags: [agile, planning]
 categories:
   - planning
 postimage:
-  src: "post.png"
-  alt: "Inspiration4"
+  src: "post.jpg"
+  alt: "Engine Block"
 featured: true
 
 ---
@@ -57,7 +57,7 @@ Busy, busy, busy.  I started the week with a plan.  It was a week full of all ki
 1. и́мя: name
 
 ### Image credit
-TBD
+[Engine Block by Garett Mizunaka](https://unsplash.com/photos/xFjti9rYILo)
 
 ### Quote credit
 [BrainyQuote](https://www.brainyquote.com/quotes/demosthenes_128803?src=t_great)
