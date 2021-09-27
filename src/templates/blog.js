@@ -10,8 +10,9 @@ const Blog = (props) => {
     
     const post = props.data.markdownRemark
     const postImage = post.frontmatter.postimage
-    const seoImage = post.frontmatter.postimage
-    ? post.frontmatter.postimage.src.childImageSharp.resize
+    // const seoImage = null;
+    const seoImage = postImage && postImage.src
+    ? postImage.src.childImageSharp.resize
     : null
     const disqusShortname = "roxberry";
     const disqusConfig = {
@@ -33,20 +34,27 @@ const Blog = (props) => {
             <section>
                 <h1 className="postTitle">{post.frontmatter.title}</h1>
                 <div className="postedInfo">posted on {post.frontmatter.date} by {post.frontmatter.author}</div>
-                <div className="postImage">
-                    {
-                        postImage && (
+                {
+                    postImage && postImage.src && (
+                        <div className="postImage">
                             <GatsbyImage
                             image={postImage.src.childImageSharp.gatsbyImageData}
                             alt={postImage.alt}
                             layout="fullWidth"
                             />
-                        )
-                    }
-                    <div className="overlay">
-                        <div className="innerOverlayText" dangerouslySetInnerHTML={{__html: post.frontmatter.subtitle }}></div>
-                    </div>
-                </div>
+                            <div className="overlay">
+                                <div className="innerOverlayText" dangerouslySetInnerHTML={{__html: post.frontmatter.subtitle }}></div>
+                            </div>
+                        </div>
+                    )
+
+                }
+
+                {
+                    postImage && !postImage.src && (
+                        <q className="postQuote" dangerouslySetInnerHTML={{__html: post.frontmatter.subtitle }}></q>
+                    )
+                }
                 <div className="blogBody" dangerouslySetInnerHTML={{__html: post.html}}></div>
                 <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
                 <Helmet>

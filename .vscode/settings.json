@@ -1,3 +1,13 @@
 {
-    "todo-tree.tree.scanMode": "workspace"
+    "todo-tree.tree.scanMode": "workspace",
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#009cde",
+        "statusBar.foreground": "#e7e7e7",
+        "statusBarItem.hoverBackground": "#12b9ff",
+        "titleBar.activeBackground": "#009cde",
+        "titleBar.activeForeground": "#e7e7e7",
+        "titleBar.inactiveBackground": "#009cde99",
+        "titleBar.inactiveForeground": "#e7e7e799"
+    },
+    "peacock.color": "#009cde"
 }
