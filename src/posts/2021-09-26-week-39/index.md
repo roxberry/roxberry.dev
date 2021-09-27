@@ -10,7 +10,7 @@ tags: [agile, planning]
 categories:
   - planning
 postimage:
-  src: "post.jpg"
+  src: "post.JPG"
   alt: "Engine Block"
 featured: true
 
