@@ -17,8 +17,6 @@ featured: true
 ---
 ## Week 39 Retrospective
 
-Overall feel - last week was a grind.  Despite that all my projects are green, SJSL went well on Sunday and not a complete disaster, the week in totality felt like a drag.  A few negatives outweighed the positives, hopefully I can flip the script in week 39.
-
 Busy, busy, busy.  I started the week with a plan.  It was a week full of all kinds of interactions beyond the Slack window and I ended it with a great feeling of many doors opening.
 
 1. Back to School - I visited my children's school and learned about their daily process.  I definitely miss the classroom environment. 
