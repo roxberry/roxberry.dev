@@ -3,7 +3,7 @@ layout: post
 title: Why do we need all of this data? OWASP Privacy Risks - P-10
 subtitle: Do not trust your memory; it is a net full of holes; the most beautiful prizes slip through it. - Georges Duhamel
 comments: true
-date: 2021-10-05 01:00:00
+date: 2021-10-20 01:00:00
 author: Mark Roxberry
 excerpt: P-10 Collection of data not required for the user-consented purpose and the "Lean Data Commitment".
 tags: [owasp, privacy]
@@ -41,7 +41,10 @@ From Security.org, a review of privacy policies reveals that they have granted t
 
 ## What to do to mitigate P-10
 
-"Lean Data Commitment" 
+I recommend that you look into making a "Lean Data Commitment", following Mozilla's "Lean Data Practices" guide to help define your organization's privacy best practices.  "Lean Data Practices" can be found [here](https://www.mozilla.org/en-US/about/policy/lean-data/).  Particulary note the 3 tenets of lean data practices:
+- "Stay Lean" - review your data collection
+- "Build Security" - protect customer data
+- "Engage Your Users" - inform your users, keep your practices transparent. 
 
 Scan your site for Privacy issues at [PRIVACYSCORE](https://privacyscore.org/)
 
