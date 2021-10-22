@@ -17,7 +17,7 @@ featured: true
 ---
 ## P-10 Collection of data not required for the user-consented purpose
 
-The [OWASP Top 10 Privacy Risks Project](https://owasp.org/www-project-top-10-privacy-risks/) identifies 10 privacy risks in web applications, the cloud and the global online ecosystem.  In September of 2021, version 2 of the project was released. I'm going to work through the list and discuss each risk, with references and mitigation countermeasures, if they exist.
+The [OWASP Top 10 Privacy Risks Project](https://owasp.org/www-project-top-10-privacy-risks/) identifies the top 10 privacy risks in web applications, the cloud and the global online ecosystem.  In September of 2021, version 2 of the project was released. I'm going to work through the list and discuss each risk, with references and mitigation countermeasures, if they exist.
 
 The P-10 risk, "Collection of data not required for the user-consented purpose" on the list is the collection of too much data from users.
 
