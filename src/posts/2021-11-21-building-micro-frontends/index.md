@@ -5,7 +5,7 @@ subtitle: Fools ignore complexity. Pragmatists suffer it. Some can avoid it. Gen
 comments: true
 date: 2021-11-21 15:00:00
 author: Mark Roxberry
-excerpt: 
+excerpt: Tracking concepts for a micro front-end architecture.  This post will track ideas, concepts and resources for MFE architectural guidance.
 tags: [architecture]
 categories:
   - architecture
@@ -22,6 +22,8 @@ New client, thinking about architectures - I am helping out their platform team,
 1. breaks out shared concerns to a common root frame (auth, communication, logging, telemetry)
 1. is designed to be modular and framework independent
 1. has tools for teams to realize an architectural standard.
+
+This post will capture MFE ideas, concepts and resources.
 
 ## References
 
