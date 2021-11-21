@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Building Micro Front-ends
+title: Building Micro-Frontends
 subtitle: Fools ignore complexity. Pragmatists suffer it. Some can avoid it. Geniuses remove it. - Alan Perlis
 comments: true
 date: 2021-11-21 15:00:00
 author: Mark Roxberry
-excerpt: Tracking concepts for a micro front-end architecture.  This post will track ideas, concepts and resources for MFE architectural guidance.
+excerpt: Tracking concepts for a micro-frontend architecture.  This post will track ideas, concepts and resources for MFE architectural guidance.
 tags: [architecture]
 categories:
   - architecture
@@ -15,9 +15,9 @@ postimage:
 featured: true
 
 ---
-## Building Micro Front-end Resources
+## Building Micro-Frontends Resources
 
-New client, thinking about architectures - I am helping out their platform team, learning about micro front-ends and realizing an architecture for micro front-end creation to support many development teams here.  At the core of this work is building out a micro front-end architecure that: 
+New client, thinking about architectures - I am helping out their platform team, learning about micro-frontends and realizing an architecture for micro-frontend creation to support many development teams here.  At the core of this work is building out a micro-frontend architecure that: 
 
 1. breaks out shared concerns to a common root frame (auth, communication, logging, telemetry)
 1. is designed to be modular and framework independent
@@ -29,11 +29,11 @@ This post will capture MFE ideas, concepts and resources.
 
 [Team Topologies](https://teamtopologies.com/key-concepts)
 
-[Building Micro Front-ends](https://www.buildingmicrofrontends.com/)
+[Building Micro-Frontends](https://www.buildingmicrofrontends.com/)
 
-[Micro Frontends](https://martinfowler.com/articles/micro-frontends.html)
+[Micro-Frontends](https://martinfowler.com/articles/micro-frontends.html)
 
-[Micro Frontends: a deep dive into the latest industry trend.](https://dev.to/bettercodingacademy/micro-frontends-a-deep-dive-into-the-latest-industry-trend-3i7a)
+[Micro-Frontends: a deep dive into the latest industry trend.](https://dev.to/bettercodingacademy/micro-frontends-a-deep-dive-into-the-latest-industry-trend-3i7a)
 
 ## Credits
 
