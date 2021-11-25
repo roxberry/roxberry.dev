@@ -1,0 +1,16 @@
+{
+    "mode": "history",
+    "base": "/",
+    "disableWarnings": false,
+    "containerEl": "#container",
+    "routes": [
+      {
+        "type": "route",
+        "path": "clients",
+        "routes": [
+          { "type": "application", "name": "clients" }
+        ],
+        "default": false
+      }
+    ]
+}
