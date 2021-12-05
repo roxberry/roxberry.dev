@@ -5,12 +5,12 @@ subtitle: Clarity affords focus - Thomas Leonard
 comments: true
 date: 2021-12-01 15:00:00
 author: Mark Roxberry
-excerpt: ...
+excerpt: My December 2021 theme is clarity.  Seeking clarity, clean board, see forward and backward and create a future.
 tags: [agile, planning]
 categories:
   - planning
 postimage:
-  src: "post.JPEG"
+  src: "post.jpeg"
   alt: "Blurry background, focused camera lense"
 featured: true
 
