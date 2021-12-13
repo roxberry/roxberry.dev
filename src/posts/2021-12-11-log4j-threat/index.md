@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "PSA: Log4Shell: Exploiting the Log4J Vulnerability"
-subtitle: 
 comments: true
 date: 2021-12-11 10:00:00
 author: Mark Roxberry
