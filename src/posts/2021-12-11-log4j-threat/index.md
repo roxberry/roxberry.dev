@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "PSA: Log4Shell: Exploiting the Log4J Vulnerability"
+subtitle: "Just when you thought it was safe to relax for the weekend - Paul Ducklin, Naked Security Author"
 comments: true
 date: 2021-12-11 10:00:00
 author: Mark Roxberry
@@ -14,6 +15,7 @@ postimage:
 featured: true
 
 ---
+
 ## Log4Shell: A Log4J Vulnerability
 
 A major component used in Java, Apache servers, Log4J is vulnerable to parameter substitution - like SQL injection but via a 3rd party lib.  The vulnerability has been labeled 'Log4Shell'.
@@ -25,6 +27,12 @@ A major component used in Java, Apache servers, Log4J is vulnerable to parameter
 #### CVE 2021-44228
 
 [CVE Report](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-44228)
+
+#### Detailed analysis by Sophos
+
+[Log4Shell explained – how it works, why you need to know, and how to fix it](https://nakedsecurity.sophos.com/2021/12/13/log4shell-explained-how-it-works-why-you-need-to-know-and-how-to-fix-it/)
+
+[“Log4Shell” Java vulnerability – how to safeguard your servers](https://nakedsecurity.sophos.com/2021/12/10/log4shell-java-vulnerability-how-to-safeguard-your-servers/)
 
 #### CISA Official Report
 
@@ -47,6 +55,10 @@ Original release date: December 11, 2021
 Descripton: Apache Log4j <=2.14.1 JNDI features used in configuration, log messages, and parameters do not protect against attacker controlled LDAP and other JNDI related endpoints. An attacker who can control log messages or log message parameters can execute arbitrary code loaded from LDAP servers when message lookup substitution is enabled. From log4j 2.15.0, this behavior has been disabled by default.
 
 Mitigation: In releases >=2.10, this behavior can be mitigated by setting either the system property ```java log4j2.formatMsgNoLookups``` or the environment variable ```bash LOG4J_FORMAT_MSG_NO_LOOKUPS``` to true. For releases >=2.7 and <=2.14.1, all ```java PatternLayout``` patterns can be modified to specify the message converter as %m{nolookups} instead of just %m. For releases >=2.0-beta9 and <=2.10.0, the mitigation is to remove the ```java JndiLookup``` class from the classpath: ```bash zip -q -d log4j-core-*.jar org/apache/logging/log4j/core/lookup/JndiLookup.class```.
+
+### Quote credit
+
+Quote from [Paul Ducklin, Naked Security](https://nakedsecurity.sophos.com/2021/12/10/log4shell-java-vulnerability-how-to-safeguard-your-servers/)
 
 ### Image credit
 
