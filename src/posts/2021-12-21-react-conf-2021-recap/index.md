@@ -12,13 +12,49 @@ categories:
 postimage:
   src: "post.png"
   alt: "React Logo banner image"
-featured: false
+featured: true
 
 ---
 
 ## React Conference 2021 - State of their Art
 
+[React Conf Website](https://conf.reactjs.org)
+
 ### Feature Recap
+
+#### Concurrent Features
+
+- implement Concurrent renderer in React 18 with no (known) breaking changes
+
+#### Suspense and Server Components
+
+- granular component streaming from the server
+
+#### Developer Notes
+
+- new React DevTools team
+- new Timeline Profiler for debugging
+
+#### React 18 RC
+
+Available for feedback:
+
+```bash
+npm install react@rc react-dom@rc
+```
+
+Change entry to use *createRoot*
+
+```javascript
+// before
+const container = document.getElementById('root');
+ReactDOM.render(<App />, container);
+
+// after
+const container = document.getElementById('root');
+const root = ReactDOM.createRoot(container);
+root.render(<App/>);
+```
 
 
 ### References
