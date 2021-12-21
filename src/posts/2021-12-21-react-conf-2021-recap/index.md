@@ -71,4 +71,4 @@ root.render(<App/>);
 
 ### Quote Credit
 
-Jonathan Swift Quotes. (n.d.). BrainyQuote.com. Retrieved December 21, 2021, from [BrainyQuote.com] Web site(https://www.brainyquote.com/quotes/jonathan_swift_122246)
+Jonathan Swift Quotes. (n.d.). BrainyQuote.com. Retrieved December 21, 2021, from [BrainyQuote.com](https://www.brainyquote.com/quotes/jonathan_swift_122246)
