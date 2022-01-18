@@ -12,7 +12,7 @@ module.exports = {
     twitterUsername: "@roxberry",
     author: "Mark Roxberry",
     keywords: ["roxberry", "journal", "development"],
-    version: "2021.09.26.01",
+    version: "2022.01.18.01",
   },
   plugins: [
     "gatsby-plugin-sass",

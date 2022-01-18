@@ -14,7 +14,7 @@ const Footer = () => {
   `)
   return (
     <footer>
-        © 2021 {data.site.siteMetadata.author} (v{data.site.siteMetadata.version})
+        © 2022 {data.site.siteMetadata.author} (v{data.site.siteMetadata.version})
     </footer>
   )
 }
