@@ -73,4 +73,4 @@ root.render(<App/>);
 
 Jonathan Swift Quotes. (n.d.). BrainyQuote.com. Retrieved December 21, 2021, from [BrainyQuote.com](https://www.brainyquote.com/quotes/jonathan_swift_122246)
 
-![Hopper The Rabbit](./post1.png)
+![freecodecamp Photo](./IMG_0194.JPG)
