@@ -83,7 +83,7 @@ main {
 aside {
   background: $sidebar-background;
   flex: 0 0 $sidebar-width;
-  overflow: auto;
+  // overflow: auto;
   padding: 2em 4em;
 }
 

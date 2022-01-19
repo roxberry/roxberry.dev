@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
+import * as contactStyles from "../styles/contact.module.scss"
 
 const ContactPage = () => {
   return (
