@@ -1,5 +1,5 @@
 import React from "react"
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 import Pager from "../components/Pager"
 import { GatsbyImage } from "gatsby-plugin-image"

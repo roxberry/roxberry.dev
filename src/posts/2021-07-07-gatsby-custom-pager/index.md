@@ -85,7 +85,7 @@ export default Pager
 Pager then can be added to a page template, posts.js:
 
 ```js
-import Pager from "../components/pager"
+import Pager from "../components/Pager"
 ```
 
 Set the values, per the Gatsby documentation,
