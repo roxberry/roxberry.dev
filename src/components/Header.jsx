@@ -1,5 +1,4 @@
 import React from "react"
-import { Helmet } from "react-helmet"
 import { Link, graphql, useStaticQuery } from "gatsby"
 
 const Header = () => {
@@ -48,7 +47,7 @@ const Header = () => {
           
         </div>
         <div className="rightSide">
-          <p className="tagLine">coder, maker, hacker, mentor</p>
+          <p className="tagLine">architect, writer, strategist, technologist</p>
         </div>
       </div>
     </header>

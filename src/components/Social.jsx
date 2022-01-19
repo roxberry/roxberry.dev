@@ -1,6 +1,5 @@
 import React from "react"
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { Link, graphql, useStaticQuery } from "gatsby"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTags, faRss, faEnvelope } from '@fortawesome/free-solid-svg-icons' 
 import { faFacebookF, faTwitter, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons' 

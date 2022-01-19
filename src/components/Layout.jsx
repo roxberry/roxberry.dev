@@ -1,7 +1,7 @@
 import React from "react"
-import Header from "../components/header"
-import Disclaimer from "../components/disclaimer"
-import Sidebar from "../components/sidebar"
+import Header from "./Header"
+import Disclaimer from "./Disclaimer"
+import Sidebar from "./Sidebar"
 import "../styles/index.scss"
 
 // import * as layoutStyles from "../styles/layout.module.scss"

@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Pager from "../components/pager"
+import SEO from "../components/SEO"
+import Pager from "../components/Pager"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { Link, graphql } from "gatsby"
 
@@ -22,7 +22,7 @@ class BlogIndex extends React.Component {
         <section>
           <h1>Welcome!</h1>
           <p>
-            I am a technologist and someone who seeks out new ideas and
+            I seek out patterns, new ideas and
             paradigms. On my blog, you will find my day to day notes, ideas,
             projects and stuff that may be useful.
           </p>

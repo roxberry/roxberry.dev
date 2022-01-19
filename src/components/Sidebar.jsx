@@ -1,8 +1,8 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import Social from "../components/social"
-import Categories from "./tags"
-import Footer from "../components/footer"
+import Social from "./Social"
+import Categories from "./Tags"
+import Footer from "./Footer"
 
 const SideBar = () =>  {
     return (
