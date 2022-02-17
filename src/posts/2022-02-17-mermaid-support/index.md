@@ -18,7 +18,7 @@ featured: true
 
 ## Mermaid for Diagramming
 
-Always in search of good tooling - robust, compatible, extendible - for diagrams.  Mermaid.js looked like something cool for code based diagramming.  This week, Github announced support for Mermaid.js in its documentation, [Github markdown supports Mermaid.js](https://github.blog/2022-02-14-include-diagrams-markdown-files-mermaid/).
+Always in search of good tooling - robust, compatible, extendible - for diagrams.  [Mermaid.js](https://mermaid-js.github.io/mermaid/#/) looks like something cool for code based diagramming.  This week, Github announced support for Mermaid.js in its documentation, [Github markdown supports Mermaid.js](https://github.blog/2022-02-14-include-diagrams-markdown-files-mermaid/).
 
 ### Blogging flow chart example
 
