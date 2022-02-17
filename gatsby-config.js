@@ -12,7 +12,7 @@ module.exports = {
     twitterUsername: "@roxberry",
     author: "Mark Roxberry",
     keywords: ["roxberry", "journal", "development"],
-    version: "2022.01.18.01",
+    version: "2022.02.17.01",
   },
   plugins: [
     "gatsby-plugin-sass",
@@ -44,6 +44,7 @@ module.exports = {
           //   //   showLineNumbers: true,
           //   // }
           // },
+          "gatsby-remark-mermaid",
           {
             resolve: "gatsby-remark-vscode",
             options: {
