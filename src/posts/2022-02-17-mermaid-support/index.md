@@ -22,8 +22,22 @@ Always in search of good tooling - robust, compatible, extendible - for diagrams
 
 ### Blogging flow chart example
 
+Transform this text to a diagram:
+
+```text
+%%{init: {"theme": "dark", "flowchart" : { "curve" : "basis" } } }%%
+flowchart LR
+A[Blog Idea] --> B{Do I have time?}
+B --> |Of course| C[Topic?]
+C --> D[Title?]
+D --> E[Get Photo and Quote]
+E --> F[Write!]
+B --> |Nope| H[Make time!]
+H --> B
+```
+
 ```mermaid
-%%{init: {'theme': 'dark', "flowchart" : { "curve" : "basis" } } }%%
+%%{init: {"theme": "dark", "flowchart" : { "curve" : "basis" } } }%%
 flowchart LR
 A[Blog Idea] --> B{Do I have time?}
 B --> |Of course| C[Topic?]
