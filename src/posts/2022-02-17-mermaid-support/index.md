@@ -54,7 +54,7 @@ H --> B
 
 [Gatsby Mermaid Tooling](https://www.gatsbyjs.com/plugins/gatsby-remark-mermaid/)
 
-[Visual Studi Code Preview Extension](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid)
+[Visual Studio Code Preview Extension](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid)
 
 ### Image Credit
 
