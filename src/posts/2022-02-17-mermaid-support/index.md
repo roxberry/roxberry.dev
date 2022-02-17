@@ -23,6 +23,7 @@ Always in search of good tooling - robust, compatible, extendible - for diagrams
 ### Blogging flow chart example
 
 ```mermaid
+%%{init: {'theme': 'dark', "flowchart" : { "curve" : "basis" } } }%%
 flowchart LR
 A[Blog Idea] --> B{Do I have time?}
 B --> |Of course| C[Topic?]
