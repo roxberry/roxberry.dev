@@ -1,7 +1,6 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import Social from "./Social"
-import Categories from "./Tags"
 import Footer from "./Footer"
 
 const SideBar = () =>  {
@@ -30,8 +29,7 @@ const SideBar = () =>  {
           <section>
             <a href="https://github.com/roxberry/gatsby-roxberry/actions/workflows/main-ci.yml"><img src="https://github.com/roxberry/gatsby-roxberry/actions/workflows/main-ci.yml/badge.svg" alt="Roxberry.DEV CI" /></a>
           </section>
-            <!-- <Categories /> -->
-          <Footer />
+         <Footer />
         </aside>
     )
 }
