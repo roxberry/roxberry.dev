@@ -30,7 +30,7 @@ const SideBar = () =>  {
           <section>
             <a href="https://github.com/roxberry/gatsby-roxberry/actions/workflows/main-ci.yml"><img src="https://github.com/roxberry/gatsby-roxberry/actions/workflows/main-ci.yml/badge.svg" alt="Roxberry.DEV CI" /></a>
           </section>
-            <Categories />
+            <!-- <Categories /> -->
           <Footer />
         </aside>
     )
