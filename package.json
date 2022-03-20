@@ -40,7 +40,7 @@
     "gatsby-transformer-sharp": "^4.5.0",
     "gh-pages": "^3.2.3",
     "normalize.css": "^8.0.1",
-    "postcss": "^8.4.5",
+    "postcss": "^8.4.12",
     "prismjs": "^1.27.0",
     "puppeteer": "^13.3.2",
     "react": "^17.0.2",
