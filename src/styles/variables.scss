@@ -24,7 +24,7 @@ $orange: #ed4c15;
 $red: red;
 $amber: rgb(255,176,0);
 $darkgoldenrod: darkgoldenrod;
-
+$sunyellow: #FFE87C;
 $default: $black;
 $default-contrast: #282828;
 
@@ -53,10 +53,10 @@ $brand-header-background: $default-contrast;
 $brand-body-background: $default;
 $brand-overlay: $default-contrast;
 $brand-primary: $white;
-$brand-links: $glacialblue;
+$brand-links: $sunyellow;
 $brand-primary-banner: $white;
 $brand-navbar: $default;
-$brand-disclaimer: $glacialblue; // highlight
+$brand-disclaimer: $sunyellow; // highlight
 $brand-font: 'Roboto'; // 'Raleway';
 $brand-heading-font: 'Roboto Slab';
 
