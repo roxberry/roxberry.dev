@@ -28,12 +28,12 @@ const Header = () => {
             <label className="menu-icon" for="menu-btn"><span class="navicon"></span></label> */}
 
             <ul className="menu">
-              <li>
+              {/* <li>
                 <Link to="/tags/planning" className="header-menu-item" activeClassName="active">Planning</Link>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <Link to="/contact" className="header-menu-item" activeClassName="active">Contact</Link>
-              </li>
+              </li> */}
               {/* <li>
                 <Link to="/tags/nwrpg" className="header-menu-item" activeClassName="active">NWRPG</Link>
               </li> */}
@@ -47,7 +47,8 @@ const Header = () => {
           
         </div>
         <div className="rightSide">
-          <p className="tagLine">architect, writer, strategist, technologist</p>
+          {/* <p className="tagLine">architect, writer, strategist, technologist</p>  */}
+          <p className="tagLine">Always look on the bright side of life.</p>
         </div>
       </div>
     </header>
