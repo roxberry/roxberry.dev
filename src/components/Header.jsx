@@ -47,8 +47,9 @@ const Header = () => {
           
         </div>
         <div className="rightSide">
-          {/* <p className="tagLine">architect, writer, strategist, technologist</p>  */}
-          <p className="tagLine">Always look on the bright side of life.</p>
+          {/* <p className="tagLine">architect, writer, strategist, technologist</p>
+          <p className="tagLine">Always look on the bright side of life.</p>  */}
+          <p className="tagLine">Quis custodiet ipsos custodes?</p>
         </div>
       </div>
     </header>
