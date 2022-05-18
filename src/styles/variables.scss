@@ -33,9 +33,25 @@ $pennstatenavy: #001E44;
 $pennstatesky:  #009CDE;
 
 // Penn State Theme
-$brand-header-background: $pennstateblue; // $default-contrast
-$brand-body-background: $pennstatenavy;  // $default
-$brand-overlay: $pennstateblue; // $default-contrast
+// $brand-header-background: $pennstateblue; // $default-contrast
+// $brand-body-background: $pennstatenavy;  // $default
+// $brand-overlay: $pennstateblue; // $default-contrast
+// $brand-primary: $white;
+// $brand-links: $pennstatesky;
+// $brand-primary-banner: $white;
+// $brand-navbar: $pennstatenavy; // $default
+// $brand-disclaimer: $pennstatesky; // highlight
+// $brand-font: 'Roboto'; // 'Raleway';
+// $brand-heading-font: 'Roboto Slab';
+
+// $disclaimer-color: $white;
+// $sidebar-background: linear-gradient(to right, $default, $default-contrast);
+// $sidebar-background: linear-gradient(to right, $pennstatenavy, $pennstateblue);
+
+
+$brand-header-background: $default-contrast;
+$brand-body-background: $default;
+$brand-overlay: $default-contrast;
 $brand-primary: $white;
 $brand-links: $bluegray;
 $brand-primary-banner: $white;
@@ -46,19 +62,3 @@ $brand-heading-font: 'Roboto';
 
 $disclaimer-color: $white;
 $sidebar-background: linear-gradient(to right, $default, $default-contrast);
-$sidebar-background: linear-gradient(to right, $pennstatenavy, $pennstateblue);
-
-// General Theme
-// $brand-header-background: $default-contrast;
-// $brand-body-background: $default;
-// $brand-overlay: $default-contrast;
-// $brand-primary: $white;
-// $brand-links: $sunyellow;
-// $brand-primary-banner: $white;
-// $brand-navbar: $default;
-// $brand-disclaimer: $sunyellow; // highlight
-// $brand-font: 'Roboto'; // 'Raleway';
-// $brand-heading-font: 'Roboto Slab';
-
-// $disclaimer-color: $default-contrast;
-// $sidebar-background: linear-gradient(to right, $default, $default-contrast);
