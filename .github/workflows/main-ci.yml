@@ -68,11 +68,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-public-gatsby
           
-      - name: run yarn install and build # go to temp folder and run npm build to create files.
+      - name: run npm install and build # go to temp folder and run npm build to create files.
         run: |
           cd temp
           npm install
-          npm build:incremental
+          npm run build:incremental
 
       - name: move files # move the dist files into root dir and remove others.
         if: ${{ success() }}
