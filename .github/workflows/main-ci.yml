@@ -72,7 +72,7 @@ jobs:
         run: |
           cd temp
           yarn install
-          yarn build:incremental
+          yarn build # yarn build:incremental
 
       - name: move files # move the dist files into root dir and remove others.
         if: ${{ success() }}
