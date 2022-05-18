@@ -138,7 +138,7 @@ h5 {
   margin: unset;
   margin-top: 1em;
   color: $brand-primary;
-  color: $brand-links;
+//   color: $brand-links;
 
   font-weight: bold;
   font-family: $brand-heading-font;
@@ -326,6 +326,10 @@ aside section {
   // max-width: 300px;
 }
 
+.gatsby-image-wrapper {
+    max-height: 480px;
+}
+
 .postedInfo {
   font-size: .8em;
   color: $gray;
@@ -425,7 +429,7 @@ and (max-width: 880px) {
 @media only screen
 and (min-width: 881px) {
   article {
-    margin-left: 2rem;
+    margin-left: 5rem;
     margin-right: 2rem;
   }
 }
@@ -434,10 +438,10 @@ and (min-width: 881px) {
 and (min-width: 1200px) {
   .sub-header {
     width: 100%;
-    margin: 0 10vw;
+    margin: 0 10rem;
   }
 
   main {
-    margin: 0 10vw;
+    margin: 0 10rem;
   }
 }

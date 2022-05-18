@@ -37,12 +37,12 @@ $brand-header-background: $pennstateblue; // $default-contrast
 $brand-body-background: $pennstatenavy;  // $default
 $brand-overlay: $pennstateblue; // $default-contrast
 $brand-primary: $white;
-$brand-links: $pennstatesky;
+$brand-links: $bluegray;
 $brand-primary-banner: $white;
-$brand-navbar: $pennstatenavy; // $default
-$brand-disclaimer: $pennstatesky; // highlight
+$brand-navbar: $default;
+$brand-disclaimer: $bluegray; // highlight
 $brand-font: 'Roboto'; // 'Raleway';
-$brand-heading-font: 'Roboto Slab';
+$brand-heading-font: 'Roboto';
 
 $disclaimer-color: $white;
 $sidebar-background: linear-gradient(to right, $default, $default-contrast);
