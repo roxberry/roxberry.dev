@@ -12,7 +12,8 @@ module.exports = {
     twitterUsername: "@roxberry",
     author: "Mark Roxberry",
     keywords: ["roxberry", "journal", "development"],
-    version: "2022.05.18.01",
+    featuredTags: ["Russia", "development", "performance", "robotics", "security", "privacy", "apple"],
+    version: "2022.05.20.01",
   },
   plugins: [
     "gatsby-plugin-sass",
