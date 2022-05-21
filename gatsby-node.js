@@ -138,7 +138,7 @@ module.exports.createPages = async ({ graphql, actions, reporter }) => {
   })
 
   // Create blog post list pages
-  const postsPerPage = 9
+  const postsPerPage = 6
 
   const totalFeaturedPosts = posts.filter(p => p.node.frontmatter.featured).length
 

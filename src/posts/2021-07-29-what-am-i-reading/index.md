@@ -26,6 +26,7 @@ by Arkady Ostrovsky
 Find it on [Amazon](https://a.co/c0I0Lmd)
 
 ### Modern Cryptography for Cybersecurity Professionals
+
 by Lisa Bock
 
 From the Amazon page:
@@ -42,6 +43,7 @@ From the Amazon page:
 Find it on [Amazon](https://read.amazon.com/kp/embed?asin=B0933N9X2B&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_495ZBJGR0H6N7F5KHHWF)
 
 ### Fracture (First Colony Book 8)
+
 by Ken Lozito
 
 Colonel Sean Quinn is stranded in another universe, along with two thousand people under his command. They've been hiding from the enemy long enough, now it’s time to return home. Outnumbered against a superior foe, Sean must risk everything in a daring operation, but the mysterious enemy has a few surprises of their own.

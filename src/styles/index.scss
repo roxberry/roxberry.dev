@@ -118,7 +118,7 @@ h1,
   margin-top: 1em;
   color: $brand-primary;
   font-weight: bold;
-  line-height: 1;
+  line-height: 1.2;
   // font-size: 2em;
   border-bottom: 2px solid $brand-primary;
   font-family: $brand-heading-font;
@@ -129,6 +129,7 @@ h2 {
   margin-top: 1em;
   color: $brand-primary;
   font-weight: bold;
+  line-height: 1.2;
   font-family: $brand-heading-font;
 }
 
@@ -233,9 +234,9 @@ a {
 }
 
 .tagList {
-  height: 0;
+  //height: 0;
   // transition: all .5s ease-in-out;
-  visibility: hidden;
+  //visibility: hidden;
 
   &[data-active='true'] {
     height: auto;

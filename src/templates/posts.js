@@ -46,7 +46,7 @@ class BlogIndex extends React.Component {
                         layout="fullWidth"
                       />
                     )}
-                    <h3>{edge.node.frontmatter.title}</h3>
+                    <h2>{edge.node.frontmatter.title}</h2>
                     <div className="postedInfo">
                       posted on {edge.node.frontmatter.date}
                     </div>

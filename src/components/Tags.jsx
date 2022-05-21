@@ -29,8 +29,10 @@ const Tags = () =>  {
 
   return (
     <section>
-      <h2 onClick={toggleShown}>{state.shown ? <span>&#8211;</span> : <span>&#43;</span>} Tags</h2>
-      <ul className="tagList fa-ul" aria-hidden={!state.shown} data-active={state.shown}>
+      {/* <h2 onClick={toggleShown}>{state.shown ? <span>&#8211;</span> : <span>&#43;</span>} Tags</h2> */}
+      <h2>Tags</h2>
+      {/* <ul className="tagList fa-ul" aria-hidden={!state.shown} data-active={state.shown}> */}
+      <ul className="tagList fa-ul">
         {data.allMarkdownRemark.group.map(tag => (
           <li key={tag.fieldValue} >
             {/* <span className="fa-li"><i className="fas fa-tag"></i></span> */}

@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 
 const Header = () => {
 
@@ -22,7 +23,17 @@ const Header = () => {
       </Helmet> */}
       <div className="sub-header">
         <div className="leftSide">
-            <Link to="/" className="title" activeClassName="active">{data.site.siteMetadata.title}</Link>
+            <Link to="/" className="title" activeClassName="active">
+                <StaticImage
+                    // layout="fixed"
+                    formats={["PNG"]}
+                    src="../images/roxberry-dev-logo-250.png"
+                    alt={data.site.siteMetadata.title}
+                    placeholder="NONE"
+                    background="#282828"
+                    loading="eager"
+                />
+            </Link>
           <nav>
             {/* <input className="menu-btn" type="checkbox" id="menu-btn" />
             <label className="menu-icon" for="menu-btn"><span class="navicon"></span></label> */}
