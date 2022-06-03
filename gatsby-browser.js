@@ -5,6 +5,7 @@ import 'normalize.css/normalize.css';
 import "typeface-raleway";
 import "typeface-roboto";
 import "typeface-roboto-slab";
+import "typeface-questrial";
 
 //code syntax color and line numbers
 require('gatsby-remark-vscode/styles.css');

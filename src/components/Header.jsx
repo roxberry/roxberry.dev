@@ -26,8 +26,8 @@ const Header = () => {
             <Link to="/" className="title" activeClassName="active">
                 <StaticImage
                     // layout="fixed"
-                    formats={["PNG"]}
-                    src="../images/roxberry-dev-logo-250.png"
+                    formats={["AUTO"]}
+                    src="../images/roxberry-dev-logo-250.webp"
                     alt={data.site.siteMetadata.title}
                     placeholder="NONE"
                     background="#282828"

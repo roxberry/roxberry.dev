@@ -23,10 +23,10 @@ const SideBar = () => {
             </section>
             <section>
                 <h2>About Me</h2>
-                <p>Cross Platform Consultant</p>
+                <p>Platform Architect</p>
                 <a href="https://www.waveseeker.com">@ Database Solutions</a>
                 {/* <p>Husband, father, son, brother and uncle.</p> */}
-                <p>Security driven developer and passionate cross platform software engineer, architect and consultant.</p>
+                {/* <p>Security driven developer and passionate cross platform software engineer, architect and consultant.</p> */}
             </section>
             <section>
                 <a href="https://github.com/roxberry/gatsby-roxberry/actions/workflows/main-ci.yml"><img src="https://github.com/roxberry/gatsby-roxberry/actions/workflows/main-ci.yml/badge.svg" alt="Roxberry.DEV CI" /></a>

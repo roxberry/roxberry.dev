@@ -147,12 +147,11 @@ h5 {
 
 
 a {
-  color: $brand-primary;
-  font-weight: bold;
+  color: $brand-links;
   text-decoration: none;
-  &:hover {
-    color: $brand-links;
-  }
+//   &:hover {
+//     color: $brand-links;
+//   }
 }
 
 .flexboxA {
