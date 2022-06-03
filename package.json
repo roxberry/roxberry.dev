@@ -16,6 +16,7 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
+    "@fontsource/questrial": "^4.5.8",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
@@ -27,7 +28,7 @@
     "gatsby-plugin-fontawesome-css": "^1.2.0",
     "gatsby-plugin-image": "^2.5.2",
     "gatsby-plugin-react-helmet": "^5.5.0",
-    "gatsby-plugin-sass": "^5.10.0",
+    "gatsby-plugin-sass": "^5.15.1",
     "gatsby-plugin-sharp": "^4.5.2",
     "gatsby-remark-images": "^6.10.1",
     "gatsby-remark-mermaid": "^2.1.0",
@@ -47,6 +48,7 @@
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
     "slug": "^5.2.0",
+    "typeface-questrial": "^1.1.13",
     "typeface-raleway": "^1.1.13",
     "typeface-roboto": "^1.1.13",
     "typeface-roboto-slab": "^1.1.13"
