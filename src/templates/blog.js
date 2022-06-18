@@ -33,7 +33,8 @@ const Blog = (props) => {
             </SEO>
             <section>
                 <h1 className="postTitle">{post.frontmatter.title}</h1>
-                <div className="postedInfo">posted on {post.frontmatter.date} by {post.frontmatter.author}</div>
+                <div className="postedInfo">posted on {post.frontmatter.date}</div>
+                {/* by {post.frontmatter.author}</div> */}
                 {
                     postImage && postImage.src && (
                         <div className="postImage">

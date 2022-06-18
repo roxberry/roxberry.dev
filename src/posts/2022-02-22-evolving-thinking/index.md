@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "What makes me tick?"
+title: "Evolving thinking, people and systems"
 subtitle: "If you fell down yesterday, stand up today. - H. G. Wells"
 comments: true
 date: 2022-02-22 09:00:00

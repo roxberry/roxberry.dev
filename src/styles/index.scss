@@ -11,85 +11,86 @@ $sidebar-width: 200px;
 
 html,
 body {
-  margin: 0;
+    margin: 0;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  font-family: $brand-font; //, sans-serif;
-  font-weight: 300;
-  font-size: 1.14em;
-  line-height: 1.3em;
-  // font-display: auto;
-  color: rgba(255, 255, 255, 0.8);
-  background-color: $brand-body-background !important;
+    display: flex;
+    flex-direction: column;
+    font-family: $brand-font; //, sans-serif;
+    font-weight: 300;
+    font-size: 1.14em;
+    line-height: 1.3em;
+    // font-display: auto;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: $brand-body-background !important;
 }
 
 .container {
-  margin: 0 auto;
-  //max-width: 1250px; //was 750px
-  //   padding: 1rem;
+    margin: 0 auto;
+    //max-width: 1250px; //was 750px
+    //   padding: 1rem;
 
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 
 }
 
 header {
-  background-color: $brand-header-background;
-  color: $brand-primary;
-  display: flex;
-  justify-content: center;
-  line-height: 2;
+    background-color: $brand-header-background;
+    color: $brand-primary;
+    display: flex;
+    justify-content: center;
+    line-height: 2;
 }
 
 .sub-header {
-  display: flex;
-  // flex: 0 0 1150px;
-  //flex: 0 0 1150px;
-  //justify-content: space-between;
-  //width: $container-width;
-  // border: 2px solid red; //for design purposes
+    display: flex;
+    // flex: 0 0 1150px;
+    //flex: 0 0 1150px;
+    //justify-content: space-between;
+    //width: $container-width;
+    // border: 2px solid red; //for design purposes
 }
 
 .disclaimer {
-  width: 100%;
-  background-color: $brand-disclaimer;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
-  display: flex;
-  justify-content: center;
-  span {
-    padding: 0.25em 0em;
-    color: $disclaimer-color;
-    //width: $container-width;
-    // border: 2px solid red; //for design purposes
-    text-align: center;
-  }
+    width: 100%;
+    background-color: $brand-disclaimer;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: center;
+
+    span {
+        padding: 0.25em 0em;
+        color: $disclaimer-color;
+        //width: $container-width;
+        // border: 2px solid red; //for design purposes
+        text-align: center;
+    }
 }
 
 main {
-  display: flex;
-  min-height: 0;
-  //margin-right: auto;
-  //margin-left: auto;
-  //width: $container-width;
-  flex: 1;
-  //border: 2px solid red;//for design purposes
+    display: flex;
+    min-height: 0;
+    //margin-right: auto;
+    //margin-left: auto;
+    //width: $container-width;
+    flex: 1;
+    //border: 2px solid red;//for design purposes
 }
 
 aside {
-  background: $sidebar-background;
-  flex: 0 0 $sidebar-width;
-  overflow: auto;
-  padding: 2em 4em;
+    background: $sidebar-background;
+    flex: 0 0 $sidebar-width;
+    overflow: auto;
+    padding: 2em 4em;
 }
 
 section {
-  margin-top: 2em;
-  margin-bottom: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 //TODO WIP
@@ -105,9 +106,10 @@ section {
 // END
 
 pre {
-  white-space: pre-wrap;
-  overflow: auto;
+    white-space: pre-wrap;
+    overflow: auto;
 }
+
 // footer {
 //   padding: 2em;
 // }
@@ -115,60 +117,64 @@ pre {
 // index.js
 h1,
 .section-heading {
-  margin-top: 1em;
-  color: $brand-primary;
-  font-weight: bold;
-  line-height: 1.2;
-  // font-size: 2em;
-  border-bottom: 2px solid $brand-primary;
-  font-family: $brand-heading-font;
+    //   margin-top: 1em;
+    color: $brand-primary;
+    font-weight: bold;
+    line-height: 1.2;
+    // font-size: 2em;
+    //   border-bottom: 2px solid $brand-primary;
+    font-family: $brand-heading-font;
 }
 
 h2 {
-  margin: unset;
-  margin-top: 1em;
-  color: $brand-primary;
-  font-weight: bold;
-  line-height: 1.2;
-  font-family: $brand-heading-font;
+    margin: unset;
+    margin-top: 1em;
+    color: $brand-primary;
+    font-weight: bold;
+    line-height: 1.2;
+    font-family: $brand-heading-font;
 }
 
 h3,
 h4,
 h5 {
-  margin: unset;
-  margin-top: 1em;
-  color: $brand-primary;
-//   color: $brand-links;
+    margin: unset;
+    margin-top: 1em;
+    color: $brand-primary;
+    //   color: $brand-links;
 
-  font-weight: bold;
-  font-family: $brand-heading-font;
+    font-weight: bold;
+    font-family: $brand-heading-font;
 }
 
 
 a {
-  color: $brand-links;
-  text-decoration: none;
-//   &:hover {
-//     color: $brand-links;
-//   }
+    color: $brand-links;
+    text-decoration: none;
+    //   &:hover {
+    //     color: $brand-links;
+    //   }
 }
 
 .flexboxA {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  a {
-    font-weight: unset;
-    color: unset;
-  }
-  > div {
-    width: 32%;
-    .postedInfo {
-      font-size: 0.8em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    a {
+        font-weight: unset;
+        color: unset;
     }
-    margin-bottom: 5em;
-  }
+
+    >div {
+        width: 32%;
+
+        .postedInfo {
+            font-size: 0.8em;
+        }
+
+        margin-bottom: 5em;
+    }
 }
 
 // .box {
@@ -185,145 +191,156 @@ a {
 
 // header styles
 .leftSide {
-  flex-direction: row;
-  display: flex;
-  align-items: center;
-  padding-left: 2vw;
-  // border: 2px solid red; //for design purposes
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    padding-left: 2vw;
+    // border: 2px solid red; //for design purposes
 }
 
 .leftSide .title {
-  font-size: 1.5em;
-  //text-decoration: none;
-  color: $brand-primary;
-  font-family: $brand-heading-font;
-  font-weight: bold;
+    font-size: 1.5em;
+    //text-decoration: none;
+    color: $brand-primary;
+    font-family: $brand-heading-font;
+    font-weight: bold;
 }
 
 .leftSide .title.active {
-  font-weight: bold;
-  color: $brand-primary;
+    font-weight: bold;
+    color: $brand-primary;
 }
 
 .leftSide ul {
-  display: flex;
-  list-style-type: none;
+    display: flex;
+    list-style-type: none;
 }
 
 .leftSide ul a {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.5);
-  font-weight: normal;
-  &:hover {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: normal;
+
+    &:hover {
+        color: $brand-primary;
+    }
+}
+
+.header-menu-item,
+.category-item,
+.tagLine {
+    font-family: $brand-heading-font;
+}
+
+.header-menu-item.active,
+.category-item.active {
+    font-weight: bold;
     color: $brand-primary;
-  }
-}
-
-.header-menu-item, .category-item, .tagLine {
-  font-family: $brand-heading-font;
-}
-
-.header-menu-item.active, .category-item.active {
-  font-weight: bold;
-  color: $brand-primary;
 }
 
 .leftSide ul li {
-  margin-right: 1em;
+    margin-right: 1em;
 }
 
 .tagList {
-  //height: 0;
-  // transition: all .5s ease-in-out;
-  //visibility: hidden;
+    //height: 0;
+    // transition: all .5s ease-in-out;
+    //visibility: hidden;
 
-  &[data-active='true'] {
-    height: auto;
-    opacity: 1;
-    visibility: visible;
-  }
+    &[data-active='true'] {
+        height: auto;
+        opacity: 1;
+        visibility: visible;
+    }
 }
+
 .tagList li {
-  margin-bottom: .5em;
+    margin-bottom: .5em;
 }
 
 .rightSide {
-  // display: flex;
-  // align-items: center;
-  margin-left: auto;
-  padding-right: 2vw;
+    // display: flex;
+    // align-items: center;
+    margin-left: auto;
+    padding-right: 2vw;
 }
 
 // sidebar start
 .profile {
-  border-radius: 100%;
-  background: transparent;
+    border-radius: 100%;
+    background: transparent;
 }
 
-.profile > div {
-  border-radius: 100%;
-  background: transparent;
+.profile>div {
+    border-radius: 100%;
+    background: transparent;
 }
+
 .profile img {
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 100%;
-  background: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100%;
+    background: transparent;
 }
+
 // sidebar end
 
 aside section {
-  // width: 200px;
-  flex: 0 0 200px;
+    // width: 200px;
+    flex: 0 0 200px;
 }
 
 .social-icons ul {
-  display: flex;
-  list-style-type: none;
-  padding-inline-start: unset;
-  justify-content: space-between;
+    display: flex;
+    list-style-type: none;
+    padding-inline-start: unset;
+    justify-content: space-between;
 }
 
 .social-icons ul li {
-  // margin-right: .5em;
-  font-size: 1.25em;
-  padding: 5px;
+    // margin-right: .5em;
+    font-size: 1.25em;
+    padding: 5px;
 }
 
 // blog post
 /* The overlay effect - lays on top of the container and over the image */
 .overlay {
-  position: absolute;
-  bottom: 0;
-  // background: rgb(0, 0, 0);
-  // background: rgba(0, 0, 0, 0.7); /* Black see-through */
-  background: $brand-overlay;
-  opacity: .8;
-  color: #f1f1f1;
-  width: 100%;
-  transition: 0.5s ease;
-  // opacity: 1;
-  color: white;
-  font-size: 20px;
-  //padding: 20px;
-  // text-align: center;
+    position: absolute;
+    bottom: 0;
+    // background: rgb(0, 0, 0);
+    // background: rgba(0, 0, 0, 0.7); /* Black see-through */
+    background: $brand-overlay;
+    opacity: .8;
+    color: #f1f1f1;
+    width: 100%;
+    transition: 0.5s ease;
+    // opacity: 1;
+    color: white;
+    font-size: 20px;
+    //padding: 20px;
+    // text-align: center;
 }
 
 .innerOverlayText {
-  padding: 20px;
+    padding: 20px;
 }
 
 // * {box-sizing: border-box}
 
+.sectionTitle {
+    border-bottom: 2px solid $brand-primary;
+}
+
 /* Container needed to position the overlay. Adjust the width as needed */
 .postTitle {
-  margin-bottom: unset;
+    margin-bottom: unset;
 }
 
 .postImage {
-  position: relative;
-  // width: 50%;
-  // max-width: 300px;
+    position: relative;
+    // width: 50%;
+    // max-width: 300px;
 }
 
 .gatsby-image-wrapper {
@@ -331,18 +348,18 @@ aside section {
 }
 
 .postedInfo {
-  font-size: .8em;
-  color: $gray;
-  margin-top: .5em;
-  margin-bottom: 2em;
+    font-size: .8em;
+    color: $gray;
+    margin-top: .5em;
+    margin-bottom: 2em;
 }
 
 .postExcerpt {
-  word-wrap: break-word;
+    word-wrap: break-word;
 }
 
 .postQuote {
-  font-style: italic;
+    font-style: italic;
 }
 
 
@@ -351,28 +368,31 @@ aside section {
 // }
 
 .blogBody {
-  margin-bottom: 5em;
+    margin-bottom: 5em;
 }
 
 code {
-  font-size: 87.5%;
-  color: $amber;
-  word-break: break-word;
+    font-size: 87.5%;
+    color: $amber;
+    word-break: break-word;
 }
 
 blockquote {
-  margin: 20px;
-  font-size: 1.25em;
-  p {
-    padding: 20px;
-    border-left: $brand-primary 4px solid;
-  }
-  p::before {
-    content: '\201C';
-  }
-  p::after {
-    content: '\201D';
-  }
+    margin: 20px;
+    font-size: 1.25em;
+
+    p {
+        padding: 20px;
+        border-left: $brand-primary 4px solid;
+    }
+
+    p::before {
+        content: '\201C';
+    }
+
+    p::after {
+        content: '\201D';
+    }
 }
 
 @import "pager";
@@ -381,67 +401,64 @@ blockquote {
 
 
 .sub-header {
-  width: 100%;
-  height: 64px;
-  // margin: 0 2vw;
+    width: 100%;
+    height: 64px;
+    // margin: 0 2vw;
 }
 
 main {
-  // margin: 0 2vw;
+    // margin: 0 2vw;
 }
 
 article {
-  //max-width: 1200px;
-  width: 100%;
-  line-height: 1.5;
+    //max-width: 1200px;
+    width: 100%;
+    line-height: 1.5;
 }
 
-@media only screen
-and (max-width: 768px) {
-  header {
-    .rightSide {
+@media only screen and (max-width: 768px) {
+    header {
+        .rightSide {
+            display: none;
+        }
+
+        nav {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    aside {
+        width: 0px;
         display: none;
     }
-    nav {
-        display: none;
+
+    .flexbox>div {
+        // margin: 2rem 0;
+        width: 100%;
     }
-  }
+
+    article {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
 }
 
-@media only screen
-and (max-width: 880px) {
-  aside {
-    width: 0px;
-    display: none;
-  }
-
-  .flexbox > div {
-    margin: 2rem 0;
-    width: 100%;
-  }
-
-  article {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
+@media only screen and (min-width: 881px) {
+    article {
+        margin-left: 5rem;
+        margin-right: 2rem;
+    }
 }
 
-@media only screen
-and (min-width: 881px) {
-  article {
-    margin-left: 5rem;
-    margin-right: 2rem;
-  }
-}
+@media only screen and (min-width: 1200px) {
+    .sub-header {
+        width: 100%;
+        margin: 0 10rem;
+    }
 
-@media only screen
-and (min-width: 1200px) {
-  .sub-header {
-    width: 100%;
-    margin: 0 10rem;
-  }
-
-  main {
-    margin: 0 10rem;
-  }
+    main {
+        margin: 0 10rem;
+    }
 }
