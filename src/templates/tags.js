@@ -38,8 +38,8 @@ const Tags = ({ pageContext, data }) => {
                   )
               }
               <section>
-                <h3>{node.frontmatter.title}</h3>
-                <div className="postedInfo">posted on {node.frontmatter.date}</div>
+                <h3>{node.frontmatter.title}</h3> 
+                <div className="postedInfo">posted on {node.frontmatter.date} | tags: {node.frontmatter.tags}</div>
                 <p>{node.frontmatter.excerpt}</p>
               </section>
             </Link>
@@ -108,6 +108,7 @@ export const query = graphql`
               author
               excerpt
               featured
+              tags
               postimage
               {
                 alt
