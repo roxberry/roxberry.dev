@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 import Pager from "../components/Pager"
+import TagList from "../components/TagList"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { Link, graphql } from "gatsby"
 
@@ -37,9 +38,12 @@ class BlogIndex extends React.Component {
                                 >
                                     <Link to={edge.node.fields.slug}>
                                         <h1 className="postTitle">{edge.node.frontmatter.title}</h1>
+                                    </Link>
                                         <div className="postedInfo">
-                                            posted on {edge.node.frontmatter.date}
+                                            posted on {edge.node.frontmatter.date} | tags: [ <TagList tags= { edge.node.frontmatter.tags } /> ]
                                         </div>
+                                        <Link to={edge.node.fields.slug}>
+
                                         {postImage && postImage.src && (
                                             <GatsbyImage
                                                 image={postImage.src.childImageSharp.gatsbyImageData}
@@ -47,10 +51,11 @@ class BlogIndex extends React.Component {
                                                 layout="fullWidth"
                                             />
                                         )}
+                                                                            </Link>
+
                                         <div className="postExcerpt">
                                             <p>{edge.node.frontmatter.excerpt}</p>
                                         </div>
-                                    </Link>
                                 </div>
                             )
                         })}
@@ -95,6 +100,7 @@ export const pageQuery = graphql`
             author
             excerpt
             featured
+            tags
             postimage {
               alt
               src {

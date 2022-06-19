@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import SEO from '../components/SEO'
+import TagList from "../components/TagList"
 import Helmet from 'react-helmet'
 import { GatsbyImage } from "gatsby-plugin-image"
 import { graphql } from 'gatsby'
@@ -33,7 +34,7 @@ const Blog = (props) => {
             </SEO>
             <section>
                 <h1 className="postTitle">{post.frontmatter.title}</h1>
-                <div className="postedInfo">posted on {post.frontmatter.date}</div>
+                <div className="postedInfo">posted on {post.frontmatter.date}  | tags: [ <TagList tags= { post.frontmatter.tags } /> ]</div>
                 {/* by {post.frontmatter.author}</div> */}
                 {
                     postImage && postImage.src && (
@@ -78,6 +79,7 @@ export const query = graphql`
             date(formatString: "LL")
             author
             featured
+            tags
             postimage
             {
               alt
