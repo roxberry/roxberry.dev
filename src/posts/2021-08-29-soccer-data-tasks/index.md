@@ -36,7 +36,7 @@ title: "ETL with Python and Pandas for Soccer Scheduling"
   
 ### UPDATES WILL FOLLOW
   
-[SJSL GotSport Toolbox - ETL](https://github.com/SJSLORG/gotsport-toolbox/tree/main/etl)
+[SJSL GotSport Toolbox - ETL](https://github.com/SJSLORG/gotsport-toolbox/tree/main/arbiter_etl)
 
 Need to clean up code for public consumption
 
