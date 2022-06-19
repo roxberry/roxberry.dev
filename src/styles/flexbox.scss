@@ -7,7 +7,7 @@
     justify-content: space-between;
     // width: 60%;
     // height: 300px;
-    margin: auto;
+    // margin: auto;
   }
   
   .flexbox > div {
@@ -16,8 +16,8 @@
       10px - spacing between columns 
     */
     box-sizing: border-box;
-    margin: 20px 20px 0 0;
-    width: calc(1/2*100% - (1 - 1/2)*30px);
+    // margin: 20px 20px 0 0;
+    width: calc(1/1*100% - (1 - 1/1)*30px);
     // background: #46B980;
     padding: 0px;
     color: #fff;
@@ -31,7 +31,7 @@
     align last row columns to the left
     3n - 3 columns per row
   */
-  .flexbox > div:nth-child(2n) {
+  .flexbox > div:nth-child(1n) {
     margin-right: 0;
   }
   
@@ -44,6 +44,6 @@
     remove top margin from first row
     -n+3 - 3 columns per row 
   */
-  .flexbox > div:nth-child(-n+2) {
+  .flexbox > div:nth-child(-n+1) {
     margin-top: 0;
   }
