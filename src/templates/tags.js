@@ -39,7 +39,14 @@ const Tags = ({ pageContext, data }) => {
               }
               <section>
                 <h3>{node.frontmatter.title}</h3> 
-                <div className="postedInfo">posted on {node.frontmatter.date} | tags: {node.frontmatter.tags}</div>
+                <div className="postedInfo">posted on {node.frontmatter.date} | tags: [
+                { node.frontmatter.tags.map(( { tag }, i) => {
+                    <Link to={`/tags/${kebabCase(tag.fieldValue)}/`} className="category-item" activeClassName="active">
+                            {tag.fieldValue} ({tag.totalCount})
+                            </Link> |
+                  }
+                } ]
+                </div>
                 <p>{node.frontmatter.excerpt}</p>
               </section>
             </Link>
