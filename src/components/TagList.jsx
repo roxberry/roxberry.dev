@@ -6,7 +6,7 @@ const TagList = ({ tags }) => {
     console.log(tags);
     return (
         tags.map((tag, i) => {
-                let tagLink = "/tags/" + tag;
+                let tagLink = "/tags/" + kebabCase(tag);
                 return <a href={tagLink}>{ tag } </a>
             }
         )
