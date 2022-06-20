@@ -56,7 +56,7 @@
   "devDependencies": {
     "env-cmd": "^10.1.0",
     "prettier": "2.6.2",
-    "sass": "^1.49.9"
+    "sass": "^1.52.3"
   },
   "repository": {
     "type": "git",
