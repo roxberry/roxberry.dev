@@ -7,7 +7,7 @@ const TagList = ({ tags }) => {
     return (
         tags.map((tag, i) => {
                 let tagLink = "/tags/" + kebabCase(tag);
-                return <a href={tagLink}>{ tag } </a>
+                return <span>{(i ? ', ' : '')}<a href={tagLink} key={i} >{ tag }</a></span>
             }
         )
     )
