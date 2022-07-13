@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Gone on too long P-8 Missing or Insufficient Session Expiration"
+title: "Gone on too long, P-8 Missing or Insufficient Session Expiration"
 subtitle: "You pray for rain, you gotta deal with the mud too. That's a part of it. - Denzel Washington"
 comments: true
 date: 2022-07-12 11:00:00
