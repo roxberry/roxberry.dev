@@ -20,6 +20,8 @@ featured: true
 
 The [OWASP Top 10 Privacy Risks Project](https://owasp.org/www-project-top-10-privacy-risks/) identifies the top 10 privacy risks in web applications, the cloud and the global online ecosystem.  In September of 2021, version 2 of the project was released. I'm going to work through the list and discuss each risk, with references and mitigation countermeasures, if they exist.
 
+What is Session? [From MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Session)
+
 Poorly enforced session termination is a significant privacy risk.  Sessions may be reused for authorization to access user data without the user's consent or awareness.
 
 This risk can be mitigated by configuring shorter session expiration periods, implementing a logout function and avoiding "infinite" session timeouts.
