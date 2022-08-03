@@ -30,7 +30,7 @@
     "gatsby-plugin-react-helmet": "^5.5.0",
     "gatsby-plugin-sass": "^5.16.0",
     "gatsby-plugin-sharp": "^4.16.1",
-    "gatsby-remark-images": "^6.10.1",
+    "gatsby-remark-images": "^6.20.0",
     "gatsby-remark-mermaid": "^2.1.0",
     "gatsby-remark-prismjs": "^6.16.0",
     "gatsby-remark-relative-images": "^2.0.2",
