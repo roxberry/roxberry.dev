@@ -27,7 +27,7 @@ const Header = () => {
                 <StaticImage
                     // layout="fixed"
                     formats={["AUTO"]}
-                    src="../images/roxberry-dev-logo-250.webp"
+                    src="../images/roxberry-logo-robot.webp"
                     alt={data.site.siteMetadata.title}
                     placeholder="NONE"
                     background="#282828"

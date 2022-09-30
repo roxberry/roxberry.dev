@@ -10,7 +10,11 @@
         "titleBar.inactiveForeground": "#e7e7e799",
         "sash.hoverBorder": "#12b9ff",
         "statusBarItem.remoteBackground": "#009cde",
-        "statusBarItem.remoteForeground": "#e7e7e7"
+        "statusBarItem.remoteForeground": "#e7e7e7",
+        "commandCenter.border": "#e7e7e799"
     },
-    "peacock.color": "#009cde"
+    "peacock.color": "#009cde",
+    "cSpell.words": [
+        "postimage"
+    ]
 }

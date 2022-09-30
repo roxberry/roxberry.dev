@@ -45,7 +45,7 @@ const Blog = (props) => {
                             layout="fullWidth"
                             />
                             <div className="overlay">
-                                <div className="innerOverlayText" dangerouslySetInnerHTML={{__html: post.frontmatter.subtitle }}></div>
+                                <div className="innerOverlayText" dangerouslySetInnerHTML={{__html: post.frontmatter.excerpt }}></div>
                             </div>
                         </div>
                     )
@@ -76,6 +76,7 @@ export const query = graphql`
         frontmatter {
             title
             subtitle
+            excerpt
             date(formatString: "LL")
             author
             featured

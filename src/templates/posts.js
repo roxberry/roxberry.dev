@@ -45,17 +45,20 @@ class BlogIndex extends React.Component {
                                         <Link to={edge.node.fields.slug}>
 
                                         {postImage && postImage.src && (
-                                            <GatsbyImage
-                                                image={postImage.src.childImageSharp.gatsbyImageData}
-                                                alt={postImage.alt}
-                                                layout="fullWidth"
-                                            />
+                                            <div className="postImage">
+                                                <GatsbyImage
+                                                    image={postImage.src.childImageSharp.gatsbyImageData}
+                                                    alt={postImage.alt}
+                                                    layout="fullWidth"
+                                                />
+                                                <div className="overlay">
+                                                    <div className="innerOverlayText" dangerouslySetInnerHTML={{__html: edge.node.frontmatter.excerpt }}></div>
+                                                </div>
+                                            </div>
                                         )}
-                                                                            </Link>
+                                    </Link>
 
-                                        <div className="postExcerpt">
-                                            <p>{edge.node.frontmatter.excerpt}</p>
-                                        </div>
+
                                 </div>
                             )
                         })}
