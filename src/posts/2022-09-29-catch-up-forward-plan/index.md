@@ -30,6 +30,7 @@ Last week, I wrapped up work at a client where I was both architect and engineer
 
 ### My Present State
 
+- Working on a Swift project
 - Some architectural deep diving on microservices, Kafka and Elastic.
 - AWS Partner: Well-Architected Best Practices (Technical).
 - Some work looking at Microsoft Teams App development at the Microsoft Teams Developer Portal.
@@ -42,10 +43,9 @@ Of all the things I want to do, what can I complete?
 
 ### References
 
+1. [Beginning Firebase for iOS](https://www.raywenderlich.com/22029618-beginning-firebase-for-ios)
 1. [Google Cloud Platform](https://cloud.google.com)
-1. [
-Event-Driven Microservices: Spring Boot, Kafka and Elastic
-](https://www.udemy.com/course/event-driven-microservices-spring-boot-kafka-and-elasticsearch/learn/lecture/23054088#overview)
+1. [Event-Driven Microservices: Spring Boot, Kafka and Elastic](https://www.udemy.com/course/event-driven-microservices-spring-boot-kafka-and-elasticsearch/learn/lecture/23054088#overview)
 1. [AWS Partner: Well-Architected Best Practices (Technical)](https://www.aws.training/Details/InstructorLedTraining?id=107244)
 1. [Microsoft Teams Developer Portal](https://dev.teams.microsoft.com/home)
 1. [Security Best Practices in Google Cloud](https://app.pluralsight.com/library/courses/security-best-practices-google-cloud-5)
