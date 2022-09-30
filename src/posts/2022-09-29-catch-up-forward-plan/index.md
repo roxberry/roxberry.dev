@@ -5,7 +5,7 @@ subtitle: "Never look back unless you are planning to go that way. - Henry David
 comments: true
 date: 2022-09-29 11:00:00
 author: Mark Roxberry
-excerpt: 
+excerpt: Past, Present and Future Stuff
 tags: [planning]
 categories:
   - 
