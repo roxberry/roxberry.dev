@@ -454,11 +454,12 @@ article {
 
 @media only screen and (min-width: 1200px) {
     .sub-header {
-        width: 100%;
-        margin: 0 10rem;
+        margin: 0 auto;
+        max-width: 1280px;
     }
 
     main {
-        margin: 0 10rem;
+        margin: 0 auto;
+        max-width: 1280px;
     }
 }
