@@ -18,15 +18,29 @@ featured: true
 
 ## Catch Up, Planning Forward
 
-### Where I've been
+### Facets
+
+I'm taking a snapshot now - work, volunteer, professional and personal facets of my life.
 
 #### Work
 
+I am always working, happy to be in my field - which is somewhere between nomadic developer and enterprise architect.  I've been more on the architect side recently, with a focus on cloud platforms and interoperability (always the *ilities*). And of course everything converges with security, identity and safe architecture.
+
+TODO: Safe architecture is something to think about for a blog post or series.
+
 Last week, I wrapped up work at a client where I was both architect and engineer.  I spent some time and worked with cool stuff in the Google Cloud Platform (GCP).  Learned a few products and published several architectural decision records (ADRs).  I also was the lead engineer for a good security project to solve root registration by creating an out of band account management feature.
 
-#### SJSL
+#### Volunteer
+
+On the SJSL side (as Information Officer), I have many projects running concurrently.  I want credit card payments, an integrated referee platform and soon a new website.  I am working with the various people and organizations to get buy in and ideas.
+
 #### Professional
+
+I lined up a few training series - Software Architecture Fundamentals on O'Reilly, GCP, Security Best Practices on Google Cloud.  I spend at least an hour in training on something each day, if not more.
+
 #### Personal
+
+I started a personal project to reverse translate the Russian translation of The Silmarillion, Сильмариллион for fun.  Checking out Brandon Sanderson's class and reading Stephen King's "On Writing" for a writing project.
 
 ### My Present State
 
