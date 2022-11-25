@@ -18,7 +18,7 @@
   "dependencies": {
     "@fontsource/questrial": "^4.5.10",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
-    "@fortawesome/free-brands-svg-icons": "^6.1.1",
+    "@fortawesome/free-brands-svg-icons": "^6.2.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@fortawesome/react-fontawesome": "^0.1.18",
     "disqus-react": "^1.1.3",
