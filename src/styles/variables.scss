@@ -14,6 +14,7 @@ $gray-dark: rgb(40,40,40);
 $new-year-gold: rgb(252,194,0);
 $new-year-gold-disclaimer: rgb(207,181,59);
 $kelley-green: rgb(76,187,23);
+$christmas-green: #00873E;
 $gray-dark-transparent: rgba(40,40,40, .8);
 $gray: #798088;
 $white-faded: fade(white, 80%);
@@ -53,10 +54,10 @@ $brand-header-background: $default-contrast;
 $brand-body-background: $default;
 $brand-overlay: $default-contrast;
 $brand-primary: $white;
-$brand-links: $orange;
+$brand-links: $christmas-green;
 $brand-primary-banner: $white;
 $brand-navbar: $default;
-$brand-disclaimer: $orange; // highlight
+$brand-disclaimer: $christmas-green; // highlight
 $brand-font: 'Roboto'; // 'Raleway';
 $brand-heading-font: 'Questrial';
 
