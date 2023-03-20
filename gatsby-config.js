@@ -45,13 +45,13 @@ module.exports = {
           //   //   showLineNumbers: true,
           //   // }
           // },
-          "gatsby-remark-mermaid",
-          {
-            resolve: "gatsby-remark-vscode",
-            options: {
-              theme:  "Dark+ (default dark)" // Or install your favorite theme from GitHub
-            }
-          },
+        //   "gatsby-remark-mermaid",
+        //   {
+        //     resolve: "gatsby-remark-vscode",
+        //     options: {
+        //       theme:  "Dark+ (default dark)" // Or install your favorite theme from GitHub
+        //     }
+        //   },
           "gatsby-remark-relative-images",
           {
             resolve: "gatsby-remark-images",
@@ -82,7 +82,7 @@ module.exports = {
     //     doctype: `HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"`,
     //   },
     // },
-    "gatsby-plugin-fontawesome-css",
+    // "gatsby-plugin-fontawesome-css",
     {
       resolve: "gatsby-plugin-feed",
       options: {
