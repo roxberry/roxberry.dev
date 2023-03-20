@@ -5,7 +5,7 @@ subtitle: "Either write something worth reading or do something worth writing. -
 comments: true
 date: 2023-03-19 23:00:00
 author: Mark Roxberry
-excerpt: "Maybe something worth reading, maybe something worth remembering.  Touchpoint notes for "
+excerpt: "Maybe something worth reading, maybe something worth remembering.  Touchpoint notes for March 2023."
 tags: [planning]
 categories:
   - planning
