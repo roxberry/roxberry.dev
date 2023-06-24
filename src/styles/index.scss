@@ -230,12 +230,13 @@ a {
 .category-item,
 .tagLine {
     font-family: $brand-heading-font;
+    color: azure;
 }
 
 .header-menu-item.active,
 .category-item.active {
     font-weight: bold;
-    color: $brand-primary;
+    // color: $brand-primary;
 }
 
 .leftSide ul li {
@@ -288,6 +289,10 @@ a {
 aside section {
     // width: 200px;
     flex: 0 0 200px;
+}
+
+.social-icons a {
+    color: azure;
 }
 
 .social-icons ul {

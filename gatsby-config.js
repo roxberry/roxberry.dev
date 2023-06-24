@@ -13,7 +13,7 @@ module.exports = {
         author: "Mark Roxberry",
         keywords: ["roxberry", "journal", "development"],
         featuredTags: ["Russia", "development", "performance", "robotics", "security", "privacy", "apple", "soccer"],
-        version: "2022.09.29.01",
+        version: "2023.06.24.01",
     },
     plugins: [
         "gatsby-plugin-sass",

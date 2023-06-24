@@ -1,6 +1,8 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
+const currentYear = new Date().getFullYear();
+
 const Footer = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -14,7 +16,7 @@ const Footer = () => {
   `)
   return (
     <footer>
-        © 2022 {data.site.siteMetadata.author} (v{data.site.siteMetadata.version})
+        © {currentYear} {data.site.siteMetadata.author} (v{data.site.siteMetadata.version})
     </footer>
   )
 }

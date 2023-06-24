@@ -1,6 +1,7 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+// import { Helmet } from 'react-helmet';
 
 const Header = () => {
 
@@ -19,7 +20,7 @@ const Header = () => {
     <header>
       {/* <Helmet>
           <meta charSet="utf-8" />
-          <title>{data.site.siteMetadata.title}</title>
+          <title>test {data.site.siteMetadata.title}</title>
       </Helmet> */}
       <div className="sub-header">
         <div className="leftSide">

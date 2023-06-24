@@ -30,20 +30,19 @@ const Tags = ({ pageContext, data }) => {
                                 <Link to={node.fields.slug}><h1 className="postTitle">{node.frontmatter.title}</h1></Link>
                                 <div className="postedInfo">posted on {node.frontmatter.date} | tags: [ <TagList tags= { node.frontmatter.tags } /> ]</div>
                                 <Link to={node.fields.slug}>
-                                    {
-                                        postImage && postImage.src && (
+                                    {postImage && postImage.src && (
+                                        <div className="postImage">
                                             <GatsbyImage
                                                 image={postImage.src.childImageSharp.gatsbyImageData}
                                                 alt={postImage.alt}
                                                 layout="fullWidth"
                                             />
-                                        )
-                                    }
+                                            <div className="overlay">
+                                                <div className="innerOverlayText" dangerouslySetInnerHTML={{__html: node.frontmatter.excerpt }}></div>
+                                            </div>
+                                        </div>
+                                    )}
                                 </Link>
-
-                                    <section>
-                                        <p>{node.frontmatter.excerpt}</p>
-                                    </section>
                             </div>
                         )
                     })}
