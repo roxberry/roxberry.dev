@@ -3,6 +3,8 @@
  *
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
+const fs = require('fs')
+const path = require('path')
 
 module.exports = {
     siteMetadata: {
@@ -13,7 +15,7 @@ module.exports = {
         author: "Mark Roxberry",
         keywords: ["roxberry", "journal", "development"],
         featuredTags: ["Russia", "development", "performance", "robotics", "security", "privacy", "apple", "soccer"],
-        version: "2023.06.24.01",
+        version: "2023.07.15.01",
     },
     plugins: [
         "gatsby-plugin-sass",
@@ -59,7 +61,16 @@ module.exports = {
                     //         theme: "Dark+ (default dark)" // Or install your favorite theme from GitHub
                     //     }
                     // },
-                    "gatsby-remark-relative-images",
+                    {
+                        resolve: `gatsby-remark-mermaid`,
+                        options: /** @type {import('gatsby-remark-mermaid').Options} */ ({
+                            mermaidConfig: {
+                                theme: 'neutral',
+                                themeCSS: '.node rect { fill: #fff; }'
+                            }
+                        })
+                    },
+                    "gatsby-remark-relative-images-v2",
                     {
                         resolve: "gatsby-remark-images",
                         options: {
@@ -148,6 +159,39 @@ module.exports = {
                         // link: "https://feeds.feedburner.com/gatsby/blog",
                     },
                 ],
+            },
+        },
+        {
+            resolve: 'gatsby-plugin-local-search',
+            options: {
+                name: 'blog',
+                query: `
+                {
+                    allMarkdownRemark {
+                      nodes {
+                        id
+                        frontmatter {
+                          title
+                          excerpt
+                        }
+                        fields {
+                            slug
+                          }
+                      }
+                    }
+                  }
+                `,
+                engine: 'flexsearch',
+                engineOptions: 'speed',
+                ref: 'id',
+                index: ['title'],
+                store: ['id', 'title', 'slug'],
+                normalizer: ({ data }) =>
+                data.allMarkdownRemark.nodes.map((node) => ({
+                    id: node.id,
+                    title: node.frontmatter.title,
+                    slug: node.fields.slug
+                })),
             },
         },
     ],

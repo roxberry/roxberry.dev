@@ -1,27 +1,15 @@
 import React from "react"
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
-import Pager from "../components/Pager"
-import TagList from "../components/TagList"
-import { StaticImage, GatsbyImage } from "gatsby-plugin-image"
-import { Link, graphql } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 
-class BlogIndex extends React.Component {
-    render() {
-        const { data } = this.props
-        const siteTitle = data.site.siteMetadata.title
-        const posts = data.allMarkdownRemark.edges
-        const { currentPage, numPages } = this.props.pageContext
-        const isFirst = currentPage === 1
-        const isLast = currentPage === numPages
-        const prevPage = currentPage - 1 === 1 ? "/" : "/" + (currentPage - 1).toString()
-        const nextPage = "/" + (currentPage + 1).toString()
+const ProjectsPage = () => {
+    return (
+        <Layout>
+            <SEO title="Projects" />
 
-        return (
-            <Layout location={this.props.location} title={siteTitle}>
-                <SEO title="Welcome!" />
-                <section>
-                <h1 className="sectionTitle">Featured Projects</h1>
+            <section>
+                <h1 className="sectionTitle">Projects</h1>
                 <div className="flexbox-widex">
                     <div class="project-card-wide">
                         <div class="project-card-image">
@@ -148,104 +136,9 @@ class BlogIndex extends React.Component {
                     </div>
                 </div>
             </section>
-                <section>
-                    <h1 className="sectionTitle">Latest Posts</h1>
-                    <div className="flexbox">
-                        {data.allMarkdownRemark.edges.map((edge, i) => {
-                            const postImage = edge.node.frontmatter.postimage
 
-                            return (
-                                <div
-                                    key={edge.node.fields.slug + i.toString()}
-                                    className="post"
-                                >
-                                    <Link to={edge.node.fields.slug}>
-                                        <h1 className="postTitle">{edge.node.frontmatter.title}</h1>
-                                    </Link>
-                                    <div className="postedInfo">
-                                        posted on {edge.node.frontmatter.date} | tags: [ <TagList tags={edge.node.frontmatter.tags} /> ]
-                                    </div>
-                                    <Link to={edge.node.fields.slug}>
-
-                                        {postImage && postImage.src && (
-                                            <div className="postImage">
-                                                <GatsbyImage
-                                                    image={postImage.src.childImageSharp.gatsbyImageData}
-                                                    alt={postImage.alt}
-                                                    layout="fullWidth"
-                                                />
-                                                <div className="overlay">
-                                                    <div className="innerOverlayText" dangerouslySetInnerHTML={{ __html: edge.node.frontmatter.excerpt }}></div>
-                                                </div>
-                                            </div>
-                                        )}
-                                    </Link>
-
-
-                                </div>
-                            )
-                        })}
-
-                        <Pager
-                            isFirst={isFirst}
-                            isLast={isLast}
-                            prevPage={prevPage}
-                            nextPage={nextPage}
-                            currentPage={currentPage}
-                            numPages={numPages} />
-
-                    </div>
-                </section>
-            </Layout>
-        )
-    }
+        </Layout>
+    )
 }
 
-export default BlogIndex
-
-export const pageQuery = graphql`
-  query blogPageQuery($skip: Int!, $limit: Int!) {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { featured: { eq: true } } }
-      limit: $limit
-      skip: $skip
-    ) {
-      edges {
-        node {
-          excerpt
-          frontmatter {
-            title
-            subtitle
-            date(formatString: "LL")
-            author
-            excerpt
-            featured
-            tags
-            postimage {
-              alt
-              src {
-                absolutePath
-                childImageSharp {
-                  gatsbyImageData(
-                    layout: FULL_WIDTH
-                    placeholder: BLURRED
-                    formats: [AUTO, WEBP, AVIF]
-                  )
-                }
-              }
-            }
-          }
-          fields {
-            slug
-          }
-        }
-      }
-    }
-  }
-`
+export default ProjectsPage

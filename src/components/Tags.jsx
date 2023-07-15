@@ -45,7 +45,8 @@ const Tags = () =>  {
         {data.allMarkdownRemark.group
             .sort((a,b) => { return a.fieldValue.toLowerCase().localeCompare(b.fieldValue.toLowerCase()); })
             .map(tag => 
-                { if (featuredTags.indexOf(tag.fieldValue) > -1)
+                { if (1==1)
+                // { if (featuredTags.indexOf(tag.fieldValue) > -1)
                     return (
                         <li key={tag.fieldValue} >
                             {/* <span className="fa-li"><i className="fas fa-tag"></i></span> */}

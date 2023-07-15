@@ -4,7 +4,7 @@ const { createFilePath } = require("gatsby-source-filesystem")
 const {
   extractMetadataFromFilename,
   isBlogPostFileName,
-} = require("./src/util/posthelper")
+} = require("./src/utils/posthelper")
 
 module.exports.onCreateNode = ({ node, getNode, actions }) => {
   if (1 == 1) {
@@ -138,7 +138,7 @@ module.exports.createPages = async ({ graphql, actions, reporter }) => {
   })
 
   // Create blog post list pages
-  const postsPerPage = 6
+  const postsPerPage = 3
 
   const totalFeaturedPosts = posts.filter(p => p.node.frontmatter.featured).length
 

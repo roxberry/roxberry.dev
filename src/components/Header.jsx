@@ -5,7 +5,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const Header = () => {
 
-  const data = useStaticQuery(graphql`
+    const data = useStaticQuery(graphql`
     query {
       site {
         siteMetadata {
@@ -16,57 +16,66 @@ const Header = () => {
     }
   `)
 
-  return (
-    <header>
-      {/* <Helmet>
+    return (
+        <header>
+            {/* <Helmet>
           <meta charSet="utf-8" />
           <title>test {data.site.siteMetadata.title}</title>
       </Helmet> */}
-      <div className="sub-header">
-        <div className="leftSide">
-            <Link to="/" className="title" activeClassName="active">
-                <StaticImage
-                    layout="fixed"
-                    width={200}
-                    formats={["AUTO"]}
-                    src="../images/roxberry-logo-robot.webp"
-                    alt={data.site.siteMetadata.title}
-                    placeholder="NONE"
-                    background="#282828"
-                    loading="eager"
-                />
-            </Link>
-          <nav>
-            {/* <input className="menu-btn" type="checkbox" id="menu-btn" />
+            <div className="sub-header">
+                <div className="leftSide">
+                    <Link to="/" className="title" activeClassName="active">
+                        <StaticImage
+                            layout="fixed"
+                            width={200}
+                            formats={["AUTO"]}
+                            src="../images/roxberry-logo-robot.webp"
+                            alt={data.site.siteMetadata.title}
+                            placeholder="NONE"
+                            background="#282828"
+                            loading="eager"
+                        />
+                    </Link>
+                    <nav>
+                        {/* <input className="menu-btn" type="checkbox" id="menu-btn" />
             <label className="menu-icon" for="menu-btn"><span class="navicon"></span></label> */}
 
-            <ul className="menu">
-              {/* <li>
+                        <ul className="menu">
+                            <li>
+                                <Link to="/about" className="header-menu-item" activeClassName="active">About Me</Link>
+                            </li>
+                            <li>
+                                <Link to="/projects" className="header-menu-item" activeClassName="active">Projects</Link>
+                            </li>
+                            <li>
+                                <Link to="/contact" className="header-menu-item" activeClassName="active">Contact</Link>
+                            </li>
+                            {/* <li>
                 <Link to="/tags/planning" className="header-menu-item" activeClassName="active">Planning</Link>
               </li> */}
-              {/* <li>
+                            {/* <li>
                 <Link to="/contact" className="header-menu-item" activeClassName="active">Contact</Link>
               </li> */}
-              {/* <li>
+                            {/* <li>
                 <Link to="/tags/nwrpg" className="header-menu-item" activeClassName="active">NWRPG</Link>
               </li> */}
-                {/* <li>
+                            {/* <li>
                 <Link to="/blog" className="header-menu-item"  activeClassName="active">Blog</Link>
               </li> */}
-            </ul>
-          </nav>
-        </div>
-        <div className="center">
-          
-        </div>
-        <div className="rightSide">
-          {/* <p className="tagLine">architect, writer, strategist, technologist</p>
+                        </ul>
+                    </nav>
+                </div>
+                <div className="center">
+
+                </div>
+                <div className="rightSide">
+                    {/* <p className="tagLine">architect, writer, strategist, technologist</p>
           <p className="tagLine">Always look on the bright side of life.</p>  */}
-          <p className="tagLine">Quis custodiet ipsos custodes?</p>
-        </div>
-      </div>
-    </header>
-  )
+                    <p className="tagLine">Quis custodiet ipsos custodes?</p>
+                </div>
+            </div>
+        </header>
+    )
 }
 
 export default Header

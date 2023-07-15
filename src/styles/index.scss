@@ -1,6 +1,6 @@
 @import "variables";
 @import "flexbox";
-
+@import "flexbox-wide";
 // for debugging styles, uncomment for outlining.
 // *:hover { 
 //   outline:1px blue solid;
@@ -86,6 +86,11 @@ aside {
     flex: 0 0 $sidebar-width;
     overflow: auto;
     padding: 2em 4em;
+}
+
+article {
+    width: 600px;
+    line-height: 1.5;
 }
 
 section {
@@ -415,11 +420,6 @@ main {
     // margin: 0 2vw;
 }
 
-article {
-    //max-width: 1200px;
-    width: 100%;
-    line-height: 1.5;
-}
 
 @media only screen and (max-width: 768px) {
     header {

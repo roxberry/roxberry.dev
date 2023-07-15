@@ -12,7 +12,7 @@ const SideBar = () => {
                     className="profile"
                     layout="fixed"
                     formats={["AUTO", "WEBP", "AVIF"]}
-                    src="../images/profile.1.jpg"
+                    src="../images/profile.3.jpg"
                     quality={95}
                     alt="Profile picture"
                     style={{ borderRadius: '100%' }}
