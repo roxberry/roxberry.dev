@@ -61,15 +61,15 @@ module.exports = {
                     //         theme: "Dark+ (default dark)" // Or install your favorite theme from GitHub
                     //     }
                     // },
-                    {
-                        resolve: `gatsby-remark-mermaid`,
-                        options: /** @type {import('gatsby-remark-mermaid').Options} */ ({
-                            mermaidConfig: {
-                                theme: 'neutral',
-                                themeCSS: '.node rect { fill: #fff; }'
-                            }
-                        })
-                    },
+                    // {
+                    //     resolve: `gatsby-remark-mermaid`,
+                    //     options: /** @type {import('gatsby-remark-mermaid').Options} */ ({
+                    //         mermaidConfig: {
+                    //             theme: 'neutral',
+                    //             themeCSS: '.node rect { fill: #fff; }'
+                    //         }
+                    //     })
+                    // },
                     "gatsby-remark-relative-images-v2",
                     {
                         resolve: "gatsby-remark-images",
