@@ -23,7 +23,7 @@ class BlogIndex extends React.Component {
                 <section>
                 <h1 className="sectionTitle">Featured Projects</h1>
                 <div className="flexbox-widex">
-                    <div class="project-card-wide">
+                    {/* <div class="project-card-wide hide">
                         <div class="project-card-image">
                             <StaticImage
                                 src="../images/projects/standout-1.png"
@@ -43,7 +43,7 @@ class BlogIndex extends React.Component {
                                 <a href="https://standout.pro" target="_blank">Visit the project &gt;</a>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     <div class="project-card-wide">
                         <div class="project-card-image">
 
@@ -88,7 +88,7 @@ class BlogIndex extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div class="project-card-wide">
+                    {/* <div class="project-card-wide">
                         <div class="project-card-image">
                             <StaticImage
                                 formats={["AUTO"]}
@@ -108,7 +108,7 @@ class BlogIndex extends React.Component {
                                 <a href="https://actu8.io" target="_blank">Visit the project &gt;</a>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     <div class="hide">
                         <div class="project-card-image">
                             <StaticImage
@@ -173,6 +173,7 @@ class BlogIndex extends React.Component {
                                                     image={postImage.src.childImageSharp.gatsbyImageData}
                                                     alt={postImage.alt}
                                                     layout="fullWidth"
+                                                    formats={["auto","webp"]}
                                                 />
                                                 <div className="overlay">
                                                     <div className="innerOverlayText" dangerouslySetInnerHTML={{ __html: edge.node.frontmatter.excerpt }}></div>

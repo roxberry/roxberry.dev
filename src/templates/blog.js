@@ -43,6 +43,7 @@ const Blog = (props) => {
                             image={postImage.src.childImageSharp.gatsbyImageData}
                             alt={postImage.alt}
                             layout="fullWidth"
+                            formats={["auto","webp"]}
                             />
                             <div className="overlay">
                                 <div className="innerOverlayText" dangerouslySetInnerHTML={{__html: post.frontmatter.excerpt }}></div>
