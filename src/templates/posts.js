@@ -62,7 +62,7 @@ class BlogIndex extends React.Component {
                             <h3>ShipWrite</h3>
                             <span>An AI-powered application to assist the creation of high-quality writing for the professional and technical domains.</span>
                             <div class="project-card-link">
-                                <a href="https:/shipwrite.app" target="_blank">Visit the project &gt;</a>
+                                <a href="https://shipwrite.app" target="_blank">Visit the project &gt;</a>
                             </div>
                         </div>
                     </div>

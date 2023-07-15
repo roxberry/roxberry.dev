@@ -35,6 +35,8 @@ I need a mobile navigation widget that will show the new navigation links on sma
 I would like to data drive the featured projects and all projects, will need to see how to do that via Gatsby.
 
 Review what I should have on an About Me page, what will interest others, not just myself.
+
+Design and develop a better tag manager, possibly use a search tool for the local list of tags.
   
 ## Image Credit
 
