@@ -47,6 +47,8 @@ header {
 
 .sub-header {
     display: flex;
+    width: 100%;
+    height: 64px;
     // flex: 0 0 1150px;
     //flex: 0 0 1150px;
     //justify-content: space-between;
@@ -89,7 +91,7 @@ aside {
 }
 
 article {
-    width: 600px;
+    width: 100%;
     line-height: 1.5;
 }
 
@@ -405,66 +407,7 @@ blockquote {
     }
 }
 
+
+@import "media";
+
 @import "pager";
-
-//@import "media";
-
-
-.sub-header {
-    width: 100%;
-    height: 64px;
-    // margin: 0 2vw;
-}
-
-main {
-    // margin: 0 2vw;
-}
-
-
-@media only screen and (max-width: 768px) {
-    header {
-        .rightSide {
-            display: none;
-        }
-
-        nav {
-            display: none;
-        }
-    }
-}
-
-@media only screen and (max-width: 880px) {
-    aside {
-        width: 0px;
-        display: none;
-    }
-
-    .flexbox>div {
-        // margin: 2rem 0;
-        width: 100%;
-    }
-
-    article {
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-}
-
-@media only screen and (min-width: 881px) {
-    article {
-        margin-left: 5rem;
-        margin-right: 2rem;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    .sub-header {
-        margin: 0 auto;
-        max-width: 1280px;
-    }
-
-    main {
-        margin: 0 auto;
-        max-width: 1280px;
-    }
-}
