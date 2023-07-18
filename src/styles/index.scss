@@ -407,6 +407,9 @@ blockquote {
     }
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
 
 @import "media";
 
