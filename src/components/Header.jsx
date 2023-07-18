@@ -1,7 +1,6 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-// import { Helmet } from 'react-helmet';
 
 const Header = () => {
 
@@ -18,11 +17,7 @@ const Header = () => {
 
     return (
         <header>
-            {/* <Helmet>
-          <meta charSet="utf-8" />
-          <title>test {data.site.siteMetadata.title}</title>
-      </Helmet> */}
-            <div className="sub-header">
+            <div class="top-nav sub-header">
                 <div className="leftSide">
                     <Link to="/" className="title" activeClassName="active">
                         <StaticImage
@@ -36,60 +31,30 @@ const Header = () => {
                             loading="eager"
                         />
                     </Link>
-                    <nav>
-                        {/* <input className="menu-btn" type="checkbox" id="menu-btn" />
-            <label className="menu-icon" for="menu-btn"><span class="navicon"></span></label> */}
-
-                        <ul className="menu">
-                            <li>
-                                <Link to="/about" className="header-menu-item" activeClassName="active">About Me</Link>
-                            </li>
-                            <li>
-                                <Link to="/projects" className="header-menu-item" activeClassName="active">Projects</Link>
-                            </li>
-                            <li>
-                                <Link to="/contact" className="header-menu-item" activeClassName="active">Contact</Link>
-                            </li>
-                            {/* <li>
-                <Link to="/tags/planning" className="header-menu-item" activeClassName="active">Planning</Link>
-              </li> */}
-                            {/* <li>
-                <Link to="/contact" className="header-menu-item" activeClassName="active">Contact</Link>
-              </li> */}
-                            {/* <li>
-                <Link to="/tags/nwrpg" className="header-menu-item" activeClassName="active">NWRPG</Link>
-              </li> */}
-                            {/* <li>
-                <Link to="/blog" className="header-menu-item"  activeClassName="active">Blog</Link>
-              </li> */}
-                        </ul>
-                    </nav>
-                </div>
-                <div className="center">
 
                 </div>
-                <div className="rightSide">
-                    {/* <p className="tagLine">architect, writer, strategist, technologist</p>
-          <p className="tagLine">Always look on the bright side of life.</p>  */}
-                    <p className="tagLine">Quis custodiet ipsos custodes?</p>
-                </div>
+
+
+                    <input id="menu-toggle" type="checkbox" />
+                    <label class='menu-button-container' for="menu-toggle">
+                        <div class='menu-button'></div>
+                    </label>
+
+                    <ul className="menu">
+                        <li>
+                            <Link to="/about" className="header-menu-item" activeClassName="active">About Me</Link>
+                        </li>
+                        <li>
+                            <Link to="/projects" className="header-menu-item" activeClassName="active">Projects</Link>
+                        </li>
+                        <li>
+                            <Link to="/contact" className="header-menu-item" activeClassName="active">Contact</Link>
+                        </li>
+                    </ul>
+
             </div>
         </header>
     )
 }
 
 export default Header
-// <header className={headerStyles.header}>
-//     <nav>
-//         <h1><Link className={headerStyles.title} activeClassName={headerStyles.activeNavItem} to="/">Mark Roxberry</Link></h1>
-
-//         <ul className={headerStyles.navList}>
-//             <li>
-//                 <Link className={headerStyles.navItem}  activeClassName={headerStyles.activeNavItem} to="/contact">Contact</Link>
-//             </li>
-//             <li>
-//                 <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/blog">Blog</Link>
-//             </li>
-//         </ul>
-//     </nav>
-// </header>
