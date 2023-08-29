@@ -15,7 +15,7 @@ module.exports = {
         author: "Mark Roxberry",
         keywords: ["roxberry", "journal", "development"],
         featuredTags: ["Russia", "development", "performance", "robotics", "security", "privacy", "apple", "soccer"],
-        version: "2023.07.15.01",
+        version: "2023.08.28.01",
     },
     plugins: [
         "gatsby-plugin-sass",
@@ -41,6 +41,15 @@ module.exports = {
             resolve: "gatsby-transformer-remark",
             options: {
                 plugins: [
+                    {
+                        resolve: "gatsby-remark-mermaid",
+                        options: /** @type {import('gatsby-remark-mermaid').Options} */ ({
+                          mermaidConfig: {
+                            theme: 'dark' //,
+                            // themeCSS: '.node rect { fill: #fff; }'
+                          }
+                        })
+                    },
                     // { 
                     //   resolve: "gatsby-remark-prismjs",      
                     //   // options: {
