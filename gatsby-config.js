@@ -5,6 +5,7 @@
  */
 const fs = require('fs')
 const path = require('path')
+const puppeteer = require('puppeteer')
 
 module.exports = {
     siteMetadata: {
@@ -41,35 +42,34 @@ module.exports = {
             resolve: "gatsby-transformer-remark",
             options: {
                 plugins: [
-                    {
-                        resolve: "gatsby-remark-mermaid",
-                        options: /** @type {import('gatsby-remark-mermaid').Options} */ ({
-                          mermaidConfig: {
-                            theme: 'dark' //,
-                            // themeCSS: '.node rect { fill: #fff; }'
-                          }
-                        })
-                    },
+                    // {
+                    //     resolve: "gatsby-remark-mermaid",
+                    //     options: /** @type {import('gatsby-remark-mermaid').Options} */ ({
+                    //       mermaidConfig: {
+                    //         theme: 'dark' //,
+                    //         // themeCSS: '.node rect { fill: #fff; }'
+                    //       }
+                    //     })
+                    // },
                     // { 
                     //   resolve: "gatsby-remark-prismjs",      
                     //   // options: {
                     //   //   showLineNumbers: true,
                     //   // }
                     // },
-                    // "gatsby-remark-mermaid",
-                    // {
-                    //     resolve: "gatsby-remark-vscode",
-                    //     options: {
-                    //         launchOptions: {
-                    //             executablePath: puppeteer.executablePath(),
-                    //             defaultViewport: {
-                    //                 width: 1280,
-                    //                 height: 3000,
-                    //             }
-                    //         },
-                    //         theme: "Dark+ (default dark)" // Or install your favorite theme from GitHub
-                    //     }
-                    // },
+                    { 
+                        resolve: "gatsby-remark-mermaid",
+                        options: {
+                            launchOptions: {
+                                executablePath: puppeteer.executablePath(),
+                                defaultViewport: {
+                                    width: 1280,
+                                    height: 3000,
+                                }
+                            },
+                            theme: "dark" // Or install your favorite theme from GitHub
+                        }
+                    },
                     // {
                     //     resolve: `gatsby-remark-mermaid`,
                     //     options: /** @type {import('gatsby-remark-mermaid').Options} */ ({
