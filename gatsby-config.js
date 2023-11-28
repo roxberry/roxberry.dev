@@ -12,11 +12,11 @@ module.exports = {
         title: "Roxberry.DEV",
         url: "https://www.roxberry.dev",
         siteUrl: "https://www.roxberry.dev",
-        twitterUsername: "@roxberry",
+        twitterUsername: "@roxdotdev",
         author: "Mark Roxberry",
         keywords: ["roxberry", "journal", "development"],
         featuredTags: ["Russia", "development", "performance", "robotics", "security", "privacy", "apple", "soccer"],
-        version: "2023.08.28.01",
+        version: "2023.11.28.01",
     },
     plugins: [
         "gatsby-plugin-sass",
