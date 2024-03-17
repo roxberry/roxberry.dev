@@ -56,8 +56,7 @@ Continue researching AI and security and best practices, highlighting the signif
 - Identify opportunities for research and development in secure generation.
 #### Continuous Risk Assessment and Threat Modeling
 - New and Novel techniques, processes, paradigms are being adopted at breakneck speed
-- We need to continuous evaluate LLMs, RAG technology, 
-coexistence" and processes in your organization and understand data flows.
+- We need to continuously evaluate LLMs, RAG technology, and its coexistence in your organization.
 
 
 ## Call-to-Action
