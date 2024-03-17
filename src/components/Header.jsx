@@ -33,24 +33,22 @@ const Header = () => {
                     </Link>
 
                 </div>
+                <input id="menu-toggle" type="checkbox" />
+                <label class='menu-button-container' htmlFor="menu-toggle">
+                    <div class='menu-button'></div>
+                </label>
 
-
-                    <input id="menu-toggle" type="checkbox" />
-                    <label class='menu-button-container' for="menu-toggle">
-                        <div class='menu-button'></div>
-                    </label>
-
-                    <ul className="menu">
-                        <li>
-                            <Link to="/about" className="header-menu-item" activeClassName="active">About Me</Link>
-                        </li>
-                        <li>
-                            <Link to="/projects" className="header-menu-item" activeClassName="active">Projects</Link>
-                        </li>
-                        <li>
-                            <Link to="/contact" className="header-menu-item" activeClassName="active">Contact</Link>
-                        </li>
-                    </ul>
+                <ul className="menu">
+                    <li>
+                        <Link to="/about" className="header-menu-item" activeClassName="active">About Me</Link>
+                    </li>
+                    <li>
+                        <Link to="/projects" className="header-menu-item" activeClassName="active">Projects</Link>
+                    </li>
+                    <li>
+                        <Link to="/contact" className="header-menu-item" activeClassName="active">Contact</Link>
+                    </li>
+                </ul>
 
             </div>
         </header>

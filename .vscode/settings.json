@@ -18,5 +18,21 @@
         "Microservices",
         "postimage",
         "Touchpoint"
-    ]
+    ],
+    "favorites.resources": [
+        {
+            "filePath": "gatsby-config.js",
+            "group": "Configuration"
+        },
+        {
+            "filePath": "src/posts/2023-12-10-technology-notes",
+            "group": "Default"
+        }
+    ],
+    "favorites.groups": [
+        "Default",
+        "Configuration"
+    ],
+    "favorites.currentGroup": "Default",
+    "favorites.sortOrder": "ASC"
 }

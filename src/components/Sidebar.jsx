@@ -23,7 +23,7 @@ const SideBar = () => {
             </section>
             <section>
                 <h2>About Me</h2>
-                <p>Platform Architect</p>
+                <p>Principal Consultant</p>
                 <a href="https://www.waveseeker.com">@ Database Solutions</a>
                 {/* <p>Husband, father, son, brother and uncle.</p> */}
                 {/* <p>Security driven developer and passionate cross platform software engineer, architect and consultant.</p> */}
