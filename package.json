@@ -35,7 +35,7 @@
         "gatsby-transformer-remark": "^6.13.1",
         "gatsby-transformer-sharp": "^5.13.1",
         "normalize.css": "^8.0.1",
-        "puppeteer": "^22.4.0",
+        "puppeteer": "^22.15.0",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-use-flexsearch": "^0.1.1",
