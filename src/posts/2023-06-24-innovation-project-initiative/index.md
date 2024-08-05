@@ -12,7 +12,7 @@ categories:
 postimage:
   src: "post.png"
   alt: ""
-featured: false
+featured: true
 
 ---
 

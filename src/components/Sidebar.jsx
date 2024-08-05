@@ -22,7 +22,7 @@ const SideBar = () => {
                 <Social />
             </section>
             <section>
-                <h2>About Me</h2>
+                <h2>Mark Roxberry</h2>
                 <p>Principal Consultant</p>
                 <a href="https://www.waveseeker.com">@ Database Solutions</a>
                 {/* <p>Husband, father, son, brother and uncle.</p> */}

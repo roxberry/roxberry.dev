@@ -17,6 +17,17 @@ class BlogIndex extends React.Component {
         const prevPage = currentPage - 1 === 1 ? "/" : "/" + (currentPage - 1).toString()
         const nextPage = "/" + (currentPage + 1).toString()
 
+        let pager;
+        if (numPages > 1 ) {
+            pager = <Pager
+                isFirst={isFirst}
+                isLast={isLast}
+                prevPage={prevPage}
+                nextPage={nextPage}
+                currentPage={currentPage}
+                numPages={numPages}
+            />;
+        }
         return (
             <Layout location={this.props.location} title={siteTitle}>
                 <SEO title="Welcome!" />
@@ -58,15 +69,7 @@ class BlogIndex extends React.Component {
                                 </div>
                             )
                         })}
-
-                        <Pager
-                            isFirst={isFirst}
-                            isLast={isLast}
-                            prevPage={prevPage}
-                            nextPage={nextPage}
-                            currentPage={currentPage}
-                            numPages={numPages} />
-
+                        {pager}
                     </div>
                 </section>
                 <section>
@@ -212,7 +215,7 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { frontmatter: {date: DESC} }
       filter: { frontmatter: { featured: { eq: true } } }
       limit: $limit
       skip: $skip

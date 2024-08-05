@@ -16,7 +16,7 @@ module.exports = {
         author: "Mark Roxberry",
         keywords: ["roxberry", "journal", "development"],
         featuredTags: ["Russia", "development", "performance", "robotics", "security", "privacy", "apple", "soccer"],
-        version: "2023.12.10.01",
+        version: "2024.08.04.01",
     },
     plugins: [
         "gatsby-plugin-sass",
@@ -29,14 +29,14 @@ module.exports = {
             options: {
                 name: "posts",
                 path: `${__dirname}/src/posts`,
-            },
+            }
         },
-        // {
-        //   resolve: "gatsby-source-filesystem",
-        //   options: {
-        //     name: "posts",
-        //     path: `${__dirname}/src/drafts`,
-        //   },
+        // {    
+        //     resolve: "gatsby-source-filesystem",
+        //     options: {
+        //         name: "archive",
+        //         path: `${__dirname}/src/archive`,
+        //     },
         // },
         {
             resolve: "gatsby-transformer-remark",
@@ -103,13 +103,6 @@ module.exports = {
                 ],
             },
         },
-        // {
-        //   resolve: "gatsby-plugin-doctype",
-        //   options: {
-        //     doctype: `HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"`,
-        //   },
-        // },
-        // "gatsby-plugin-fontawesome-css",
         {
             resolve: "gatsby-plugin-feed",
             options: {
