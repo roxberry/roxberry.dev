@@ -42,21 +42,12 @@ module.exports = {
             resolve: "gatsby-transformer-remark",
             options: {
                 plugins: [
-                    // {
-                    //     resolve: "gatsby-remark-mermaid",
-                    //     options: /** @type {import('gatsby-remark-mermaid').Options} */ ({
-                    //       mermaidConfig: {
-                    //         theme: 'dark' //,
-                    //         // themeCSS: '.node rect { fill: #fff; }'
-                    //       }
-                    //     })
-                    // },
-                    // { 
-                    //   resolve: "gatsby-remark-prismjs",      
-                    //   // options: {
-                    //   //   showLineNumbers: true,
-                    //   // }
-                    // },
+                    {
+                        resolve: `gatsby-remark-images`,
+                        options: {
+                          maxWidth: 800, // Adjust as needed
+                        },
+                    },
                     { 
                         resolve: "gatsby-remark-mermaid",
                         options: {
@@ -70,23 +61,6 @@ module.exports = {
                             theme: "dark" // Or install your favorite theme from GitHub
                         }
                     },
-                    // {
-                    //     resolve: `gatsby-remark-mermaid`,
-                    //     options: /** @type {import('gatsby-remark-mermaid').Options} */ ({
-                    //         mermaidConfig: {
-                    //             theme: 'neutral',
-                    //             themeCSS: '.node rect { fill: #fff; }'
-                    //         }
-                    //     })
-                    // },
-                    // "gatsby-remark-relative-images-v2",
-                    // {
-                    //     resolve: "gatsby-remark-images",
-                    //     options: {
-                    //         maxWidth: 800,
-                    //         linkImagesToOriginal: false,
-                    //     },
-                    // },
                     {
                         resolve: `gatsby-remark-twitter-cards`,
                         options: {
