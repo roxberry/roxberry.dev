@@ -179,8 +179,9 @@ a {
         .postedInfo {
             font-size: 0.8em;
         }
-
-        margin-bottom: 5em;
+        & {
+            margin-bottom: 5em;
+        }
     }
 }
 

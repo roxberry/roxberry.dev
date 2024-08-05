@@ -79,14 +79,14 @@ module.exports = {
                     //         }
                     //     })
                     // },
-                    "gatsby-remark-relative-images-v2",
-                    {
-                        resolve: "gatsby-remark-images",
-                        options: {
-                            maxWidth: 800,
-                            linkImagesToOriginal: false,
-                        },
-                    },
+                    // "gatsby-remark-relative-images-v2",
+                    // {
+                    //     resolve: "gatsby-remark-images",
+                    //     options: {
+                    //         maxWidth: 800,
+                    //         linkImagesToOriginal: false,
+                    //     },
+                    // },
                     {
                         resolve: `gatsby-remark-twitter-cards`,
                         options: {
