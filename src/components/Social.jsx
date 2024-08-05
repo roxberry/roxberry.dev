@@ -1,8 +1,8 @@
 import React from "react"
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTags, faRss, faEnvelope } from '@fortawesome/free-solid-svg-icons' 
-import { faFacebookF, faTwitter, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons' 
+import { faTags, faRss, faEnvelope, faX } from '@fortawesome/free-solid-svg-icons' 
+import { faFacebookF, faTwitter, faGithub, faLinkedin, faXingSquare, faSquareXTwitter, faXTwitter } from '@fortawesome/free-brands-svg-icons' 
 
 library.add([faTags, faRss, faFacebookF, faTwitter, faGithub, faLinkedin, faEnvelope]); 
 
@@ -14,7 +14,7 @@ const Social = () =>  {
                     <a href="/feed.xml"><FontAwesomeIcon icon={['fas', 'rss']} /></a>
                 </li>
                 <li>
-                    <a href="https://twitter.com/roxberry"><FontAwesomeIcon icon={['fab', 'twitter']} /></a>
+                    <a href="https://x.com/roxberry"><FontAwesomeIcon icon={faXTwitter} /></a>
                 </li>
                 <li>
                     <a href="https://www.facebook.com/roxberry"><FontAwesomeIcon icon={['fab', 'facebook-f']} /></a>
