@@ -24,7 +24,7 @@ const Header = () => {
                             layout="fixed"
                             width={200}
                             formats={["AUTO"]}
-                            src="../images/roxberry-dev-logo-200.png"
+                            src="../images/roxberry-logo-robot@3x.webp"
                             alt={data.site.siteMetadata.title}
                             placeholder="NONE"
                             background="#282828"

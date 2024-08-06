@@ -19,12 +19,11 @@ const SideBar = () => {
                 />
             </section>
             <section>
-                <Social />
-            </section>
-            <section>
                 <h2>Mark Roxberry</h2>
-                <p>Principal Consultant</p>
-                <a href="https://www.waveseeker.com">@ Database Solutions</a>
+                <span>Principal Consultant</span><br/>
+                <span><a href="https://www.waveseeker.com">@ Database Solutions</a></span>
+                <Social />
+
                 {/* <p>Husband, father, son, brother and uncle.</p> */}
                 {/* <p>Security driven developer and passionate cross platform software engineer, architect and consultant.</p> */}
             </section>
