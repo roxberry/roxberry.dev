@@ -8,13 +8,14 @@ author: Mark Roxberry
 excerpt: Recently, I had the opportunity to deliver MFA solutions for a client across three distinct platforms. Each project presented unique challenges, but the ultimate goal was the same - to enhance the security of the client's data and applications.
 tags: [security, architecture, database, angular, development]
 categories:
-  - development
+  - 05134426bcd175050b08193c02f14ccdafcca088
 postimage:
   src: "post.png"
   alt: 
 featured: false
 
 ---
+
 ## Introduction
 
 In today's digital landscape, Multi-Factor Authentication (MFA) has become a critical requirement for ensuring the security of applications and safeguarding sensitive data. With increasing cyber threats, relying solely on passwords is no longer sufficient. MFA adds an additional layer of security by requiring users to verify their identity through multiple methods, such as receiving a code via email or SMS, before gaining access to an application.
