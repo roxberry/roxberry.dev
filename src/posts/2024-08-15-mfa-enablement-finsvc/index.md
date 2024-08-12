@@ -20,7 +20,7 @@ featured: false
 
 In today's digital landscape, Multi-Factor Authentication (MFA) has become a critical requirement for ensuring the security of applications and safeguarding sensitive data. With increasing cyber threats, relying solely on passwords is no longer sufficient. MFA adds an additional layer of security by requiring users to verify their identity through multiple methods, such as receiving a code via email or SMS, before gaining access to an application.
 
-Recently, I had the opportunity to deliver MFA solutions for a client across three distinct platforms. Each project presented unique challenges, but the ultimate goal was the same: to enhance the security of the client's data and applications.
+Recently, I had the opportunity to deliver MFA solutions for a client across three distinct platforms: a borrower web platform, internal servicing applications and a Sql Server 2016 Reporting Services implementation. Each project presented unique challenges, but the ultimate goal was the same: to enhance the security of the client's data and applications.
 
 ## The Approach
 
@@ -42,7 +42,7 @@ graph LR
 
 The first solution in the MFA enablement project was to add MFA to the borrower web application. However, during the initial stages of implementation, I discovered that the platform was running on outdated Angular and C# WebAPI code, which posed significant security risks and performance limitations. This discovery prompted a full platform modernization, where I upgraded the application from Angular 7 to Angular 17 and migrated the C# WebAPI from .NET 4.5 to .NET 8. This upgrade not only improved security and runtime performance but also enhanced developer efficiency and ensured continued support, as the older code had numerous deprecations. Following this modernization effort, I successfully integrated an MFA interstitial verification process, which sends a verification code to the borrower via email. The borrower must then enter this code on the platform, adding an essential layer of security to ensure that only authorized users can access sensitive information.
 
-### 2. Enhancing Internal Applications
+### 2. Enhancing Internal Servicing Applications
 
 &nbsp;
 &nbsp;
@@ -60,7 +60,7 @@ graph LR
 
 The second project focused on adding MFA verification to an internal application used for servicing and contracts. This application was built on an older version of VB.NET, making the integration of modern MFA capabilities a challenge. However, by implementing a tailored MFA solution, I was able to enhance the security of the internal processes without disrupting the legacy system.
 
-### 3. Custom Authentication and Authorization for SSRS 2016
+### 3. Custom Authentication and Authorization for Sql Server Reporting Services 2016
 
 &nbsp;
 &nbsp;
