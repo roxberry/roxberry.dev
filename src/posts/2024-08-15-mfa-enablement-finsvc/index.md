@@ -105,6 +105,9 @@ This integration allowed both applications to securely access SSRS for report ge
 
 Here's a MermaidJS sequence diagram to illustrate the integration:
 
+&nbsp;
+&nbsp;
+
 ```mermaid
 %%{init: {"theme": "dark", "sequenceDiagram": { "actorMargin": 10, "actorFontSize": 14, "actorFontFamily": "Arial", "noteFontSize": 12, "noteFontFamily": "Arial", "messageFontSize": 14, "messageFontFamily": "Arial", "messageAlign": "center" } } }%%
 sequenceDiagram
@@ -124,6 +127,9 @@ sequenceDiagram
     B->>C: Generate Auth Cookie
     C->>G: Return Report
 ```
+
+&nbsp;
+&nbsp;
 
 This diagram shows the flow from each application calling the SSRS webhook to generate the authentication cookie, allowing them to retrieve reports within their own platforms. The inclusion of the proxy service for the internal application highlights the solution's adaptability to different technologies within the client's environment.
 
