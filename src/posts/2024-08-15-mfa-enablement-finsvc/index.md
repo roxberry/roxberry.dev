@@ -40,7 +40,7 @@ graph LR
 &nbsp;
 &nbsp;
 
-The first project involved upgrading the client's borrower web platform from Angular 7 to Angular 17, and from C# WebAPI on .NET 4.5 to .NET 8. As part of this upgrade, I integrated an MFA interstitial verification process. This process sends an email with a verification code to the borrower user, which they must enter on the platform to proceed. This additional step ensures that only authorized users can access sensitive information.
+The first solution in the MFA enablement project was to add MFA to the borrower web application. However, during the initial stages of implementation, I discovered that the platform was running on outdated Angular and C# WebAPI code, which posed significant security risks and performance limitations. This discovery prompted a full platform modernization, where I upgraded the application from Angular 7 to Angular 17 and migrated the C# WebAPI from .NET 4.5 to .NET 8. This upgrade not only improved security and runtime performance but also enhanced developer efficiency and ensured continued support, as the older code had numerous deprecations. Following this modernization effort, I successfully integrated an MFA interstitial verification process, which sends a verification code to the borrower via email. The borrower must then enter this code on the platform, adding an essential layer of security to ensure that only authorized users can access sensitive information.
 
 ### 2. Enhancing Internal Applications
 
