@@ -6,9 +6,11 @@ comments: true|false
 date: 2024-08-15 21:00:00
 author: Mark Roxberry
 excerpt: Recently, I had the opportunity to deliver MFA solutions for a client across three distinct platforms. Each project presented unique challenges, but the ultimate goal was the same - to enhance the security of the client's data and applications.
-tags: []
+tags: [security, architecture, database, angular, development]
 categories:
-  - 
+  - security
+  - development
+  - integration
 postimage:
   src: "post.png"
   alt: 
