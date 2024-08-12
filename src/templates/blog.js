@@ -2,10 +2,10 @@ import React from 'react'
 import Layout from '../components/Layout'
 import SEO from '../components/SEO'
 import TagList from "../components/TagList"
-import Helmet from 'react-helmet'
 import { GatsbyImage } from "gatsby-plugin-image"
 import { graphql } from 'gatsby'
-import { DiscussionEmbed } from 'disqus-react'
+// import { DiscussionEmbed } from 'disqus-react'
+import { Disqus } from 'gatsby-plugin-disqus';
 
 const Blog = (props) => {
     
@@ -60,12 +60,16 @@ const Blog = (props) => {
                 }
 
                 <div className="blogBody" dangerouslySetInnerHTML={{__html: post.html}}></div>
-                <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
-                <Helmet>
-                    <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=d50ae18d-23ca-411f-bd12-d8b2b9bf5e18" type="text/javascript" />
-                </Helmet>
+                {/* <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} /> */}
 
-                <div id="amzn-assoc-ad-d50ae18d-23ca-411f-bd12-d8b2b9bf5e18"></div>
+                <Disqus
+                    config={{
+                        url: pathName,
+                        identifier: post.id,
+                        title: post.frontmatter.title,
+                    }}
+                />
+
                 <div className="disclaimer">This post and/or images used in it may have been created or enhanced using generative AI tools for clarity and organization. However, all ideas, technical work, solutions, integrations, and other aspects described here are entirely my own.</div>
             </section>        
         </Layout>

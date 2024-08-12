@@ -22,7 +22,7 @@ I presented the [OWASP Top 10 Privacy Risks Project](https://owasp.org/www-proje
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0&appId=342830649098030&autoLogAppEvents=1" nonce="qASQl9xX"></script>
 
-<div class="fb-video" data-href="https://www.facebook.com/DAMAPhila/videos/598718031485258/" data-width="500" data-show-text="false"><blockquote cite="https://www.facebook.com/DAMAPhila/videos/598718031485258/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/DAMAPhila/videos/598718031485258/">Cyber Security Month - DAMA Philadelphia</a><p>Cyber Security Month - DAMA Philadelphia</p>Posted by <a href="https://www.facebook.com/DAMAPhila/">DAMA Philadelphia</a> on Wednesday, October 27, 2021</blockquote></div>
+<div className="fb-video" data-href="https://www.facebook.com/DAMAPhila/videos/598718031485258/" data-width="500" data-show-text="false"><blockquote cite="https://www.facebook.com/DAMAPhila/videos/598718031485258/" className="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/DAMAPhila/videos/598718031485258/">Cyber Security Month - DAMA Philadelphia</a><p>Cyber Security Month - DAMA Philadelphia</p>Posted by <a href="https://www.facebook.com/DAMAPhila/">DAMA Philadelphia</a> on Wednesday, October 27, 2021</blockquote></div>
 
 ### References
 

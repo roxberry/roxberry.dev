@@ -17,7 +17,7 @@ const Header = () => {
 
     return (
         <header>
-            <div class="top-nav sub-header">
+            <div className="top-nav sub-header">
                 <div className="leftSide">
                     <Link to="/" className="title" activeClassName="active">
                         <StaticImage
@@ -34,8 +34,8 @@ const Header = () => {
 
                 </div>
                 <input id="menu-toggle" type="checkbox" />
-                <label class='menu-button-container' htmlFor="menu-toggle">
-                    <div class='menu-button'></div>
+                <label className='menu-button-container' htmlFor="menu-toggle">
+                    <div className='menu-button'></div>
                 </label>
 
                 <ul className="menu">

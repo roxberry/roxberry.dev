@@ -39,6 +39,12 @@ module.exports = {
             },
         },
         {
+            resolve: "gatsby-plugin-disqus",
+            options: {
+                shortname: `roxberry`
+            },
+        },
+        {
             resolve: "gatsby-transformer-remark",
             options: {
                 plugins: [
