@@ -101,7 +101,7 @@ To implement this solution, I set up a service account that bypassed MFA verific
 
 This integration allowed both applications to securely access SSRS for report generation while maintaining a consistent authentication flow across the client's platforms.
 
-### Seqeunce Diagram
+### Sequence Diagram
 
 &nbsp;
 &nbsp;
