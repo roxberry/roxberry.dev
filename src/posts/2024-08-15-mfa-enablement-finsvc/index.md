@@ -44,6 +44,8 @@ The first solution in the MFA enablement project was to add MFA to the borrower 
 
 This upgrade not only improved security and runtime performance but also enhanced developer efficiency and ensured continued support, as the older code had numerous deprecations. Following this modernization effort, I successfully integrated an MFA interstitial verification process, which sends a verification code to the borrower via email. The borrower must then enter this code on the platform, adding an essential layer of security to ensure that only authorized users can access sensitive information.
 
+**Disclaimer**: Upgrading from Angular 7 to Angular 17 and from .NET Framework 4.5 to .NET 8 involves significant changes that go beyond simple version upgrades. Angular 17 introduces new features, breaking changes, and performance improvements that may require substantial refactoring of existing code. Similarly, migrating from .NET Framework 4.5 to .NET 8 involves transitioning from the .NET Framework to the .NET Core/Unified .NET platform, which may require reworking dependencies, APIs, and libraries. It’s crucial to thoroughly assess the impact of these upgrades on your application and consider a phased approach to minimize disruptions. Please consult the official documentation and consider seeking expert advice before undertaking such migrations.
+
 ### 2. Enhancing Internal Servicing Applications
 
 &nbsp;
@@ -85,9 +87,11 @@ I added project time to conduct extensive research, navigating through limited d
 
 Eventually, I came across a Microsoft GitHub project that provided skeleton code for implementing a custom authentication extension using IAuthenticationExtension2 and IAuthorizationExtension. Although the documentation was sparse and required a fair amount of interpretation, it served as a critical starting point. I worked through the code, making the necessary modifications and adjustments to fit the client’s specific needs. After several iterations and testing, I was able to develop an excellent solution that met the client’s requirements.
 
-The solution involved creating an MFA interstitial page that emails a verification code to university lenders. These lenders then enter the code on the interstitial page to access the reporting services, ensuring that only verified users can view sensitive reports. This added layer of security was a significant enhancement to the client’s existing setup.
+The solution involved creating an MFA interstitial page that emails a verification code to lenders. These lenders then enter the code on the interstitial page to access the reporting services, ensuring that only verified users can view sensitive reports. This added layer of security was a significant enhancement to the client’s existing setup.
 
 For those interested in the technical details, the GitHub project that served as the foundation for this solution can be found [here](https://github.com/microsoft/Reporting-Services/tree/master/CustomSecuritySample2016). By leveraging this project and building upon it, I was able to deliver a robust and secure authentication mechanism for SSRS 2016, despite the challenges posed by the platform’s age and limited support.
+
+**Disclaimer**: Implementing custom authentication and authorization for SQL Server Reporting Services (SSRS) 2016, particularly when transitioning from NTLM to Forms authentication, is a complex process. SSRS 2016 is an older platform with limited support, and customizing it to meet modern security standards requires careful planning and execution. The use of extensions like IAuthenticationExtension2 and IAuthorizationExtension involves deep technical knowledge and may require substantial modifications to the default setup. Additionally, working with legacy systems often involves navigating sparse documentation and potential compatibility issues.
 
 ## Platform Integration
 
@@ -100,6 +104,8 @@ The webhook was designed to create a `CookieCollection` and generate an authenti
 To implement this solution, I set up a service account that bypassed MFA verification. This service account was used by a proxy service created for the Internal Servicer Application, which was unable to call the webhook directly due to its legacy architecture. The Borrower Web Platform, being more modern and built on Angular, could call the webhook directly without requiring a proxy.
 
 This integration allowed both applications to securely access SSRS for report generation while maintaining a consistent authentication flow across the client's platforms.
+
+**Disclaimer**: The use of service accounts to bypass Multi-Factor Authentication (MFA) for integration purposes should be carefully considered and implemented with strict security controls. Service accounts that are exempt from MFA can introduce potential security risks if not properly managed. It is essential to restrict access to these accounts, implement IP whitelisting, enforce strong password policies, and regularly audit usage to detect any unauthorized activity. Additionally, ensure that service accounts are used only when absolutely necessary and that their permissions are limited to the minimum required for the integration. Proper monitoring and logging should be in place to track and respond to any anomalies promptly.
 
 ### Sequence Diagram
 
