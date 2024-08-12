@@ -40,7 +40,9 @@ graph LR
 &nbsp;
 &nbsp;
 
-The first solution in the MFA enablement project was to add MFA to the borrower web application. However, during the initial stages of implementation, I discovered that the platform was running on outdated Angular and C# WebAPI code, which posed significant security risks and performance limitations. This discovery prompted a full platform modernization, where I upgraded the application from Angular 7 to Angular 17 and migrated the C# WebAPI from .NET 4.5 to .NET 8. This upgrade not only improved security and runtime performance but also enhanced developer efficiency and ensured continued support, as the older code had numerous deprecations. Following this modernization effort, I successfully integrated an MFA interstitial verification process, which sends a verification code to the borrower via email. The borrower must then enter this code on the platform, adding an essential layer of security to ensure that only authorized users can access sensitive information.
+The first solution in the MFA enablement project was to add MFA to the borrower web platform, a combination of a web portal served to desktops and mobile devices and an API for integration. However, during the initial stages of implementation, I discovered that the platform was running on outdated Angular and C# WebAPI code, which posed significant security risks and performance limitations. This discovery prompted a full platform modernization, where I upgraded the application from Angular 7 to Angular 17 and migrated the C# WebAPI from .NET 4.5 to .NET 8.
+
+This upgrade not only improved security and runtime performance but also enhanced developer efficiency and ensured continued support, as the older code had numerous deprecations. Following this modernization effort, I successfully integrated an MFA interstitial verification process, which sends a verification code to the borrower via email. The borrower must then enter this code on the platform, adding an essential layer of security to ensure that only authorized users can access sensitive information.
 
 ### 2. Enhancing Internal Servicing Applications
 
@@ -99,21 +101,28 @@ To implement this solution, I set up a service account that bypassed MFA verific
 
 This integration allowed both applications to securely access SSRS for report generation while maintaining a consistent authentication flow across the client's platforms.
 
-### MermaidJS Diagram
+### Sequnce Diagram
 
-Here's a MermaidJS diagram to illustrate the integration:
+Here's a MermaidJS sequence diagram to illustrate the integration:
 
 ```mermaid
-%%{init: {"theme": "dark", "flowchart" : { "curve" : "basis" } } }%%
-graph LR
-    A[Borrower Web Platform] -->|Call Webhook| B[Webhook - SSRS 2016]
-    B -->|Generate Auth Cookie| C[SSRS 2016]
-    
-    D[Internal Servicer Application] -->|Call Proxy Service| E[Proxy Service]
-    E -->|Call Webhook| B
-    
-    C -->|Return Report| F[Borrower Web Platform]
-    C -->|Return Report| G[Internal Servicer Application]
+%%{init: {"theme": "dark", "sequenceDiagram": { "actorMargin": 10, "actorFontSize": 14, "actorFontFamily": "Arial", "noteFontSize": 12, "noteFontFamily": "Arial", "messageFontSize": 14, "messageFontFamily": "Arial", "messageAlign": "center" } } }%%
+sequenceDiagram
+    participant A as Borrower Web Platform
+    participant B as Webhook - SSRS 2016
+    participant C as SSRS 2016
+    participant D as Internal Servicer Application
+    participant E as Proxy Service
+    participant F as Borrower Web Platform
+    participant G as Internal Servicer Application
+
+    A->>B: Call Webhook
+    B->>C: Generate Auth Cookie
+    C->>F: Return Report
+    D->>E: Call Proxy Service
+    E->>B: Call Webhook
+    B->>C: Generate Auth Cookie
+    C->>G: Return Report
 ```
 
 This diagram shows the flow from each application calling the SSRS webhook to generate the authentication cookie, allowing them to retrieve reports within their own platforms. The inclusion of the proxy service for the internal application highlights the solution's adaptability to different technologies within the client's environment.
