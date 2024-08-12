@@ -145,10 +145,6 @@ While these three projects have significantly improved security across different
 
 By implementing MFA across these three platforms, I have added a significant measure of security to my client's data, applications, and platforms. As cyber threats continue to evolve, it's essential to stay ahead of potential vulnerabilities. MFA is a crucial component of a comprehensive security strategy, and its successful implementation demonstrates a commitment to protecting sensitive information.
 
-## Final Note
-
-As a final note, I used ChatGPT to assist with drafting this blog post, helping to organize and articulate the details of the work I’ve completed. However, I want to emphasize that the solutions, integrations, and custom implementations described here are entirely my own. The research, development, and execution were based on my expertise and tailored to meet my client’s specific needs. ChatGPT served as a tool to enhance the clarity and presentation of this content, but the technical work and solutions are my own.
-
 ## References
 
 - [Microsoft Sql Server Reporting Services - Custom Security for 2016](https://github.com/microsoft/Reporting-Services/tree/master/CustomSecuritySample2016)
