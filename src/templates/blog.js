@@ -36,6 +36,12 @@ const Blog = (props) => {
                 <h1 className="postTitle">{post.frontmatter.title}</h1>
                 <div className="postedInfo">posted on {post.frontmatter.date}  | tags: [ <TagList tags= { post.frontmatter.tags } /> ]</div>
                 {/* by {post.frontmatter.author}</div> */}
+
+                {
+                    postImage && postImage.src && (
+                        <blockquote className="postQuote" dangerouslySetInnerHTML={{__html: post.frontmatter.subtitle }}></blockquote>
+                    )
+                }
                 {
                     postImage && postImage.src && (
                         <div className="postImage">
@@ -53,11 +59,6 @@ const Blog = (props) => {
 
                 }
 
-                {
-                    postImage && !postImage.src && (
-                        <q className="postQuote" dangerouslySetInnerHTML={{__html: post.frontmatter.subtitle }}></q>
-                    )
-                }
                 <div className="blogBody" dangerouslySetInnerHTML={{__html: post.html}}></div>
                 <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
                 <Helmet>

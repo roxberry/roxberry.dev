@@ -372,7 +372,13 @@ aside section {
 }
 
 .postQuote {
+    font-size: 1em;
     font-style: italic;
+    color: $brand-primary;
+    border-left: 15px solid $brand-disclaimer;
+    margin: 50px 0;
+    padding: 10px 20px;
+    background-color: $default-contrast;
 }
 
 
