@@ -4,7 +4,6 @@ import Seo from '../components/Seo'
 import TagList from "../components/TagList"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { graphql } from 'gatsby'
-import { Disqus } from 'gatsby-plugin-disqus';
 
 const Blog = (props) => {
     
@@ -54,14 +53,6 @@ const Blog = (props) => {
                 }
 
                 <div className="blogBody" dangerouslySetInnerHTML={{__html: post.html}}></div>
-
-                <Disqus
-                    config={{
-                        url: props.location.href,
-                        identifier: post.id,
-                        title: post.frontmatter.title,
-                    }}
-                />
 
                 <div className="disclaimer">This post and/or images used in it may have been created or enhanced using generative AI tools for clarity and organization. However, all ideas, technical work, solutions, integrations, and other aspects described here are entirely my own.</div>
             </section>        
