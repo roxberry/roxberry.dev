@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout"
-import SEO from "../components/SEO"
+import Seo from "../components/Seo"
 import Pager from "../components/Pager"
 import TagList from "../components/TagList"
 import { StaticImage, GatsbyImage } from "gatsby-plugin-image"
@@ -10,7 +10,6 @@ class BlogIndex extends React.Component {
     render() {
         const { data } = this.props
         const siteTitle = data.site.siteMetadata.title
-        const posts = data.allMarkdownRemark.edges
         const { currentPage, numPages } = this.props.pageContext
         const isFirst = currentPage === 1
         const isLast = currentPage === numPages
@@ -30,7 +29,7 @@ class BlogIndex extends React.Component {
         }
         return (
             <Layout location={this.props.location} title={siteTitle}>
-                <SEO title="Welcome!" />
+                <Seo title="Welcome!" />
                 <section>
                     <h1 className="sectionTitle">Latest Posts</h1>
                     <div className="flexbox">
@@ -107,14 +106,14 @@ class BlogIndex extends React.Component {
                                     background="#282828"
                                     loading="eager"
                                     layout="constrained"
-                                    width="250"
+                                    width={250}
                                 />
                             </div>
                             <div className="project-card-wide-text">
                                 <h3>ShipWrite</h3>
                                 <span>An AI-powered application to assist the creation of high-quality writing for the professional and technical domains.</span>
                                 <div className="project-card-link">
-                                    <a href="https://shipwrite.app" target="_blank">Visit the project &gt;</a>
+                                    <a href="https://shipwrite.app" target="_blank" rel="noreferrer">Visit the project &gt;</a>
                                 </div>
                             </div>
                         </div>
@@ -128,7 +127,7 @@ class BlogIndex extends React.Component {
                                     background="#282828"
                                     loading="eager"
                                     layout="constrained"
-                                    width="250"
+                                    width={250}
 
                                 />
                             </div>
@@ -136,7 +135,7 @@ class BlogIndex extends React.Component {
                                 <h3>UN2 AI</h3>
                                 <span>An ecosystem where artificial intelligence and humanity coexist, rooted in a reciprocal relationship of respect and fairness.</span>
                                 <div className="project-card-link">
-                                    <a href="https://un2.ai" target="_blank">Visit the project &gt;</a>
+                                    <a href="https://un2.ai" target="_blank" rel="noreferrer">Visit the project &gt;</a>
                                 </div>
                             </div>
                         </div>
@@ -171,7 +170,7 @@ class BlogIndex extends React.Component {
                                     background="#282828"
                                     loading="eager"
                                     layout="constrained"
-                                    width="250" />
+                                    width={250} />
                             </div>
                             <div className="project-card-wide-text">
                                 <h3>Martyr</h3>
@@ -189,7 +188,7 @@ class BlogIndex extends React.Component {
                                     background="#282828"
                                     loading="eager"
                                     layout="constrained"
-                                    width="250"
+                                    width={250}
                                 />
                             </div>
                             <div className="project-card-wide-text">

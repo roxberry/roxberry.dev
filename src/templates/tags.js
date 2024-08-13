@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout"
-import SEO from "../components/SEO"
+import Seo from "../components/Seo"
 import TagList from "../components/TagList"
 import PropTypes from "prop-types"
 
@@ -17,7 +17,7 @@ const Tags = ({ pageContext, data }) => {
 
     return (
         <Layout>
-            <SEO title={tag} />
+            <Seo title={tag} />
             <section>
                 <h1><FontAwesomeIcon icon={['fas', 'tags']} />&nbsp;&nbsp;{tagHeader}</h1>
                 <div className="flexbox">

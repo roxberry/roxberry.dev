@@ -1,12 +1,12 @@
 import React from "react"
 import Layout from "../components/Layout"
-import SEO from "../components/SEO"
-import * as contactStyles from "../styles/contact.module.scss"
+import Seo from "../components/Seo"
+import "../styles/contact.module.scss"
 
 const ContactPage = () => {
     return (
         <Layout>
-            <SEO title="Contact Me" />
+            <Seo title="Contact Me" />
             <section className="contactForm">
                 <h1 className="sectionTitle">Contact Me</h1>
                 <div>
@@ -19,7 +19,7 @@ const ContactPage = () => {
                             id="contactForm"
                             noValidate
                         >
-                            <label>Email Address</label>
+                            <label htmlFor="_replyto">Email Address</label>
                             <input
                                 type="email"
                                 name="_replyto"
@@ -29,7 +29,7 @@ const ContactPage = () => {
                                 data-validation-required-message="Please enter your email address."
                             />
                             <p></p>
-                            <label>Message</label>
+                            <label htmlFor="body">Message</label>
                             <textarea
                                 rows="10"
                                 name="body"

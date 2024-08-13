@@ -1,12 +1,12 @@
 import React from "react"
 import Layout from "../components/Layout"
-import SEO from "../components/SEO"
+import Seo from "../components/Seo"
 import { StaticImage } from "gatsby-plugin-image"
 
 const ProjectsPage = () => {
     return (
         <Layout>
-            <SEO title="Projects" />
+            <Seo title="Projects" />
 
             <section>
                 <h1 className="sectionTitle">Projects</h1>
@@ -21,14 +21,14 @@ const ProjectsPage = () => {
                                 background="#282828"
                                 loading="eager"
                                 layout="constrained"
-                                width="250"
+                                width={250}
                             />
                         </div>
                         <div className="project-card-wide-text">
                             <h3>StandOut.PRO</h3>
                             <span>A digital platform focusing on personal consulting, analytics, and security services for promising youth athletes.</span>
                             <div className="project-card-link">
-                                <a href="https://standout.pro" target="_blank">Visit the project &gt;</a>
+                                <a href="https://standout.pro" target="_blank" rel="noreferrer">Visit the project &gt;</a>
                             </div>
                         </div>
                     </div>
@@ -43,14 +43,14 @@ const ProjectsPage = () => {
                                 background="#282828"
                                 loading="eager"
                                 layout="constrained"
-                                width="250"
+                                width={250}
                             />
                         </div>
                         <div className="project-card-wide-text">
                             <h3>ShipWrite</h3>
                             <span>An AI-powered application to assist the creation of high-quality writing for the professional and technical domains.</span>
                             <div className="project-card-link">
-                                <a href="https:/shipwrite.app" target="_blank">Visit the project &gt;</a>
+                                <a href="https:/shipwrite.app" target="_blank" rel="noreferrer">Visit the project &gt;</a>
                             </div>
                         </div>
                     </div>
@@ -64,7 +64,7 @@ const ProjectsPage = () => {
                                 background="#282828"
                                 loading="eager"
                                 layout="constrained"
-                                width="250"
+                                width={250}
 
                             />
                         </div>
@@ -72,7 +72,7 @@ const ProjectsPage = () => {
                             <h3>UN2 AI</h3>
                             <span>An ecosystem where artificial intelligence and humanity coexist, rooted in a reciprocal relationship of respect and fairness.</span>
                             <div className="project-card-link">
-                                <a href="https://un2.ai" target="_blank">Visit the project &gt;</a>
+                                <a href="https://un2.ai" target="_blank" rel="noreferrer">Visit the project &gt;</a>
                             </div>
                         </div>
                     </div>
@@ -86,14 +86,14 @@ const ProjectsPage = () => {
                                 background="#282828"
                                 loading="eager"
                                 layout="constrained"
-                                width="250"
+                                width={250}
                             />
                         </div>
                         <div className="project-card-wide-text">
                             <h3>ACTU8.IO</h3>
                             <span>An innovation hub and platform that empowers developers in the robotics and Internet of Things (IoT) fields.</span>
                             <div className="project-card-link">
-                                <a href="https://actu8.io" target="_blank">Visit the project &gt;</a>
+                                <a href="https://actu8.io" target="_blank" rel="noreferrer">Visit the project &gt;</a>
                             </div>
                         </div>
                     </div>
@@ -107,7 +107,7 @@ const ProjectsPage = () => {
                                 background="#282828"
                                 loading="eager"
                                 layout="constrained"
-                                width="250" />
+                                width={250} />
                         </div>
                         <div className="project-card-wide-text">
                             <h3>Martyr</h3>
@@ -125,7 +125,7 @@ const ProjectsPage = () => {
                                 background="#282828"
                                 loading="eager"
                                 layout="constrained"
-                                width="250"
+                                width={250}
                             />
                         </div>
                         <div className="project-card-wide-text">

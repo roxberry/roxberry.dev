@@ -1,10 +1,9 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import SEO from '../components/SEO'
+import Seo from '../components/Seo'
 import TagList from "../components/TagList"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { graphql } from 'gatsby'
-// import { DiscussionEmbed } from 'disqus-react'
 import { Disqus } from 'gatsby-plugin-disqus';
 
 const Blog = (props) => {
@@ -15,23 +14,18 @@ const Blog = (props) => {
     const seoImage = postImage && postImage.src
     ? postImage.src.childImageSharp.resize
     : null
-    const disqusShortname = "roxberry";
-    const disqusConfig = {
-      identifier: post.id,
-      title: post.frontmatter.title,
-    };
     const pathName = props.location.pathname
 
 
     return (
 
         <Layout>
-            <SEO           
+            <Seo           
                 title={post.frontmatter.title}
                 description={post.frontmatter.description || post.excerpt}
                 image={seoImage}
                 pathname={pathName}>
-            </SEO>
+            </Seo>
             <section>
                 <h1 className="postTitle">{post.frontmatter.title}</h1>
                 <div className="postedInfo">posted on {post.frontmatter.date}  | tags: [ <TagList tags= { post.frontmatter.tags } /> ]</div>
