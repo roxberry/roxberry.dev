@@ -60,11 +60,10 @@ const Blog = (props) => {
                 }
 
                 <div className="blogBody" dangerouslySetInnerHTML={{__html: post.html}}></div>
-                {/* <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} /> */}
 
                 <Disqus
                     config={{
-                        url: pathName,
+                        url: props.location.href,
                         identifier: post.id,
                         title: post.frontmatter.title,
                     }}
@@ -80,6 +79,7 @@ export const query = graphql`
     query($slug: String!) {
         markdownRemark(fields: { slug: { eq: $slug } }) {
         excerpt
+        id
         frontmatter {
             title
             subtitle
