@@ -40,7 +40,7 @@ const ContactPage = () => {
                             ></textarea>
                             <p></p>
                             <input type="submit" value="Send" />
-                            <input type="hidden" name="_next" value="//roxberry.dev/thanks/" />
+                            <input type="hidden" name="_next" value="//markrox.dev/thanks/" />
                             <input type="hidden" name="_gotcha" />
                         </form>
                     </div>

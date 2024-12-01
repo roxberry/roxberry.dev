@@ -1,6 +1,6 @@
 ---
 title: "Markdown Reference"
-subtitle: "Markdown Reference for Roxberry.DEV"
+subtitle: "Markdown Reference for markrox.dev"
 date: 2021-06-04
 author: "Mark Roxberry"
 featured: false

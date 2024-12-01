@@ -13,7 +13,7 @@
 ## Resources
 
 https://placeholder.com/
-https://via.placeholder.com/800x600.png?text=Roxberry.DEV
+https://via.placeholder.com/800x600.png?text=markRox.DEV
 
 https://www.adobe.com/express/feature/image/resize
 

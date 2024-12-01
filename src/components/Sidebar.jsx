@@ -28,7 +28,7 @@ const SideBar = () => {
                 {/* <p>Security driven developer and passionate cross platform software engineer, architect and consultant.</p> */}
             </section>
             <section>
-                <a href="https://github.com/roxberry/gatsby-roxberry/actions/workflows/main-ci.yml"><img src="https://github.com/roxberry/gatsby-roxberry/actions/workflows/main-ci.yml/badge.svg" width="170px" height="20px" alt="Roxberry.DEV CI" /></a>
+                <a href="https://github.com/roxberry/gatsby-roxberry/actions/workflows/main-ci.yml"><img src="https://github.com/roxberry/gatsby-roxberry/actions/workflows/main-ci.yml/badge.svg" width="170px" height="20px" alt="markrox.dev CI" /></a>
             </section>
             <Categories />
             <Footer />

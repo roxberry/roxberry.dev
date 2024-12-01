@@ -9,10 +9,10 @@ const puppeteer = require('puppeteer')
 
 module.exports = {
     siteMetadata: {
-        title: "Roxberry.DEV",
-        url: "https://www.roxberry.dev",
-        siteUrl: "https://www.roxberry.dev",
-        twitterUsername: "@roxdotdev",
+        title: "markRox.DEV",
+        url: "https://www.markrox.dev",
+        siteUrl: "https://www.markrox.dev",
+        twitterUsername: "@markroxdotdev",
         author: "Mark Roxberry",
         keywords: ["roxberry", "journal", "development"],
         featuredTags: ["Russia", "development", "performance", "robotics", "security", "privacy", "apple", "soccer"],
@@ -64,7 +64,7 @@ module.exports = {
                     {
                         resolve: `gatsby-remark-twitter-cards`,
                         options: {
-                            title: "roxberry.dev",
+                            title: "markrox.dev",
                             separator: "|",
                             author: "Mark Roxberry",
                             background: require.resolve("./src/images/profile.1.jpg"),
@@ -123,7 +123,7 @@ module.exports = {
               }
             `,
                         output: "/feed.xml",
-                        title: "Roxberry.DEV RSS Feed",
+                        title: "markRox.DEV RSS Feed",
                         // // optional configuration to insert feed reference in pages:
                         // // if `string` is used, it will be used to create RegExp and then test if pathname of
                         // // current page satisfied this regular expression;

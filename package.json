@@ -1,7 +1,7 @@
 {
-    "name": "roxberry.dev",
+    "name": "markrox.dev",
     "private": true,
-    "description": "roxberry.dev on Gatsby",
+    "description": "markRox.dev on Gatsby",
     "version": "0.1.0",
     "license": "0BSD",
     "scripts": {
