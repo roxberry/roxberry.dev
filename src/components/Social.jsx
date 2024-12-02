@@ -14,10 +14,10 @@ const Social = () =>  {
                     <a href="/feed.xml"><FontAwesomeIcon icon={['fas', 'rss']} /></a>
                 </li>
                 <li>
-                    <a href="https://x.com/roxberry"><FontAwesomeIcon icon={faXTwitter} /></a>
+                    <a href="https://x.com/markroxdotdev"><FontAwesomeIcon icon={faXTwitter} /></a>
                 </li>
                 <li>
-                    <a href="https://www.facebook.com/roxberry"><FontAwesomeIcon icon={['fab', 'facebook-f']} /></a>
+                    <a href="https://www.facebook.com/markroxdotdev"><FontAwesomeIcon icon={['fab', 'facebook-f']} /></a>
                 </li>
                 <li>
                     <a href="https://www.linkedin.com/in/roxberry"><FontAwesomeIcon icon={['fab', 'linkedin']} /></a>
@@ -26,7 +26,7 @@ const Social = () =>  {
                     <a href="https://github.com/roxberry"><FontAwesomeIcon icon={['fab', 'github']} /></a>
                 </li>
                 <li>
-                    <a href="mailto:contact@markrox.dev"><FontAwesomeIcon icon={['fas', 'envelope']} /></a>
+                    <a href="mailto:blog@markrox.dev"><FontAwesomeIcon icon={['fas', 'envelope']} /></a>
                 </li>
             </ul>
         </div>
