@@ -43,6 +43,8 @@ header {
     display: flex;
     justify-content: center;
     line-height: 2;
+    border-bottom: 1px solid white;
+
 }
 
 .sub-header {
@@ -54,6 +56,22 @@ header {
     //justify-content: space-between;
     //width: $container-width;
     // border: 2px solid red; //for design purposes
+}
+
+.site-disclaimer {
+    width: 100%;
+    background-color: $brand-disclaimer;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: center;
+
+    span {
+        padding: 0.25em 0em;
+        color: $disclaimer-color;
+        //width: $container-width;
+        // border: 2px solid red; //for design purposes
+        text-align: center;
+    }
 }
 
 .disclaimer {
@@ -207,11 +225,12 @@ a {
 }
 
 .leftSide .title {
-    font-size: 1.5em;
+    font-size: 1em;
     //text-decoration: none;
     color: $brand-primary;
     font-family: $brand-heading-font;
     font-weight: bold;
+    span { font-weight: lighter; padding-left: 10px; font-size: 0.8em; }
 }
 
 .leftSide .title.active {

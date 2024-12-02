@@ -272,13 +272,12 @@ header {
 .menu-button-container {
     display: none;
     height: 100%;
-    width: 30px;
+    width: 20px;
     cursor: pointer;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
-}
+    padding: 1rem;}
 
 #menu-toggle {
     display: none;
@@ -290,20 +289,20 @@ header {
     display: block;
     background-color: #fff;
     position: absolute;
-    height: 2px;
-    width: 30px;
+    height: 1px;
+    width: 15px;
     transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
     border-radius: 2px;
 }
 
 .menu-button::before {
     content: '';
-    margin-top: -8px;
+    margin-top: -5px;
 }
 
 .menu-button::after {
     content: '';
-    margin-top: 8px;
+    margin-top: 5px;
 }
 
 #menu-toggle:checked+.menu-button-container .menu-button::before {

@@ -19,17 +19,17 @@ const Header = () => {
         <header>
             <div className="top-nav sub-header">
                 <div className="leftSide">
-                    <Link to="/" className="title" activeClassName="active">
-                        <StaticImage
+                    <Link to="/" className="title" activeClassName="active">MARKROX.DEV™<span>Technology, Innovation, & Insight by Mark Roxberry</span>
+                        {/* <StaticImage
                             layout="fixed"
                             width={200}
                             formats={["AUTO"]}
-                            src="../images/roxberry-logo-robot@3x.webp"
+                            src="../images/markrox-logo.png"
                             alt={data.site.siteMetadata.title}
                             placeholder="NONE"
                             background="#282828"
                             loading="eager"
-                        />
+                        /> */}
                     </Link>
 
                 </div>

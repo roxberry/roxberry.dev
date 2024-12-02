@@ -29,7 +29,7 @@ const HeaderEx = () => {
                             layout="fixed"
                             width={200}
                             formats={["AUTO"]}
-                            src="../images/roxberry-logo-robot@3x.webp"
+                            src="../images/markrox-logo.png"
                             alt={data.site.siteMetadata.title}
                             placeholder="NONE"
                             background="#282828"

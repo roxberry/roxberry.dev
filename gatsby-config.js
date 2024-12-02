@@ -9,7 +9,7 @@ const puppeteer = require('puppeteer')
 
 module.exports = {
     siteMetadata: {
-        title: "markRox.DEV",
+        title: "MARKROX.DEV",
         url: "https://www.markrox.dev",
         siteUrl: "https://www.markrox.dev",
         twitterUsername: "@markroxdotdev",
