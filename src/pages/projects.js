@@ -11,7 +11,7 @@ const ProjectsPage = () => {
             <section>
                 <h1 className="sectionTitle">Projects</h1>
                 <div className="flexbox-widex">
-                    <div className="project-card-wide">
+                    {/* <div className="project-card-wide">
                         <div className="project-card-image">
                             <StaticImage
                                 src="../images/projects/standout-1.png"
@@ -32,7 +32,7 @@ const ProjectsPage = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="project-card-wide">
+                    <div className="project-card-wide hide">
                         <div className="project-card-image">
 
                             <StaticImage
@@ -54,7 +54,7 @@ const ProjectsPage = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="project-card-wide">
+                    <div className="project-card-wid  hide">
                         <div className="project-card-image">
                             <StaticImage
                                 formats={["AUTO"]}
@@ -75,7 +75,7 @@ const ProjectsPage = () => {
                                 <a href="https://un2.ai" target="_blank" rel="noreferrer">Visit the project &gt;</a>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="project-card-wide">
                         <div className="project-card-image">
                             <StaticImage
@@ -90,14 +90,35 @@ const ProjectsPage = () => {
                             />
                         </div>
                         <div className="project-card-wide-text">
-                            <h3>ACTU8.IO</h3>
-                            <span>An innovation hub and platform that empowers developers in the robotics and Internet of Things (IoT) fields.</span>
+                        <h3>ACTU8.IO</h3>
+                        <span>An innovation hub and platform that empowers developers in the robotics and Internet of Things (IoT) fields.</span>
+                        <div className="project-card-link">
+                            <a href="https://actu8.io" target="_blank" rel="noreferrer">Visit the project &gt;</a>
+                        </div>
+                    </div>
+                    </div>
+                    <div className="project-card-wide">
+                        <div className="project-card-image">
+                            <StaticImage
+                                formats={["AUTO"]}
+                                src="../images/projects/briefing-logo.webp"
+                                alt="project"
+                                placeholder="NONE"
+                                background="#282828"
+                                loading="eager"
+                                layout="constrained"
+                                width={250}
+                            />
+                        </div>
+                        <div className="project-card-wide-text">
+                            <h3>Briefing</h3>
+                            <span>A knowledge tool designed to help professionals master knowledge by delivering curated, topic-specific content.</span>
                             <div className="project-card-link">
-                                <a href="https://actu8.io" target="_blank" rel="noreferrer">Visit the project &gt;</a>
+                                <a href="https://driveapplied.github.io/briefing/" target="_blank" rel="noreferrer">Visit the project &gt;</a>
                             </div>
                         </div>
                     </div>
-                    <div className="hide">
+                    {/* <div className="project-card-wide hide">
                         <div className="project-card-image">
                             <StaticImage
                                 formats={["AUTO"]}
@@ -115,7 +136,7 @@ const ProjectsPage = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="hide">
+                    <div className="project-card-wide hide">
                         <div className="project-card-image">
                             <StaticImage
                                 formats={["AUTO"]}
@@ -133,7 +154,7 @@ const ProjectsPage = () => {
                             <div className="project-card-link">
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </section>
 

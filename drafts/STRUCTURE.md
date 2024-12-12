@@ -34,3 +34,4 @@ Thankful for my ability to reframe and compartmentalize, to fit my work into the
 
 ## Notes
 
+
