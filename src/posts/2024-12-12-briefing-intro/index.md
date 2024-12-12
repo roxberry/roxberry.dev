@@ -96,7 +96,7 @@ Briefing is more than just an app or a website, it is a vision for smarter, more
 If you’re intrigued by the possibilities, I’d love for you to join the journey as a beta tester or contributor. Together, we can create a platform that not only delivers knowledge but also transforms how we turn information into action. Let’s redefine productivity and expertise in the digital age—one feature at a time.
 
 ### References
-[Briefing Core](http://briefing.driveapplied.com)
+[Briefing Core](https://briefing.driveapplied.com)
 
 ### Image Credit
 
