@@ -98,8 +98,4 @@ If you’re intrigued by the possibilities, I’d love for you to join the journ
 ### References
 [Briefing Core](https://briefing.driveapplied.com)
 
-### Image Credit
-
-
-### Quote Credit
 
