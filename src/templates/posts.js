@@ -17,7 +17,7 @@ class BlogIndex extends React.Component {
         const nextPage = "/" + (currentPage + 1).toString()
 
         let pager;
-        if (numPages > 1 ) {
+        if (numPages > 1) {
             pager = <Pager
                 isFirst={isFirst}
                 isLast={isLast}
@@ -102,7 +102,7 @@ class BlogIndex extends React.Component {
                             <div className="project-card-image">
                                 <StaticImage
                                     formats={["AUTO"]}
-                                    src="../images/projects/actu8-1.png"
+                                    src="../images/projects/hactu8.png"
                                     alt="project"
                                     placeholder="NONE"
                                     background="#282828"
@@ -112,12 +112,12 @@ class BlogIndex extends React.Component {
                                 />
                             </div>
                             <div className="project-card-wide-text">
-                            <h3>ACTU8.IO</h3>
-                            <span>An innovation hub and platform that empowers developers in the robotics and Internet of Things (IoT) fields.</span>
-                            <div className="project-card-link">
-                                <a href="https://actu8.io" target="_blank" rel="noreferrer">Visit the project &gt;</a>
+                                <h3>HACTU8.COM</h3>
+                                <span>A cutting-edge initiative dedicated to ethical hacking in the domains of robotics, AI, IoT, and consumer hardware.</span>
+                                <div className="project-card-link">
+                                    <a href="https://hactu8.com" target="_blank" rel="noreferrer">Visit the project &gt;</a>
+                                </div>
                             </div>
-                        </div>
                         </div>
                         <div className="project-card-wide">
                             <div className="project-card-image">
@@ -204,7 +204,7 @@ class BlogIndex extends React.Component {
                                                     image={postImage.src.childImageSharp.gatsbyImageData}
                                                     alt={postImage.alt}
                                                     layout="fullWidth"
-                                                    formats={["auto","webp"]}
+                                                    formats={["auto", "webp"]}
                                                 />
                                                 <div className="overlay">
                                                     <div className="innerOverlayText" dangerouslySetInnerHTML={{ __html: edge.node.frontmatter.excerpt }}></div>
