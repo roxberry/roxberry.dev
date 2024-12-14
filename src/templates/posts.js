@@ -136,7 +136,7 @@ class BlogIndex extends React.Component {
                                 <h3>Briefing</h3>
                                 <span>A knowledge tool designed to help professionals master knowledge by delivering curated, topic-specific content.</span>
                                 <div className="project-card-link">
-                                    <a href="https://driveapplied.github.io/briefing/" target="_blank" rel="noreferrer">Visit the project &gt;</a>
+                                    <a href="https://briefing.driveapplied.com" target="_blank" rel="noreferrer">Visit the project &gt;</a>
                                 </div>
                             </div>
                         </div>
