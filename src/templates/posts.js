@@ -202,7 +202,7 @@ class BlogIndex extends React.Component {
                                             <div className="postImage">
                                                 <GatsbyImage
                                                     image={postImage.src.childImageSharp.gatsbyImageData}
-                                                    alt={postImage.alt}
+                                                    alt={edge.node.frontmatter.title}
                                                     layout="fullWidth"
                                                     formats={["auto", "webp"]}
                                                 />
